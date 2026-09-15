@@ -1,0 +1,3 @@
+# Deterministic line endings so a fresh clone rebuilds byte-for-byte.
+* text=auto eol=lf
+index.html -text

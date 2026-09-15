@@ -1,0 +1,483 @@
+{
+  "id": "m14",
+  "num": 14,
+  "week": 5,
+  "title": "Capstone: One Sprint on Ledgerline",
+  "subtitle": "One connected Sprint, start to finish, with you as the Product Owner and every decision feeding the next one.",
+  "minutes": 40,
+  "why": "Knowing the framework and running it are different skills. This is where you find out which one you have.",
+  "objectives": [
+    "Set a Product Goal that a Scrum Team can actually plan against",
+    "Forge a Sprint Goal as an objective rather than a shopping list",
+    "Handle a mid-Sprint emergency without endangering the Sprint Goal or abandoning your accountability",
+    "Renegotiate scope with Developers when the work turns out to be bigger than anyone thought",
+    "Run a Sprint Review with four stakeholders who cannot all be right, and a Retrospective you are actually in"
+  ],
+  "beats": [
+    {
+      "type": "hook",
+      "body": "Sprint 12 starts Monday. You are the Product Owner. Every decision you make in this module carries forward, so the Sprint Review you get is the one your earlier choices built. Nobody is going to tell you the right answer at each step, because in most of these moments there is not one. There is a defensible call, a second defensible call that costs something different, and two ways to quietly stop being accountable. Read the situation, pick, and read what it did."
+    },
+    {
+      "type": "civic",
+      "title": "Where you are standing",
+      "body": "One engineer. A Scrum Master who also does delivery and half of support. You, carrying product, sales, and the RFP replies. The Ledgerline demo has every roadmap item from R-01 to R-16 built, each its own commit. The one thing not built is the reconciliation tie-out between Corvus Financials, the bank file, and the ledger, which discovery named the adoption gate, which needs a real backend three to six months out, and which Priya Raman, the Treasurer, says decides whether she can use the product at all, because her name is on the warrant. Eight towns are in pilot discussion. One RFP is live. You have never written a Product Goal down."
+    },
+    {
+      "type": "sim",
+      "title": "Monday, before Planning: what are you actually aiming at?",
+      "setup": "Dana Whitcomb asks the question you have been avoiding: what are we aiming at? She is not being difficult. She has watched twelve Sprints of visible progress and cannot say what any of it adds up to. Whatever you answer becomes the thing the rest of the backlog has to justify itself against, and the Scrum Guide says a Product Goal must be fulfilled or abandoned before the team takes on the next one. So this is not a slogan. Pick one.",
+      "choices": [
+        {
+          "label": "By the end of pilot season, a town treasurer can tie every number the product shows to her bank statement and her ERP without leaving the product.",
+          "outcome": "It names a future state of the product, it names who it is for, and you could stand in front of the backlog and say yes or no to each item against it. It also puts the one unbuilt thing at the centre, which is uncomfortable and correct. The anomaly work, Ask the Ledger, and the Records Desk all now have to argue their way in.",
+          "verdict": "good",
+          "lesson": "The Product Goal describes a future state of the product which can serve as a target for the Scrum Team to plan against. A goal that does not make some existing backlog items look weak is not doing any work."
+        },
+        {
+          "label": "Make the demo complete across all ten personas.",
+          "outcome": "Clear, achievable, and everyone knows when it is done. It is also a goal about your sales artifact rather than your product, and it is a description of output. You would hit it entirely by continuing exactly what you have been doing for twelve Sprints, which is the tell.",
+          "verdict": "mixed",
+          "lesson": "A pre-revenue company genuinely does sell on the demo, so this is not stupid. But a Product Goal you can reach without changing anything is a restatement of your plan, not a target for it."
+        },
+        {
+          "label": "Win three paying town pilots by June.",
+          "outcome": "It focuses the company and it is measurable, which is more than most goals manage. It is also not a statement about the product, so it cannot tell you whether the tie-out beats the anomaly workflow. Two people can both be working toward it and build opposite things.",
+          "verdict": "mixed",
+          "lesson": "Company goals and Product Goals are both legitimate and they are not the same artifact. The Product Goal is in the Product Backlog, and the rest of the Product Backlog emerges to define what will fulfill it."
+        },
+        {
+          "label": "Become the most trusted municipal transparency platform in New England.",
+          "outcome": "Nothing in the backlog can be tested against it. Every item passes, which means it orders nothing. You also cannot fulfill or abandon it, so the Scrum Team can never legitimately move on.",
+          "verdict": "bad",
+          "lesson": "The Product Goal is the long-term objective for the Scrum Team, and they must fulfill or abandon one objective before taking on the next. A goal with no end state is a slogan wearing a commitment's clothes."
+        }
+      ]
+    },
+    {
+      "type": "guide",
+      "quote": "The Product Goal describes a future state of the product which can serve as a target for the Scrum Team to plan against. The Product Goal is in the Product Backlog. The rest of the Product Backlog emerges to define \"what\" will fulfill the Product Goal.",
+      "cite": "Scrum Guide 2020, Commitment: Product Goal",
+      "gloss": "The backlog exists to serve the goal, not the other way round. If your items were not chosen against a goal, you have a list of good ideas rather than a plan."
+    },
+    {
+      "type": "teach",
+      "title": "What that choice just did",
+      "body": "Assume you took the tie-out goal, because it is the one the rest of this Sprint gets tested against. You have just made your hardest, most blocked, least demo-friendly item the centre of gravity. That is not heroism, it is the point: a goal that only endorses what you already do cannot reorder anything. It also creates an immediate honesty problem you will meet at the Sprint Review, because the tie-out needs a backend three to six months out and Priya will ask. Note the trap now: a Product Goal aimed at something you cannot ship yet makes every Sprint look like a detour unless each Sprint clears a real obstacle in front of it.",
+      "callout": {
+        "kind": "why",
+        "text": "An Increment is a concrete stepping stone toward the Product Goal. Stepping stone is doing real work in that sentence. Ask of each Sprint what it removed from between you and the goal."
+      }
+    },
+    {
+      "type": "sim",
+      "title": "Sprint Planning, Topic One: why is this Sprint valuable?",
+      "setup": "Last Thursday, walking Carla Benitez through the demo, the Data Connections screen showed the Corvus Financials feed in an Error state, last synced two days earlier, zero records today. Nothing anywhere else in the product said so. Carla's comment was that this silently makes every budget number in the product wrong. Feed monitoring is filed R-19, well down the order. You also have three Anomaly Review workflow items sized and ready, which Dana has asked about every week for a month. You propose how the product could increase its value this Sprint.",
+      "choices": [
+        {
+          "label": "Propose: a user can trust that the numbers on screen are current, because the product tells them when they are not.",
+          "outcome": "The Scrum Team can now argue about the work without arguing about the destination. The Developers immediately ask whether a banner counts, which is exactly the conversation you wanted, and the anomaly items can still ride along if they fit. It also clears an obstacle sitting directly in front of the tie-out, since a reconciliation built on a dead feed is worse than none.",
+          "verdict": "good",
+          "lesson": "The Product Owner proposes how the product could increase its value and utility in the current Sprint, and the whole Scrum Team then collaborates to define a Sprint Goal. Propose the why, not the what."
+        },
+        {
+          "label": "Propose: deliver feed health monitoring plus the three anomaly workflow items.",
+          "outcome": "Everyone knows what to build and nobody knows what to protect. On day nine, when something has to give, every possible cut looks like failing the goal, because the goal is the list. The Developers lose the flexibility the Sprint Goal is specifically supposed to give them.",
+          "verdict": "mixed",
+          "lesson": "The Sprint Goal is the single objective for the Sprint and it provides flexibility in terms of the exact work needed to achieve it. A list of items removes precisely that flexibility."
+        },
+        {
+          "label": "Propose no Sprint Goal. The feed work and the anomaly work are unrelated, and forcing a goal over both would be an artificial sentence nobody believes.",
+          "outcome": "Honest instinct, and it is not permitted. The Sprint Goal must be finalized prior to the end of Sprint Planning. Worse, the discomfort was information: two unrelated bodies of work in one Sprint is usually a sign you are ordering by who asked rather than by where you are going.",
+          "verdict": "bad",
+          "lesson": "The Sprint Goal creates coherence and focus, encouraging the Scrum Team to work together rather than on separate initiatives. If you cannot write one, that is a finding about the Sprint, not a reason to skip it."
+        },
+        {
+          "label": "Propose: Dana can clear, snooze and annotate a flag without leaving Anomaly Review. Feed monitoring stays where it is.",
+          "outcome": "You serve your most credible, most persistent stakeholder with an item that is genuinely ready, and you will get a warm Sprint Review. You also build workflow on top of numbers you now personally know can be silently wrong, and you are the only person in the building who knows that.",
+          "verdict": "mixed",
+          "lesson": "Ordering by the strength of the request is defensible until you hold information the requester does not. Transparency is a pillar, and it applies to what you know about your own data."
+        }
+      ]
+    },
+    {
+      "type": "guide",
+      "quote": "Topic One: Why is this Sprint valuable? The Product Owner proposes how the product could increase its value and utility in the current Sprint. The whole Scrum Team then collaborates to define a Sprint Goal that communicates why the Sprint is valuable to stakeholders. The Sprint Goal must be finalized prior to the end of Sprint Planning.",
+      "cite": "Scrum Guide 2020, Sprint Planning",
+      "gloss": "You propose, the team defines, and it is finished before anyone leaves the room. Three separate facts, and the exam tests all three."
+    },
+    {
+      "type": "sim",
+      "title": "Topic Two: the number the Developers give you",
+      "setup": "The Sprint Goal is that a user can trust the numbers on screen because the product says when they are not current. The Developers pull the feed items in and decompose. Halfway through they give you the honest figure: connection health plus alerting plus a visible staleness indicator on every screen that reads the feed is most of the Sprint, and they are not confident about the last part. They propose taking connection health and alerting and dropping the per-screen indicator. You believe the indicator is the part that actually protects Dana, because nobody ever opens the Data Connections screen. Your one engineer is in the room.",
+      "choices": [
+        {
+          "label": "Ask what a thinner indicator would cost, one banner on the two screens Dana and Priya actually open, and let them decide whether that fits.",
+          "outcome": "You have changed the trade-off they are choosing between instead of changing their answer. They come back with a scoped version they are confident about, and the Sprint Goal survives intact because the goal was never every screen, it was the user knowing.",
+          "verdict": "good",
+          "lesson": "The Developers who will be doing the work are responsible for the sizing. The Product Owner may influence the Developers by helping them understand and select trade-offs. Influence is offering options, not overruling the estimate."
+        },
+        {
+          "label": "Tell them the indicator is not negotiable, since it is the whole point of the Sprint Goal, and ask them to find a way.",
+          "outcome": "You may get it, and you will get it by whatever route is left, which is usually quality. Quality does not decrease is a Sprint rule you just put pressure on, and the number they give you next Sprint will be padded, which costs you the honest signal permanently.",
+          "verdict": "bad",
+          "lesson": "How the chosen work gets done is at the sole discretion of the Developers, and no one else tells them how to turn Product Backlog items into Increments of value. Owning the why does not extend to owning the how."
+        },
+        {
+          "label": "Accept their proposal as offered and move the indicator to the top of the Product Backlog for next Sprint.",
+          "outcome": "You respected the sizing, which is right, and you skipped the influence the Guide explicitly gives you, which is a waste. The Sprint may now finish with alerting nobody sees, so the goal is technically met and practically unmet, and you find out at the Review.",
+          "verdict": "mixed",
+          "lesson": "Deference and abdication look identical in the room. The question that separates them is whether you offered them a trade-off they had not considered before you accepted the answer."
+        },
+        {
+          "label": "Reduce the Sprint Goal to match what they are confident about: alerting only.",
+          "outcome": "Safe, honest, and you traded away the part with the value in it. The goal now describes the plan, which means the plan can never be renegotiated against it, and on day nine you will have no principle to make a decision with.",
+          "verdict": "mixed",
+          "lesson": "Shrinking the goal to fit the plan inverts their relationship. The Sprint Goal is what lets the Sprint Backlog change without the Sprint failing."
+        }
+      ]
+    },
+    {
+      "type": "trap",
+      "myth": "The Product Owner sets the scope of the Sprint. If the Developers say it is too much, the Product Owner decides what fits.",
+      "truth": "Through discussion with the Product Owner, the Developers select items from the Product Backlog to include in the current Sprint. The Developers who will be doing the work are responsible for the sizing. The Product Owner may influence the Developers by helping them understand and select trade-offs.",
+      "why": "PSPO I loves this boundary because the correct answer sits between two obvious wrong ones. Overruling the estimate is wrong. Saying nothing is also wrong, because influencing through trade-offs is explicitly your job. The right option almost always contains the words discussion or trade-off."
+    },
+    {
+      "type": "sim",
+      "title": "Day six: SOC 2 lands in the middle of your Sprint",
+      "setup": "Day six of a two-week Sprint. Carla Benitez, the IT coordinator on the live RFP, emails: a SOC 2 report is required, and the submission window is the one thing nobody can move. Your compliance matrix lists Security, Availability, Processing Integrity and Privacy as controls implemented, audit not conducted. Every date in the ten-item compliance roadmap is a placeholder. WCAG 2.1 AA has never been assessed, and the matrix itself notes most government RFPs require accessibility documentation. Everyone on your side is asking the same one line question: can we stop and fix this? Nothing in the Sprint Backlog touches compliance.",
+      "choices": [
+        {
+          "label": "Answer Carla today with the precise current state and the contingent-contract fallback, and leave the Sprint Backlog alone. Compliance goes into the Product Backlog to be ordered at the next Planning.",
+          "outcome": "The reply takes you an afternoon and costs the Developers nothing. She now has an accurate picture and a real instrument, award contingent on completion. The Sprint Goal is untouched, and the compliance decision gets made against your Product Goal next week instead of against the temperature of an email.",
+          "verdict": "good",
+          "lesson": "No changes are made that would endanger the Sprint Goal. The urgent thing was a communication, not a build, and a Product Owner who cannot tell those apart will disrupt every Sprint they run."
+        },
+        {
+          "label": "Cancel the Sprint. Only you have that authority, and an RFP that shapes the year outranks two weeks of feed work.",
+          "outcome": "You have used the one irreversible lever you own on a Sprint Goal that is still entirely valid, and burned the Sprint's partial work to do it. The RFP does not go faster, because the blocker is an audit you do not control. The next time you say a Sprint Goal matters, nobody will fully believe you.",
+          "verdict": "bad",
+          "lesson": "In the Guide's words, a Sprint could be cancelled if the Sprint Goal becomes obsolete, and only the Product Owner has the authority to cancel the Sprint. Obsolete is the condition, not inconvenient, and not outranked."
+        },
+        {
+          "label": "Renegotiate scope with the Developers: drop the per-screen indicator, add two days of evidence gathering and an accessibility assessment, keep the Sprint Goal wording as it is.",
+          "outcome": "Defensible on the letter of the rule, since scope may be renegotiated and the goal survives on paper. In practice you have spent your only engineer on work that is mostly document and evidence collection rather than engineering, and the goal is now a sentence nobody is working toward.",
+          "verdict": "mixed",
+          "lesson": "Scope may be clarified and renegotiated with the Product Owner as more is learned. Renegotiation that keeps the words and removes the substance is how a Sprint Goal becomes decoration."
+        },
+        {
+          "label": "Treat this as a sales question rather than a product question and stay out of it.",
+          "outcome": "You protect the Sprint, which is half right. You also hand off a question about what the product must be true of in order to be bought, and the answer comes back as a promise somebody else made. Six weeks later you find out what was committed on your behalf.",
+          "verdict": "mixed",
+          "lesson": "The Product Owner is accountable for maximizing the value of the product resulting from the work of the Scrum Team. Compliance posture is part of what this buyer is buying, so it is inside the accountability even when it is outside the Sprint."
+        }
+      ]
+    },
+    {
+      "type": "guide",
+      "quote": "During the Sprint: No changes are made that would endanger the Sprint Goal; Quality does not decrease; The Product Backlog is refined as needed; and, Scope may be clarified and renegotiated with the Product Owner as more is learned.",
+      "cite": "Scrum Guide 2020, The Sprint",
+      "gloss": "The Sprint is not sealed. Scope moves, and the Sprint Goal does not, and the renegotiation is with you. Almost every mid-Sprint exam question is testing whether you know those are three different statements."
+    },
+    {
+      "type": "sim",
+      "title": "Day nine: the work was bigger than anyone thought",
+      "setup": "Building the staleness indicator forced someone to read how each screen computes its numbers, and they found this. Budget Pace lists four departments trending over budget. The Executive Overview says three. One rounds before filtering, the other compares unrounded, and Parks and Recreation at 1.905 percent falls on either side depending on which screen you open. The Select Board packet gets printed from one of them on Thursday. Fixing it properly means agreeing what over budget means and changing both screens. Four days left in the Sprint.",
+      "choices": [
+        {
+          "label": "Take it back to the Developers as a scope renegotiation. Same Sprint Goal, different work. Ask what a single shared definition of over budget costs in four days and let them choose what to drop for it.",
+          "outcome": "The Sprint Goal was that a user can trust the numbers on screen, and two screens disagreeing is the same goal wearing a different coat. They drop the second screen's banner to buy the fix. The Sprint ends with less built and more true, which is the trade the goal was written to allow.",
+          "verdict": "good",
+          "lesson": "The Sprint Goal provides flexibility in terms of the exact work needed to achieve it. This is what that flexibility is for, and it is why a goal beats a list on day nine."
+        },
+        {
+          "label": "Log it as a defect in the Product Backlog and keep the Sprint plan intact. Changing course on day nine is how Sprints fail.",
+          "outcome": "Disciplined and wrong in this instance. The packet prints Thursday, so a discrepancy you have already found reaches a public body inside this Sprint. Quality does not decrease is one of the four Sprint rules, and knowingly shipping two contradictory answers is not holding quality steady.",
+          "verdict": "mixed",
+          "lesson": "Protecting the plan and protecting the goal are different jobs. Ask which one your discipline is actually serving before you defend the plan."
+        },
+        {
+          "label": "Tell Dana to print the packet from Budget Pace this once, and schedule the real fix next Sprint.",
+          "outcome": "Cheap, fast, and it works this week. You have also made a person the workaround for a product defect, and the next person to print a packet will not know the rule exists. Dana now carries a piece of undocumented knowledge that only you two share.",
+          "verdict": "mixed",
+          "lesson": "A human workaround is a legitimate short-term mitigation and a terrible long-term artifact, because it is invisible to everyone who was not in the conversation. Transparency is a pillar, and a verbal exception is the opposite of it."
+        },
+        {
+          "label": "Fix it yourself in the data layer over the weekend so the Sprint plan is untouched.",
+          "outcome": "You put a change into the product that did not go through the Developers, was not sized, and did not meet the Definition of Done. The Sprint Backlog is a plan by and for the Developers, and you have edited the product underneath it. On Monday nobody knows which behaviour is intended.",
+          "verdict": "bad",
+          "lesson": "The founder-Product-Owner trap in its purest form. Work cannot be considered part of an Increment unless it meets the Definition of Done, and speed bought by skipping that is borrowed against transparency."
+        }
+      ]
+    },
+    {
+      "type": "teach",
+      "title": "Why a rounding rule is a Definition of Done problem",
+      "body": "Two screens gave two answers and both were built as specified. Nothing was broken, which is the unsettling part. What was missing was a shared understanding of what over budget means, and the Definition of Done exists precisely to create a shared understanding of what work was completed. When your product's value is that people can trust a number, then a written definition for every published metric is a quality measure required for the product, which is the Guide's own phrase for what belongs in the Definition of Done. [[PRACTICE]] Adding a rule like no metric ships without a written definition is practice, not Scrum. Where the Guide is firm is who owns it: the Scrum Team, not you alone.",
+      "callout": {
+        "kind": "warn",
+        "text": "If it is not an organizational standard, the Scrum Team must create a Definition of Done appropriate for the product. Handing one down as a Product Owner is a common and quiet mistake."
+      }
+    },
+    {
+      "type": "sim",
+      "title": "The Sprint Review: four people, four truths",
+      "setup": "Alerting works, the two screens now agree, and the staleness banner is live on the screens that matter. Then the room does what rooms do. Yusuf Adeyemi calls Ask the Ledger core to his work and wants it opened up further. Dana Whitcomb says she would trade it tomorrow for saved views she trusts. Priya Raman asks the only question she ever asks, which is when she can tie the product's numbers to her bank statement, because her name is on the warrant. Glen Ostrowski wants purchase-order ceiling alerts. Every one of them is telling the truth, and you have one engineer.",
+      "choices": [
+        {
+          "label": "Use the room. Ask Dana what saved views would have to show for her to stop wanting Ask the Ledger gone, and ask Yusuf what he does with it that no view could replace. Order afterwards with what you learn.",
+          "outcome": "The disagreement turns out not to be about that screen at all: Dana wants results she can defend to a board member, Yusuf wants arbitrary questions answered without asking you. Those are compatible. You leave with a scoping decision rather than a tie, and Glen and Priya got heard on the record in front of each other.",
+          "verdict": "good",
+          "lesson": "The Sprint Review is a working session and the Scrum Team should avoid limiting it to a presentation. Attendees collaborate on what to do next, which only happens if you ask questions you do not know the answer to."
+        },
+        {
+          "label": "Answer Priya first and publicly: the tie-out is the adoption gate, it needs a real backend three to six months out, here is the range and here is what it depends on. Then take the rest away.",
+          "outcome": "The honest answer to the most important stakeholder, delivered where everyone can hear it, and it costs you the credibility of a vague reassurance you no longer have to give. It also spends most of the room on one person, and the other three leave with nothing they can act on.",
+          "verdict": "mixed",
+          "lesson": "Only what has already happened may be used for forward-looking decision making, so a range with named dependencies is the right shape of answer. Choosing whose question gets the room is still a real cost you paid."
+        },
+        {
+          "label": "Present what shipped, thank everyone, and take all four requests away to order alone afterwards.",
+          "outcome": "Nothing about your accountability is wrong here, and the ordering will probably be fine. But you converted a working session into a demo, and the finding that Dana and Yusuf were never actually in conflict is a thing you can only discover with both of them in the room.",
+          "verdict": "mixed",
+          "lesson": "Deciding alone is correct. Gathering alone is a waste of the one event Scrum builds specifically for stakeholder collaboration."
+        },
+        {
+          "label": "Put it to the room. Four stakeholders, one vote, build what wins.",
+          "outcome": "You get a fair-looking answer and you have given away a decision that is yours. It also destroys the actual finding, which was that the four of them are not answering the same question, and it teaches everyone that the way to move the backlog is to bring more people.",
+          "verdict": "bad",
+          "lesson": "The Product Owner is one person, not a committee, and those wanting to change the Product Backlog can do so by trying to convince the Product Owner. Consult everyone, decide alone."
+        }
+      ]
+    },
+    {
+      "type": "guide",
+      "quote": "During the event, the Scrum Team and stakeholders review what was accomplished in the Sprint and what has changed in their environment. Based on this information, attendees collaborate on what to do next. The Product Backlog may also be adjusted to meet new opportunities. The Sprint Review is a working session and the Scrum Team should avoid limiting it to a presentation.",
+      "cite": "Scrum Guide 2020, Sprint Review",
+      "gloss": "Collaborate on what to do next, and the backlog may be adjusted. Nowhere does it say approve, sign off, accept, or prioritize."
+    },
+    {
+      "type": "sim",
+      "title": "Still in the Review: the small request that is not small",
+      "setup": "Ruth Delgado, the Select Board chair, asks for something tiny. Can the demo always show today's date, so it does not look stale to the board? The dataset is 75 percent consumed against a July to June fiscal year, which pins the snapshot to March 2026 arithmetically. On a live clock the town would appear to have spent 75 percent of its appropriation in six weeks, and every projection, pace flag and at-risk number on screen would become wrong. She is not being difficult. She is right that a stale date looks bad.",
+      "choices": [
+        {
+          "label": "Show the arithmetic in the room. Live date, correct pace maths, or this dataset. Any two, never all three. Ask her which one she wants to give up.",
+          "outcome": "A short, plain explanation converts your judgment into a constraint she can check herself. She picks the pinned date without you having to refuse anything, and she now understands a property of the product she will explain to the next board member who asks.",
+          "verdict": "good",
+          "lesson": "Transparency, the first pillar, applied to a constraint rather than to a backlog. Making a hidden constraint visible lets a stakeholder make the trade themselves, which is a stronger outcome than winning the argument."
+        },
+        {
+          "label": "Offer the third door: keep the pinned date and label it visibly as a March 2026 snapshot, so it reads as deliberate rather than stale.",
+          "outcome": "This is very likely the right feature, because her real problem was looking stale rather than the date itself. But you solved it before showing her the constraint, so she never learns why the date cannot move, and the same request arrives again next quarter from someone else.",
+          "verdict": "mixed",
+          "lesson": "Solving the stated problem instead of the requested feature is usually right. Skipping the explanation trades a permanent understanding for a one-time fix."
+        },
+        {
+          "label": "Take it away as a Product Backlog item and come back with options.",
+          "outcome": "Safe and not wrong, and it turns a short conversation into a ticket, a decision, and a follow-up email. You also lose the chance to be corrected: if there is a reason the board genuinely needs a live date, she was the only person in the room who could have told you.",
+          "verdict": "mixed",
+          "lesson": "Deferring a decision is sometimes prudence and sometimes avoidance. The test is whether you need information you do not have in the room, and here you had all of it."
+        },
+        {
+          "label": "Say yes. It is a one-line change and the request came from an approving body.",
+          "outcome": "Every projection, pace flag and at-risk number breaks at once, and they break plausibly rather than obviously, which is worse. The screen keeps rendering confident numbers that are wrong, in front of the exact audience whose trust the product is for.",
+          "verdict": "bad",
+          "lesson": "The organization must respect the Product Owner's decisions, and that respect is worth nothing if you do not make any. Seniority is not an argument, it is a reason to explain more carefully."
+        }
+      ]
+    },
+    {
+      "type": "teach",
+      "title": "What the Review actually produced",
+      "body": "Count what changed. The Ask the Ledger conflict turned out to be two compatible needs, which is a backlog item you did not have this morning. Priya has a range and a dependency instead of a reassurance, which means she can plan. Ruth understands a constraint. Glen got heard and got nothing, which is a real outcome and needs a follow-up. None of that is a status update. Notice also what did not happen: nobody approved anything, nothing was signed off, and the Increment was releasable before the Review started. The Guide is explicit that the Sprint Review is never a gate to releasing value.",
+      "callout": {
+        "kind": "note",
+        "text": "The Sprint Review is the second to last event of the Sprint. The Retrospective closes it, and it is the one you are about to be tempted to skip."
+      }
+    },
+    {
+      "type": "sim",
+      "title": "The Retrospective, and the thing somebody says carefully",
+      "setup": "Your Scrum Master, who also does delivery and half of support, opens the Retrospective. The Developers raise the two-screens discrepancy and say the reason it survived twelve Sprints is that nobody ever wrote down what over budget means. Then one of them says, carefully, that the compliance conversation on day six cost most of a day of your attention and they were blocked on a decision the whole time. You are the Product Owner, the founder, and the person who wrote the RFP reply. What do you do in this room?",
+      "choices": [
+        {
+          "label": "Say the interruption was yours, ask them what would have made it cost less, then let the team pick the single change to carry into the next Sprint Backlog.",
+          "outcome": "The answer turns out to be small and specific: a standing rule that decisions blocking them get a yes, no, or a time by end of day. It goes into the next Sprint Backlog. You also modelled the thing that makes Retrospectives work, which is a person with power taking the first hit.",
+          "verdict": "good",
+          "lesson": "The Scrum Team inspects how the last Sprint went with regards to individuals, interactions, processes, tools, and their Definition of Done. You are part of the Scrum Team, so your interactions are in scope, including the ones that were your fault."
+        },
+        {
+          "label": "Add both findings to the Definition of Done: no metric ships without a written definition, and no screen ships without a check against any screen it duplicates.",
+          "outcome": "Both rules are good and the Retrospective is the right event to inspect the Definition of Done. But you announced them, and the Definition of Done belongs to the Scrum Team where no organizational standard exists. The Developers are the ones required to conform to it, and they were about to propose most of this themselves.",
+          "verdict": "mixed",
+          "lesson": "Right content, wrong hand on the pen. The Retrospective is where the Definition of Done gets inspected by the Scrum Team, not where the Product Owner issues quality policy."
+        },
+        {
+          "label": "Note both improvements and defer them, since the next Sprint is already full and the tie-out backend is the priority.",
+          "outcome": "Honest about capacity, and it means the definitions problem that just reached a public board packet survives into another Sprint. The Guide says the most impactful improvements are addressed as soon as possible, and this one has already cost you once.",
+          "verdict": "mixed",
+          "lesson": "Improvements compete with features for the same capacity and that tension is real. What is not defensible is deferring by default, because an improvement that is never scheduled was never actually identified."
+        },
+        {
+          "label": "Stay quiet and let the Developers run it. The Retrospective is for the team to inspect itself, and a Product Owner in the room dampens honesty.",
+          "outcome": "The one thing raised about you goes unanswered, so the message the team takes is that your interruptions are not discussable. The Retrospective is for the whole Scrum Team, and you are on it. You have confused it with the Daily Scrum, which is the event that is for the Developers.",
+          "verdict": "bad",
+          "lesson": "The Daily Scrum is a 15-minute event for the Developers. The Retrospective is for the Scrum Team, which includes the Product Owner and the Scrum Master. Different events, different attendance, and the exam checks both."
+        }
+      ]
+    },
+    {
+      "type": "guide",
+      "quote": "The Scrum Team inspects how the last Sprint went with regards to individuals, interactions, processes, tools, and their Definition of Done. Inspected elements often vary with the domain of work. Assumptions that led them astray are identified and their origins explored. The Scrum Team discusses what went well during the Sprint, what problems it encountered, and how those problems were (or were not) solved.",
+      "cite": "Scrum Guide 2020, Sprint Retrospective",
+      "gloss": "Assumptions that led them astray is the sentence for this Sprint. Nobody wrote down what over budget means, and twelve Sprints later a public board packet nearly carried the wrong number."
+    },
+    {
+      "type": "trap",
+      "myth": "Twelve Sprints, every roadmap item from R-01 to R-16 shipped, each its own commit. That is a Product Owner doing the job well.",
+      "truth": "The Product Owner is accountable for maximizing the value of the product resulting from the work of the Scrum Team, and an Increment is a concrete stepping stone toward the Product Goal. Twelve Sprints of Increments that never move toward the adoption gate is motion, not progress.",
+      "why": "This is the hardest antipattern to see from the inside, because everything looks healthy: the board is moving, the demo is richer, stakeholders are pleased. The Guide's defence is the Product Goal, which is exactly why a Scrum Team must fulfill or abandon one objective before taking on the next. Without it, output happily substitutes for outcome forever."
+    },
+    {
+      "type": "write",
+      "prompt": "Write the Sprint Goal for Sprint 13, given everything that happened in Sprint 12: the feed alerting shipped, the two screens now agree, the definitions gap reached the Retrospective, the tie-out backend is three to six months out, Yusuf and Dana turned out to be compatible, Glen got nothing, and a live RFP wants SOC 2. One sentence.",
+      "starter": "Sprint Goal: ____\n\nWhat I will drop first if it turns out to be too big: ____\n\nHow I will know at the Review whether we hit it: ____\n\nThe stakeholder this disappoints, and what I will tell them: ____",
+      "rubric": [
+        "One objective, not a list. If it contains the word and joining two unrelated bodies of work, it is a plan wearing a goal's name.",
+        "It says why the Sprint is valuable to somebody nameable, in language Dana or Priya would recognise, not in language only your engineer would.",
+        "It leaves the exact work open, so the Developers can drop something on day nine without failing it. Test this by asking what you would cut, and whether the goal survives the cut.",
+        "It clears something that stands between you and the Product Goal. Name the obstacle it removes.",
+        "You name who this disappoints and what you will say to them. A Sprint Goal that costs nobody anything did not choose."
+      ],
+      "model": "Sprint Goal: a treasurer can see, for one real town's data, that a published figure and the source it came from agree, and where they do not. What I will drop first: the second town's data and the export, keeping one town end to end rather than two towns half way. How I will know at the Review: Priya can point at a number, open its source, and tell me herself whether it ties, without me driving. The stakeholder this disappoints: Glen, who has now waited two Sprints on ceiling alerts. What I will tell him: that it lost to the tie-out, that the tie-out is the Product Goal and the ceiling work is not, and that if a blown not-to-exceed costs an award or a second town names the same exposure, I will move it ahead of the anomaly work rather than behind it."
+    },
+    {
+      "type": "keypoints",
+      "points": [
+        "The Product Goal is a future state of the product you can plan against, and it must make some of your existing backlog look weak or it is ordering nothing.",
+        "Propose the why, let the team define the Sprint Goal, and finalize it before Sprint Planning ends. A list of items is not a goal.",
+        "Developers size and decide how. You influence by offering trade-offs, and saying nothing is as much a failure as overruling them.",
+        "Scope may be renegotiated with you mid-Sprint. The Sprint Goal may not be endangered, and a Sprint is only cancelled when its goal becomes obsolete.",
+        "Consult everyone, decide alone, and say out loud who you just disappointed and what would change your mind."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "id": "m14q1",
+      "kind": "mcq",
+      "stem": "Halfway through the Sprint, the Developers discover the selected work is roughly twice the size they thought. The Sprint Goal is still valuable and still achievable in a reduced form. What does the Scrum Guide 2020 support?",
+      "options": [
+        "Extend the Sprint by a week so the committed items can be completed.",
+        "The Developers collaborate with the Product Owner to renegotiate the scope of the Sprint Backlog within the Sprint, without affecting the Sprint Goal.",
+        "Cancel the Sprint, since the plan is no longer accurate.",
+        "Move the unfinished items to the next Sprint at the Sprint Review and mark the Sprint failed."
+      ],
+      "answer": 1,
+      "explain": "This is the Guide almost verbatim: if the work turns out to be different than they expected, they collaborate with the Product Owner to negotiate the scope of the Sprint Backlog within the Sprint without affecting the Sprint Goal. Option 1 breaks the fixed-length rule that makes empiricism possible, and it is the most common real-world wrong answer. Option 3 misapplies cancellation, which requires the Sprint Goal to become obsolete, and only the Product Owner may do it. Option 4 invents a failure ceremony; unfinished items simply return to the Product Backlog.",
+      "cite": "Scrum Guide 2020, Commitment: Sprint Goal and The Sprint",
+      "tag": "events"
+    },
+    {
+      "id": "m14q2",
+      "kind": "sort",
+      "stem": "Sort each Sprint 12 decision by who the Scrum Guide 2020 puts it with.",
+      "buckets": ["Product Owner", "Developers", "The whole Scrum Team"],
+      "items": [
+        {"text": "The order of the Product Backlog", "bucket": "Product Owner"},
+        {"text": "How much work is taken into the Sprint", "bucket": "Developers"},
+        {"text": "Defining the Sprint Goal", "bucket": "The whole Scrum Team"},
+        {"text": "How selected items are turned into an Increment", "bucket": "Developers"},
+        {"text": "Whether to cancel the Sprint", "bucket": "Product Owner"},
+        {"text": "The sizing of Product Backlog items", "bucket": "Developers"},
+        {"text": "Creating a Definition of Done where the organization has no standard", "bucket": "The whole Scrum Team"},
+        {"text": "Developing and explicitly communicating the Product Goal", "bucket": "Product Owner"}
+      ],
+      "explain": "The two people get mixed up most often. The Sprint Goal is defined by the whole Scrum Team collaborating after the Product Owner proposes why the Sprint is valuable, so it is neither purely yours nor purely theirs, and it is a commitment by the Developers once made. The Definition of Done follows the organizational standard if one exists, and otherwise the Scrum Team creates it. Everything about how much and how belongs to the Developers, and everything about what and in what order belongs to you. Cancellation is the one unilateral lever you hold alone.",
+      "cite": "Scrum Guide 2020, Product Owner, Developers, Sprint Planning, The Sprint, Definition of Done",
+      "tag": "accountabilities"
+    },
+    {
+      "id": "m14q3",
+      "kind": "mcq",
+      "stem": "Your Product Goal is that a treasurer can tie every number to her bank statement and ERP. A stakeholder with budget authority pushes hard for purchase-order ceiling alerts, an unrelated and genuinely valuable capability. What is the strongest Product Owner response?",
+      "options": [
+        "Add it to the current Sprint, since the organization must respect a budget holder and the request is legitimate.",
+        "Refuse and cite the Guide's statement that the organization must respect the Product Owner's decisions.",
+        "Tell him what it is currently behind and why, and name the specific evidence that would move it ahead, so he knows how to convince you rather than how to escalate.",
+        "Put it to the leadership team, since a disagreement between the Product Owner and a budget holder needs a neutral decision."
+      ],
+      "answer": 2,
+      "explain": "Both halves of the Product Owner passage have to hold at once. Those wanting to change the Product Backlog can do so by trying to convince the Product Owner, which is only meaningful if you can be convinced, and the organization must respect the decisions, which is only meaningful if you make them. Option 1 endangers the Sprint Goal and hands away the ordering. Option 2 quotes the Guide accurately and weaponises it, producing the bottleneck antipattern. Option 4 hands the accountability to a committee, and the Product Owner is one person, not a committee.",
+      "cite": "Scrum Guide 2020, Product Owner",
+      "tag": "accountabilities"
+    },
+    {
+      "id": "m14q4",
+      "kind": "multi",
+      "stem": "Two screens report different department counts because one rounds before filtering. Select the TWO statements that are supported by the Scrum Guide 2020.",
+      "options": [
+        "Quality does not decrease during the Sprint, so knowingly leaving both screens live is a quality decision, not a scheduling one.",
+        "The Definition of Done creates transparency by providing everyone a shared understanding of what work was completed as part of the Increment.",
+        "The Product Owner must accept or reject the affected items at the Sprint Review before they can be released.",
+        "A defect found mid-Sprint automatically cancels the Sprint.",
+        "The Sprint Review is the gate at which the Increment becomes releasable."
+      ],
+      "answer": [0, 1],
+      "explain": "The first two are the Guide. Option 3 is a favourite trap because acceptance rituals are everywhere in practice; the Guide has no acceptance step, and work either meets the Definition of Done or it does not. Option 4 misuses cancellation, which requires the Sprint Goal to become obsolete and is the Product Owner's decision alone. Option 5 is directly contradicted: an Increment may be delivered to stakeholders prior to the end of the Sprint, and the Sprint Review should never be considered a gate to releasing value.",
+      "cite": "Scrum Guide 2020, The Sprint, Definition of Done, Increment",
+      "tag": "artifacts"
+    },
+    {
+      "id": "m14q5",
+      "kind": "tf",
+      "stem": "Twelve Sprints have each produced a Done Increment and stakeholders are pleased, so the Product Owner is demonstrably maximizing the value of the product.",
+      "answer": false,
+      "explain": "Done Increments are necessary and not sufficient. An Increment is described as a concrete stepping stone toward the Product Goal, so the question is always what each one removed from between the team and that goal. A run of Increments that never touches the adoption gate is output rather than outcome, and stakeholder satisfaction is a poor detector because the pleasant items and the necessary ones are rarely the same items. This is exactly why the Guide requires a Product Goal and requires the team to fulfill or abandon one before taking on the next.",
+      "cite": "Scrum Guide 2020, Increment, Commitment: Product Goal, Product Owner",
+      "tag": "value"
+    },
+    {
+      "id": "m14q6",
+      "kind": "mcq",
+      "stem": "A live RFP requires SOC 2. Your controls are implemented, no audit has been conducted, and every roadmap date is a placeholder. The Sprint Goal is unrelated and still valid. Which combination is correct?",
+      "options": [
+        "Cancel the Sprint and reorder around compliance, because a Sprint may be cancelled when a more valuable opportunity appears.",
+        "Answer the buyer with the precise current state, leave the Sprint Goal intact, and order the compliance work against the Product Goal at the next Sprint Planning.",
+        "Commit a completion date to the buyer, then work backwards to make it true, since a public commitment creates the urgency to deliver.",
+        "Add the compliance work to the current Sprint without removing anything, since the Sprint still has eight days left."
+      ],
+      "answer": 1,
+      "explain": "Three module threads meet here. A Sprint is cancelled only when the Sprint Goal becomes obsolete, so option 1 misstates the condition. Only what has already happened may be used for forward-looking decision making, which rules out option 3: the audit window is not yours to control, so the date has no evidence under it. Option 4 endangers the Sprint Goal, and how much fits is the Developers' call, not yours. Option 2 separates the urgent communication from the build, which is the distinction that keeps Sprints stable.",
+      "cite": "Scrum Guide 2020, The Sprint, Sprint Planning, Product Owner",
+      "tag": "empiricism"
+    },
+    {
+      "id": "m14q7",
+      "kind": "mcq",
+      "stem": "At the Retrospective, a Developer says a mid-Sprint interruption from you cost them most of a day. What is the best Product Owner behaviour, given who the Retrospective is for?",
+      "options": [
+        "Stay silent. The Retrospective is for the team to inspect itself and a Product Owner in the room suppresses honesty.",
+        "Acknowledge it, ask what would have made it cost less, and let the Scrum Team choose which improvement to carry into the next Sprint Backlog.",
+        "Explain why the interruption was necessary, so the team understands the commercial context and the finding is corrected.",
+        "Take the feedback offline with that Developer so the Retrospective stays focused on process rather than individuals."
+      ],
+      "answer": 1,
+      "explain": "The Retrospective is for the Scrum Team, which includes the Product Owner, and it explicitly inspects individuals and interactions alongside processes, tools, and the Definition of Done. Option 1 confuses it with the Daily Scrum, which is the 15-minute event for the Developers. Option 3 converts an inspection into a defence and teaches everyone that raising your name has a cost. Option 4 sounds considerate and removes a team-level pattern from the only event designed to catch it, and the most impactful improvements are supposed to be addressed as soon as possible.",
+      "cite": "Scrum Guide 2020, Sprint Retrospective and Daily Scrum",
+      "tag": "events"
+    }
+  ],
+  "cards": [
+    {"id": "m14c1", "front": "What makes a Product Goal usable rather than a slogan?", "back": "It describes a future state of the product the team can plan against, it sits in the Product Backlog, and it can be fulfilled or abandoned. If every backlog item passes it, it orders nothing.", "tag": "artifacts"},
+    {"id": "m14c2", "front": "Sprint Planning Topic One, in the right order of actors", "back": "The Product Owner proposes how the product could increase its value. The whole Scrum Team then collaborates to define the Sprint Goal. It must be finalized prior to the end of Sprint Planning.", "tag": "events"},
+    {"id": "m14c3", "front": "Why is a Sprint Goal better than a list of items?", "back": "The Sprint Goal is a single objective that provides flexibility about the exact work needed to achieve it. A list removes that flexibility, so every mid-Sprint cut looks like failure.", "tag": "artifacts"},
+    {"id": "m14c4", "front": "What can a Product Owner do about a Developers' estimate?", "back": "Influence it by helping them understand and select trade-offs. The Developers who will be doing the work are responsible for the sizing, and how the work gets done is at their sole discretion.", "tag": "accountabilities"},
+    {"id": "m14c5", "front": "The four rules that hold during a Sprint", "back": "No changes are made that would endanger the Sprint Goal. Quality does not decrease. The Product Backlog is refined as needed. Scope may be clarified and renegotiated with the Product Owner as more is learned.", "tag": "events"},
+    {"id": "m14c6", "front": "When may a Sprint be cancelled, and by whom?", "back": "A Sprint could be cancelled if the Sprint Goal becomes obsolete. Only the Product Owner has the authority to cancel the Sprint. Obsolete, not merely inconvenient or outranked.", "tag": "events"},
+    {"id": "m14c7", "front": "Retrospective versus Daily Scrum, on attendance", "back": "The Daily Scrum is a 15-minute event for the Developers. The Sprint Retrospective is for the whole Scrum Team, so the Product Owner is in it and their own interactions are in scope.", "tag": "events"},
+    {"id": "m14c8", "front": "How do you tell output from outcome as a Product Owner?", "back": "Ask what each Increment removed from between the team and the Product Goal. Twelve Done Increments and pleased stakeholders can still be motion toward nothing.", "tag": "value"}
+  ]
+}

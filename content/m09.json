@@ -1,0 +1,529 @@
+{
+  "id": "m09",
+  "num": 9,
+  "week": 3,
+  "title": "Working With Developers and Scrum Masters",
+  "subtitle": "What the other two accountabilities actually own, and the five ways a founder accidentally takes it back.",
+  "minutes": 30,
+  "why": "A Product Owner who also signs the paychecks can break self-management without ever raising their voice, and nobody on the team will tell them it happened.",
+  "objectives": [
+    "State the four things Developers are always accountable for",
+    "Define self-managing and cross-functional the way the Scrum Guide defines them",
+    "Explain what the Definition of Done is, who creates it, and what it blocks",
+    "Name the four ways a Scrum Master serves the Product Owner",
+    "Catch yourself in the five founder traps and run the recovery move for each"
+  ],
+  "beats": [
+    {
+      "type": "hook",
+      "body": "Your team fits in one car. One engineer builds the product. Around you sit people who have done pieces of this job before, some of them at companies many times the size of yours. You also sign the paychecks. Almost every mistake in this module comes from that last sentence quietly outranking everything before it, in a room where nobody will say so."
+    },
+    {
+      "type": "guide",
+      "quote": "Developers are the people in the Scrum Team that are committed to creating any aspect of a usable Increment each Sprint.\n\nThe specific skills needed by the Developers are often broad and will vary with the domain of work. However, the Developers are always accountable for:\n\nCreating a plan for the Sprint, the Sprint Backlog;\nInstilling quality by adhering to a Definition of Done;\nAdapting their plan each day toward the Sprint Goal; and,\nHolding each other accountable as professionals.",
+      "cite": "Developers",
+      "gloss": "Four accountabilities, and only the first is about making a plan. The other three are quality, daily adaptation, and holding each other to it."
+    },
+    {
+      "type": "teach",
+      "title": "Developer is not a job title",
+      "body": "In Scrum, Developer is an accountability, not a role on an org chart. Anyone on the Scrum Team committed to creating any aspect of a usable Increment is a Developer: your engineer, a designer, a data person, and you on the Sprints where you are genuinely building something. The phrase any aspect is doing real work there. Testing, deployment, documentation, and the security review are all part of a usable Increment, so there is no separate quality assurance accountability waiting downstream. If something is needed to make the Increment usable and it is missing, that is not another department's problem. By definition it sits inside the Scrum Team.",
+      "callout": {
+        "kind": "note",
+        "text": "The Guide uses the plural, but the Scrum Team as a whole is typically 10 or fewer people, all three accountabilities included. Small is normal."
+      }
+    },
+    {
+      "type": "guide",
+      "quote": "Scrum Teams are cross-functional, meaning the members have all the skills necessary to create value each Sprint. They are also self-managing, meaning they internally decide who does what, when, and how.",
+      "cite": "The Scrum Team",
+      "gloss": "Two words everyone uses loosely. The Guide defines each in a single clause, and the exam quotes those clauses back at you."
+    },
+    {
+      "type": "analogy",
+      "title": "The crew in your kitchen",
+      "body": "You hire a crew to redo your kitchen. You tell them what the room has to do: two people cooking at once, the dishwasher not blocking the fridge, finished before your in-laws visit. You do not tell them to demolish the north wall on Tuesday, or which of them runs the tile saw. Start assigning tasks by name and three things happen. The schedule moves onto your shoulders. You overrule people who know the trade better than you. And the crew stops mentioning problems, because problems are now your department. Self-managing means they internally decide who does what, when, and how. Cross-functional means they can actually pull it off."
+    },
+    {
+      "type": "check",
+      "q": {
+        "id": "m09ck1",
+        "kind": "mcq",
+        "stem": "Your engineer has been stuck on the same task for three days. You have written similar code before and you are fairly sure you know a faster approach. What is the most appropriate Product Owner move?",
+        "options": [
+          "Assign the task to yourself and finish it, since the Sprint Goal is at risk",
+          "Tell him which approach to take, since you have solved this before",
+          "Say what you are seeing, offer what you know as available, and leave who does what and how with the Developers",
+          "Ask the Scrum Master to reassign the work to someone else"
+        ],
+        "answer": 2,
+        "explain": "Scrum Teams are self-managing, meaning they internally decide who does what, when, and how, and how the chosen work gets done is at the sole discretion of the Developers. Offering information is help. Prescribing the approach is a takeover, and it lands harder coming from the person who signs the paychecks, because it will not be argued with. You could legitimately do the work only by joining as a Developer, with them rather than around them. And the Scrum Master coaches self-management, they do not assign work.",
+        "cite": "Scrum Guide 2020, The Scrum Team and Sprint Planning",
+        "tag": "accountabilities"
+      }
+    },
+    {
+      "type": "teach",
+      "title": "Cross-functional when you have one engineer",
+      "body": "Cross-functional means the members have all the skills necessary to create value each Sprint. Look at your own team honestly and that is not fully true today. One engineer covers the build. A SOC 2 audit, a formal accessibility assessment, and the reconciliation backend are all things nobody on the team can currently finish inside a Sprint. That is not a rule violation to hide. It is a fact to make visible, in the places where decisions get made: in your ordering, in what the team is willing to commit to, and in the Definition of Done, which will say less than you want it to say until those skills exist on the team.",
+      "callout": {
+        "kind": "why",
+        "text": "A missing skill that stays invisible turns into a missed forecast to a town. A missing skill that is written down turns into a hiring decision or a smaller promise."
+      }
+    },
+    {
+      "type": "civic",
+      "title": "The flag you cannot clear",
+      "body": "Dana Whitcomb opens Anomaly Review and sees the Millbrook Diner, a restaurant charge on a library card, plus duplicate vendor flags for Northgate Medical Supply and Ashford Fuel. She says she loves it, and in the same breath says she does not trust it, because she cannot see the rule behind a flag or clear a false positive. Angela Pike, whose daily work this screen is, can also only look at it. Two obvious answers: build smarter detection, or finish what already exists. The team has one engineer. That constraint is not his problem to solve, it is an input to your ordering, and pretending otherwise just moves the disappointment later."
+    },
+    {
+      "type": "guide",
+      "quote": "The Definition of Done is a formal description of the state of the Increment when it meets the quality measures required for the product.\nThe moment a Product Backlog item meets the Definition of Done, an Increment is born.\nThe Definition of Done creates transparency by providing everyone a shared understanding of what work was completed as part of the Increment. If a Product Backlog item does not meet the Definition of Done, it cannot be released or even presented at the Sprint Review. Instead, it returns to the Product Backlog for future consideration.",
+      "cite": "Commitment: Definition of Done",
+      "gloss": "An Increment is born the moment an item meets the standard. Not when you approve it, and not when stakeholders see it."
+    },
+    {
+      "type": "teach",
+      "title": "A gate, not a wish list",
+      "body": "Picture the Definition of Done as a gate every item passes through on its way to being real. On one side, work. On the other side, Increment. Nothing in between, and no override. Two consequences follow. Undone work cannot be released or even presented at the Sprint Review, which is why a weak gate shows up as a Sprint Review full of caveats and asterisks. And tightening the gate makes the team look slower on paper while making it more honest in reality. Every forecast you give a town manager is only as trustworthy as the gate standing behind it.",
+      "visual": "dod-gate"
+    },
+    {
+      "type": "guide",
+      "quote": "If the Definition of Done for an increment is part of the standards of the organization, all Scrum Teams must follow it as a minimum. If it is not an organizational standard, the Scrum Team must create a Definition of Done appropriate for the product.\nThe Developers are required to conform to the Definition of Done. If there are multiple Scrum Teams working together on a product, they must mutually define and comply with the same Definition of Done.",
+      "cite": "Commitment: Definition of Done",
+      "gloss": "Three exam facts: organizational standard is a minimum, the Scrum Team creates it otherwise, and teams sharing a product share one Definition of Done."
+    },
+    {
+      "type": "trap",
+      "myth": "The Product Owner writes the Definition of Done and uses it to accept work at the end of the Sprint.",
+      "truth": "If the Definition of Done is not an organizational standard, the Scrum Team must create a Definition of Done appropriate for the product. The Developers are required to conform to it. There is no Product Owner acceptance step anywhere in the Guide.",
+      "why": "[[PRACTICE]] Per-item acceptance criteria are a useful practice, and many teams confuse them with the Definition of Done. They are different objects. Acceptance criteria describe one Product Backlog item. The Definition of Done is one quality standard for the whole product. The exam wants Scrum Team as the creator, Developers as the ones required to conform, and no approval gate held by you."
+    },
+    {
+      "type": "check",
+      "q": {
+        "id": "m09ck2",
+        "kind": "mcq",
+        "stem": "Your company has no organizational Definition of Done, because it is a three person company and nobody ever wrote one. Who creates it?",
+        "options": [
+          "The Product Owner, since they are accountable for maximizing the value of the product",
+          "The Developers alone, since they are the ones required to conform to it",
+          "The Scrum Team, which must create a Definition of Done appropriate for the product",
+          "The Scrum Master, since they are accountable for establishing Scrum"
+        ],
+        "answer": 2,
+        "explain": "The Guide is precise: if it is not an organizational standard, the Scrum Team must create a Definition of Done appropriate for the product. That is all three accountabilities together. The Developers are required to conform to it, which is a different sentence and the most tempting wrong answer here. You do not author it, and the Scrum Master helps the team focus on Increments that meet it rather than writing it for them.",
+        "cite": "Scrum Guide 2020, Commitment: Definition of Done",
+        "tag": "artifacts"
+      }
+    },
+    {
+      "type": "guide",
+      "quote": "The Scrum Master is accountable for establishing Scrum as defined in the Scrum Guide. They do this by helping everyone understand Scrum theory and practice, both within the Scrum Team and the organization.\n\nThe Scrum Master is accountable for the Scrum Team's effectiveness. They do this by enabling the Scrum Team to improve its practices, within the Scrum framework.\n\nScrum Masters are true leaders who serve the Scrum Team and the larger organization.",
+      "cite": "Scrum Master",
+      "gloss": "Two accountabilities: establishing Scrum, and the team's effectiveness. Note everything that is absent, including anything about assigning work or reporting to you."
+    },
+    {
+      "type": "guide",
+      "quote": "The Scrum Master serves the Product Owner in several ways, including:\n\nHelping find techniques for effective Product Goal definition and Product Backlog management;\nHelping the Scrum Team understand the need for clear and concise Product Backlog items;\nHelping establish empirical product planning for a complex environment; and,\nFacilitating stakeholder collaboration as requested or needed.",
+      "cite": "Scrum Master",
+      "gloss": "Four services aimed directly at your job. Treat this as a menu you are entitled to order from, not a courtesy."
+    },
+    {
+      "type": "teach",
+      "title": "How to actually use a Scrum Master",
+      "body": "Your Scrum Master probably wears other hats too, so their attention is scarce and worth spending deliberately. The Guide names four things to ask for: techniques for Product Goal definition and Product Backlog management, help making the team understand the need for clear and concise Product Backlog items, help establishing empirical product planning for a complex environment, and facilitating stakeholder collaboration as requested or needed. That fourth one is the one founders never use. When Dana, Margaret, and the auditor disagree at a Sprint Review, facilitating that room is not a job you can do while you are also arguing inside it.",
+      "callout": {
+        "kind": "note",
+        "text": "As requested or needed. You are allowed to request it. Nothing bad happens if you ask for facilitation instead of trying to referee your own argument."
+      }
+    },
+    {
+      "type": "trap",
+      "myth": "The Scrum Master works for the Product Owner: taking notes, chasing updates, keeping the board tidy, and enforcing the process on your behalf.",
+      "truth": "The Scrum Master is accountable for establishing Scrum as defined in the Scrum Guide and for the Scrum Team's effectiveness. Scrum Masters are true leaders who serve the Scrum Team and the larger organization. Serving the Product Owner is one of three lists, alongside serving the Scrum Team and serving the organization.",
+      "why": "The exam separates serving from reporting. Wrong answers turn the Scrum Master into a secretary, a project manager, a status reporter, or the Product Owner's enforcer. None of the three service lists makes them anyone's subordinate, and none of them includes assigning work or running the Daily Scrum on the Developers' behalf."
+    },
+    {
+      "type": "teach",
+      "title": "Five traps that come with the founder chair",
+      "body": "None of these are exotic. All five are things reasonable founders do on an ordinary Tuesday. One: pressuring estimates, because the number is inconvenient. Two: assigning work to a named person, because you know who is fastest. Three: negotiating quality instead of scope, because scope feels like the promise and quality feels like an internal preference. Four: being the only source of customer truth, because you took every sales call. Five: being effectively un-contradictable, because you sign the paychecks. Each one has a recovery move, and none of the recovery moves is trying harder to be humble. They are changes to what you say and what you make visible."
+    },
+    {
+      "type": "sim",
+      "title": "The number you did not want",
+      "setup": "Sprint Planning for a ten day Sprint. You need the feed health work in this Sprint, because a reconciliation walkthrough in three weeks depends on it. Your engineer looks at it and says roughly eight days, and two smaller items are already selected. You have built rough versions of this kind of thing before and you privately think four. He does not budge. Everyone in the room knows who signs the paychecks, including him.",
+      "choices": [
+        {
+          "label": "Say you have built something similar in four days and ask him to reconsider the number.",
+          "outcome": "He revises to five. The work takes nine. You lose the Sprint Goal, and you have also taught him that his estimates are an opening offer in a negotiation.",
+          "verdict": "bad",
+          "lesson": "The Developers who will be doing the work are responsible for the sizing. A number you pushed down is not an estimate, it is your opinion in his mouth, and it costs you the only forecasting signal you had."
+        },
+        {
+          "label": "Ask what is inside the eight days that is not inside your mental four, and listen to the whole answer before responding.",
+          "outcome": "The eight days covers retrying failed syncs and a freshness badge on eleven screens. Your four days covered a banner on one screen. You were sizing two different pieces of work.",
+          "verdict": "good",
+          "lesson": "The Product Owner may influence the Developers by helping them understand and select trade-offs. Influence works on understanding, never on the number. Most estimate arguments turn out to be scope arguments wearing a disguise."
+        },
+        {
+          "label": "Accept eight days, drop the two smaller items, and keep the Sprint Goal.",
+          "outcome": "The Sprint Goal survives, the feed work lands, and the two smaller items go back to the Product Backlog. Nothing dramatic happens, which is the entire point.",
+          "verdict": "good",
+          "lesson": "Scope is the variable you are allowed to move. Doing this at Sprint Planning is cheaper than doing it on day six, and much cheaper than discovering it on day nine."
+        },
+        {
+          "label": "Accept the eight days and quietly move the walkthrough, without telling him why.",
+          "outcome": "The Sprint is fine. Three weeks later he learns from a forwarded customer email that the walkthrough moved because of his estimate, and starts padding every number he gives you.",
+          "verdict": "mixed",
+          "lesson": "Protecting the team from consequences also hides the trade-off from them. Transparency runs both directions: they see your constraint, you see their honest number."
+        }
+      ]
+    },
+    {
+      "type": "teach",
+      "title": "Trap two: assigning work to a name",
+      "body": "You know your engineer is faster on the data layer than on the interface, so you say the efficient thing: you take the sync retries, and the contractor does the badge. What you actually did was take the Sprint Backlog away from the people the Guide hands it to. Self-managing means they internally decide who does what, when, and how. The recovery move is a sentence swap. Instead of naming a person, name an outcome and a constraint: this has to be usable by the Treasurer, and I need it before the 14th. Then stop talking and let them sort out the rest.",
+      "callout": {
+        "kind": "warn",
+        "text": "Watch for the softened version: so who is going to take this? Asked by the person who signs the paychecks, that is an assignment with a question mark stapled to it."
+      }
+    },
+    {
+      "type": "guide",
+      "quote": "The Sprint Backlog is a plan by and for the Developers. It is a highly visible, real-time picture of the work that the Developers plan to accomplish during the Sprint in order to achieve the Sprint Goal.",
+      "cite": "Sprint Backlog",
+      "gloss": "By and for. Highly visible means you may read it whenever you like. It does not mean it is yours to edit."
+    },
+    {
+      "type": "teach",
+      "title": "Trap three: negotiating quality instead of scope",
+      "body": "Scope feels like a promise you made to a customer. Quality feels like an internal preference you are allowed to spend. In Scrum that instinct is exactly backwards. During the Sprint, quality does not decrease, and the Developers are required to conform to the Definition of Done. Scope is the negotiable one, and the Guide says so twice. The recovery move is a habit swap. When you feel the urge to ask whether you can skip the tests just this once, ask instead what the smallest version of this is that still meets the Definition of Done. Same instinct, pointed at the variable you are allowed to move.",
+      "callout": {
+        "kind": "why",
+        "text": "Quality debt at a government finance vendor is not a code smell. It is a wrong number in a Select Board packet, in a document that gets printed and handed out."
+      }
+    },
+    {
+      "type": "civic",
+      "title": "The demo clock that cannot move",
+      "body": "A request arrives: make the demo always show the current date. Reasonable, and impossible. The Northfield data is 75 percent consumed against a July to June fiscal year, which pins the snapshot to March by arithmetic alone. Switch to the live clock and the town appears to have spent 75 percent of its appropriation in six weeks, which destroys every projection, pace flag, and at-risk number on screen. You can have a live date, or realistic consumption, or working projections. Any two, never all three. Notice what you did not do. You did not refuse because you are the Product Owner. You refused with the arithmetic attached, and now the requester gets to pick which two they want."
+    },
+    {
+      "type": "write",
+      "prompt": "Six days into a ten day Sprint, your engineer tells you the selected work will not all fit. Write what you say back, three or four sentences, that renegotiates scope without touching quality or the Sprint Goal. Write it as words you would say out loud, not as a policy.",
+      "starter": "Our Sprint Goal is still [the goal]. Given what you know now, which of the selected items can come out and still leave us there? I am not asking you to move [the quality thing].",
+      "rubric": [
+        "Restates the Sprint Goal first, so the negotiation has a fixed point to happen against.",
+        "Asks which items come out rather than telling them which ones do. Selection stays with the Developers.",
+        "Explicitly closes the quality door before they feel obliged to offer it. During the Sprint, quality does not decrease.",
+        "Says where the removed work goes: back to the Product Backlog, not into a side list or a verbal promise.",
+        "Applies no pressure to the estimate and makes no suggestion about how the remaining work should be built."
+      ],
+      "model": "The Sprint Goal has not changed: a Finance Director can tell whether the numbers on screen are trustworthy. Given what you know now, which of the selected items can come out and still get us there? I am not asking you to skip the retry tests, so please do not offer that as an option. Whatever comes out goes back on the Product Backlog and I will reorder it this week. Why this passes: it names the fixed point, it leaves selection with the Developers, it closes the quality door before it gets opened as a favor to you, and it says out loud where the cut work lands, which is what stops it becoming an invisible promise nobody tracks."
+    },
+    {
+      "type": "teach",
+      "title": "Trap four: the only source of customer truth",
+      "body": "You took every sales call, so every claim about what a town wants routes through your memory. That makes you fast, and it makes you unfalsifiable. When your engineer says he does not think a Town Clerk would use it that way, he has no way to check, and you have no way to be wrong. The recovery move is not more meetings. It is putting the evidence where the team can reach it: dated discovery notes, the actual quotes, named personas, and best of all the Developers in the room when a customer talks. The whole Scrum Team is responsible for stakeholder collaboration, not just you.",
+      "callout": {
+        "kind": "note",
+        "text": "Your Scrum Master's own list includes facilitating stakeholder collaboration as requested or needed. Getting a Developer in front of a real Town Clerk is a legitimate thing to ask them to arrange."
+      }
+    },
+    {
+      "type": "check",
+      "q": {
+        "id": "m09ck3",
+        "kind": "mcq",
+        "stem": "A Developer disagrees with your ordering and argues that the item you placed second should be first. What does the Scrum Guide 2020 support?",
+        "options": [
+          "Your decision stands and the organization must respect it, and the Developer's legitimate route is to try to convince you",
+          "The Scrum Team votes, since ordering affects everyone's work",
+          "The Scrum Master arbitrates, since they are accountable for the Scrum Team's effectiveness",
+          "The Developer's view wins on technical items and yours wins on business items"
+        ],
+        "answer": 0,
+        "explain": "Ordering Product Backlog items is Product Owner work, and for Product Owners to succeed the entire organization must respect their decisions. The Guide also says those wanting to change the Product Backlog can do so by trying to convince the Product Owner, which is exactly the channel here. There is no vote and no arbitration in Scrum. Splitting authority by topic appears nowhere and would make the ordering incoherent. The founder risk is the mirror image of this question: respected is not the same as correct, so the argument still has to actually happen.",
+        "cite": "Scrum Guide 2020, Product Owner",
+        "tag": "accountabilities"
+      }
+    },
+    {
+      "type": "teach",
+      "title": "Trap five: nobody can contradict you",
+      "body": "This is the one that makes the other four dangerous. You are accountable for maximizing value, and the organization must respect your decisions. You also control everyone's income. Those two facts stack, and the result is that a bad ordering call and a good one generate exactly the same amount of pushback, which is none. The recovery move is structural, not a personality adjustment. Ask for the counter-argument before you state your position rather than after. Say out loud which decisions are reversible and which are not. And use the Retrospective for its stated purpose, since assumptions that led them astray are identified and their origins explored, and most of the assumptions here originate with you.",
+      "callout": {
+        "kind": "why",
+        "text": "Respect for the Product Owner's decisions exists so the ordering stays coherent and stakeholders have one place to go. It is not a claim that the Product Owner is right."
+      }
+    },
+    {
+      "type": "civic",
+      "title": "The experience already in the room",
+      "body": "Take an inventory of the people around you before you decide anything. On most small teams somebody has already held one of these accountabilities at a far bigger company, and somebody has watched this framework run across dozens of teams and seen it fail. You are the one learning Scrum here. They are not.\n\nThe trap is quiet. You can override either of them and neither will make a scene, because you sign the paychecks and they have better places to spend credibility.\n\nThe move is to route the decision through them before you form the opinion, not after you have announced it. An opinion you have already said out loud is a thing people have to argue with. A question is a thing people answer."
+    },
+    {
+      "type": "keypoints",
+      "points": [
+        "Developers are always accountable for four things: creating the Sprint Backlog, instilling quality by adhering to a Definition of Done, adapting their plan each day toward the Sprint Goal, and holding each other accountable as professionals.",
+        "Self-managing: they internally decide who does what, when, and how. Cross-functional: they have all the skills necessary to create value each Sprint.",
+        "The Definition of Done is a gate. Undone work cannot be released or even presented at the Sprint Review. The Scrum Team creates it when no organizational standard exists, and the Developers must conform to it.",
+        "The Scrum Master serves the Product Owner in four named ways and is nobody's assistant. The underused one is facilitating stakeholder collaboration.",
+        "Scope is negotiable, quality is not, and sizing belongs to the people doing the work.",
+        "Say no with the arithmetic attached, never with your authority. Authority ends the conversation without changing anyone's mind."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "id": "m09q1",
+      "kind": "mcq",
+      "stem": "Your Developers estimate an item at eight days. You believe it is four and you need it this Sprint for a customer walkthrough. What is the correct Product Owner action?",
+      "options": [
+        "Ask them to commit to a shorter estimate, since the walkthrough date is fixed",
+        "Explore what the estimate includes and help them understand and select trade-offs, leaving the sizing with them",
+        "Escalate to the Scrum Master to break the deadlock",
+        "Accept the estimate silently and reduce the Definition of Done so it fits"
+      ],
+      "answer": 1,
+      "explain": "The Developers who will be doing the work are responsible for the sizing, and the Product Owner may influence them by helping them understand and select trade-offs. That is influence on understanding, not on the number. Pushing for a shorter estimate destroys the signal and usually just moves the surprise later. The Scrum Master has no authority to set sizes. And reducing the Definition of Done trades quality, which is the one variable that is never negotiable during a Sprint.",
+      "cite": "Scrum Guide 2020, Product Backlog",
+      "tag": "accountabilities"
+    },
+    {
+      "id": "m09q2",
+      "kind": "multi",
+      "stem": "Which two of the following are things the Scrum Guide 2020 says the Developers are always accountable for? Pick two.",
+      "options": [
+        "Instilling quality by adhering to a Definition of Done",
+        "Ordering the Product Backlog by value",
+        "Adapting their plan each day toward the Sprint Goal",
+        "Ensuring the Product Backlog is transparent, visible and understood",
+        "Approving the Sprint Goal proposed by the Product Owner"
+      ],
+      "answer": [0, 2],
+      "explain": "The four Developer accountabilities are creating the Sprint Backlog, instilling quality by adhering to a Definition of Done, adapting their plan each day toward the Sprint Goal, and holding each other accountable as professionals. Ordering the Product Backlog and ensuring it is transparent, visible and understood are both Product Owner accountabilities, which is what makes them the tempting distractors. There is no approval step for the Sprint Goal: the whole Scrum Team collaborates to define it.",
+      "cite": "Scrum Guide 2020, Developers",
+      "tag": "accountabilities"
+    },
+    {
+      "id": "m09q3",
+      "kind": "tf",
+      "stem": "Self-managing means the Developers decide what to build, since they internally decide who does what, when, and how.",
+      "answer": false,
+      "explain": "False, and this is a precision trap. Self-managing means they internally decide who does what, when, and how. What the product needs and in what order is Product Owner work: developing and communicating the Product Goal, creating and communicating Product Backlog items, and ordering them. The Developers select which items come into a Sprint through discussion with the Product Owner, but the ordering they select from is yours.",
+      "cite": "Scrum Guide 2020, The Scrum Team and Product Owner",
+      "tag": "accountabilities"
+    },
+    {
+      "id": "m09q4",
+      "kind": "mcq",
+      "stem": "Your organization has no Definition of Done. Who must create one, according to the Scrum Guide 2020?",
+      "options": [
+        "The Developers, since they are required to conform to it",
+        "The Product Owner, since quality affects the value of the product",
+        "The Scrum Team must create a Definition of Done appropriate for the product",
+        "The Scrum Master, as part of establishing Scrum"
+      ],
+      "answer": 2,
+      "explain": "If the Definition of Done is not an organizational standard, the Scrum Team must create a Definition of Done appropriate for the product. The Developers are required to conform to it, which is a separate sentence and the most common wrong answer. The Product Owner does not author it, and the Scrum Master helps the team focus on Increments that meet it rather than writing it for them. If it were an organizational standard, all Scrum Teams would have to follow it as a minimum.",
+      "cite": "Scrum Guide 2020, Commitment: Definition of Done",
+      "tag": "artifacts"
+    },
+    {
+      "id": "m09q5",
+      "kind": "mcq",
+      "stem": "Three Scrum Teams work on the same Ledgerline product. One team wants a lighter Definition of Done because their work is mostly internal tooling. What does the Scrum Guide 2020 require?",
+      "options": [
+        "Each team creates the Definition of Done appropriate for its own work",
+        "They must mutually define and comply with the same Definition of Done",
+        "The Product Owner arbitrates between the three definitions",
+        "The strictest team's Definition of Done automatically applies to all three"
+      ],
+      "answer": 1,
+      "explain": "If there are multiple Scrum Teams working together on a product, they must mutually define and comply with the same Definition of Done. Per-team definitions would make the combined Increment untrustworthy, since Increments must be additive and work together. The Product Owner does not arbitrate quality standards. And nothing in the Guide says the strictest one automatically wins: the word is mutually, which means they define it together.",
+      "cite": "Scrum Guide 2020, Commitment: Definition of Done",
+      "tag": "artifacts"
+    },
+    {
+      "id": "m09q6",
+      "kind": "multi",
+      "stem": "Which two are ways the Scrum Guide 2020 says a Scrum Master serves the Product Owner? Pick two.",
+      "options": [
+        "Facilitating stakeholder collaboration as requested or needed",
+        "Prioritizing the Product Backlog when the Product Owner is unavailable",
+        "Helping find techniques for effective Product Goal definition and Product Backlog management",
+        "Reporting Developer progress to the Product Owner each day",
+        "Approving Product Backlog items before they enter a Sprint"
+      ],
+      "answer": [0, 2],
+      "explain": "The four listed services to the Product Owner are helping find techniques for effective Product Goal definition and Product Backlog management, helping the Scrum Team understand the need for clear and concise Product Backlog items, helping establish empirical product planning for a complex environment, and facilitating stakeholder collaboration as requested or needed. Prioritizing on your behalf, reporting progress, and approving items all recast the Scrum Master as an assistant or a gatekeeper, which is not the accountability.",
+      "cite": "Scrum Guide 2020, Scrum Master",
+      "tag": "accountabilities"
+    },
+    {
+      "id": "m09q7",
+      "kind": "sort",
+      "stem": "Sort each responsibility into the accountability that owns it.",
+      "buckets": ["Product Owner", "Developers", "Scrum Master"],
+      "items": [
+        { "text": "Ordering Product Backlog items", "bucket": "Product Owner" },
+        { "text": "Developing and explicitly communicating the Product Goal", "bucket": "Product Owner" },
+        { "text": "Creating the plan for the Sprint, the Sprint Backlog", "bucket": "Developers" },
+        { "text": "Instilling quality by adhering to a Definition of Done", "bucket": "Developers" },
+        { "text": "Sizing the Product Backlog items they will work on", "bucket": "Developers" },
+        { "text": "Establishing Scrum as defined in the Scrum Guide", "bucket": "Scrum Master" },
+        { "text": "Causing the removal of impediments to the Scrum Team's progress", "bucket": "Scrum Master" },
+        { "text": "Facilitating stakeholder collaboration as requested or needed", "bucket": "Scrum Master" }
+      ],
+      "explain": "The clean split: you own what and in what order, the Developers own how much and how, and the Scrum Master owns whether Scrum is actually working. Sizing is the one people misplace most often, because the Product Owner is allowed to influence trade-offs but never to set the number.",
+      "cite": "Scrum Guide 2020, Product Owner, Developers, Scrum Master",
+      "tag": "accountabilities"
+    },
+    {
+      "id": "m09q8",
+      "kind": "mcq",
+      "stem": "On day seven of a ten day Sprint your engineer says everything selected will not fit. Which response best fits the Scrum Guide 2020?",
+      "options": [
+        "Ask which selected items can come out while still reaching the Sprint Goal, and return those to the Product Backlog",
+        "Ask him to skip the automated test pass for the remaining items so everything ships",
+        "Extend the Sprint by three days so the plan can be honored",
+        "Add a second person to the items so the original scope survives"
+      ],
+      "answer": 0,
+      "explain": "Scope may be clarified and renegotiated with the Product Owner as more is learned, and unfinished items go back to the Product Backlog. Skipping the test pass violates the rule that quality does not decrease during the Sprint, and the Developers are required to conform to the Definition of Done regardless of who asks. Sprints are fixed length events, so extending is never available. Adding people is not a Product Owner decision: who does what is decided internally by the Developers.",
+      "cite": "Scrum Guide 2020, The Sprint",
+      "tag": "events"
+    },
+    {
+      "id": "m09q9",
+      "kind": "tf",
+      "stem": "A Product Owner who is also the founder may direct a specific Developer to take a specific Sprint Backlog item, since the organization must respect the Product Owner's decisions.",
+      "answer": false,
+      "explain": "False. Respect for the Product Owner's decisions applies to the content and ordering of the Product Backlog, not to who does which task. Scrum Teams are self-managing, meaning they internally decide who does what, when, and how, and the Sprint Backlog is a plan by and for the Developers. Being the founder makes this worse rather than better, because an assignment from the person who signs the paychecks will not be pushed back on.",
+      "cite": "Scrum Guide 2020, The Scrum Team and Sprint Backlog",
+      "tag": "antipatterns"
+    },
+    {
+      "id": "m09q10",
+      "kind": "mcq",
+      "stem": "A stakeholder asks for a demo that always shows today's date. The data model makes that arithmetically incompatible with the projections currently on screen. What is the strongest Product Owner response?",
+      "options": [
+        "Decline, since the Product Owner decides what goes into the product",
+        "Accept it and let the Developers work out the contradiction during the Sprint",
+        "Explain the trade-off concretely, show which properties cannot coexist, and let the stakeholder choose which two they want",
+        "Refer the stakeholder to the Developers, since the constraint is technical"
+      ],
+      "answer": 2,
+      "explain": "Transparency is a pillar, and a decision made with a hidden constraint is not really the stakeholder's decision. Declining on authority is technically within your power and teaches the stakeholder nothing, so they will ask again. Accepting it hands an unresolvable contradiction to the Developers. Referring them to the Developers offloads a product trade-off onto people whose accountability is how the work gets done, not which trade-off the product should take.",
+      "cite": "Scrum Guide 2020, Scrum Theory and Product Owner",
+      "tag": "stakeholders"
+    },
+    {
+      "id": "m09q11",
+      "kind": "mcq",
+      "stem": "Your team calls an item Done, but it has not been through the security review that your Definition of Done requires. You believe the value is high and the town is waiting. What is permitted?",
+      "options": [
+        "Release it, since the Product Owner decides when to release value and the Sprint Review is never a gate",
+        "Present it at the Sprint Review with a caveat, so stakeholders can still give feedback",
+        "Neither. It cannot be released or even presented at the Sprint Review, and it returns to the Product Backlog for future consideration",
+        "Release it and add the security review as a Product Backlog item for the next Sprint"
+      ],
+      "answer": 2,
+      "explain": "If a Product Backlog item does not meet the Definition of Done, it cannot be released or even presented at the Sprint Review, and instead returns to the Product Backlog for future consideration. Your authority over release timing is real, but it applies to Increments, and work cannot be considered part of an Increment unless it meets the Definition of Done. A caveat at the Review does not change what the item is. Deferring the review to next Sprint is precisely the quality trade the Guide closes off.",
+      "cite": "Scrum Guide 2020, Commitment: Definition of Done and Increment",
+      "tag": "artifacts"
+    },
+    {
+      "id": "m09q12",
+      "kind": "mcq",
+      "stem": "Which statement best describes the relationship between the Scrum Master and the Product Owner?",
+      "options": [
+        "The Scrum Master reports to the Product Owner and enforces the Product Owner's decisions with the Developers",
+        "The Scrum Master serves the Product Owner in specific ways, including helping find techniques for Product Goal definition and Product Backlog management",
+        "The Scrum Master and Product Owner jointly own the Product Backlog",
+        "The Scrum Master supervises the Product Owner's performance against the Product Goal"
+      ],
+      "answer": 1,
+      "explain": "The Guide lists four specific services the Scrum Master provides to the Product Owner and describes Scrum Masters as true leaders who serve the Scrum Team and the larger organization. There is no reporting line in either direction. The Product Backlog has one owner and the Product Owner is one person, not a committee. And nothing gives the Scrum Master a supervisory or evaluative role over anyone.",
+      "cite": "Scrum Guide 2020, Scrum Master and Product Owner",
+      "tag": "accountabilities"
+    }
+  ],
+  "cards": [
+    {
+      "id": "m09c1",
+      "front": "The four things Developers are always accountable for",
+      "back": "Creating a plan for the Sprint (the Sprint Backlog); instilling quality by adhering to a Definition of Done; adapting their plan each day toward the Sprint Goal; and holding each other accountable as professionals.",
+      "tag": "accountabilities"
+    },
+    {
+      "id": "m09c2",
+      "front": "Define self-managing",
+      "back": "The Scrum Team internally decides who does what, when, and how. It does not mean deciding what the product needs or in what order, which is Product Owner work.",
+      "tag": "accountabilities"
+    },
+    {
+      "id": "m09c3",
+      "front": "Define cross-functional",
+      "back": "The members have all the skills necessary to create value each Sprint. When they do not, that is a fact to make visible in ordering and in the Definition of Done, not a gap to paper over.",
+      "tag": "accountabilities"
+    },
+    {
+      "id": "m09c4",
+      "front": "What is the Definition of Done?",
+      "back": "A formal description of the state of the Increment when it meets the quality measures required for the product. The moment a Product Backlog item meets it, an Increment is born.",
+      "tag": "artifacts"
+    },
+    {
+      "id": "m09c5",
+      "front": "What happens to an item that does not meet the Definition of Done?",
+      "back": "It cannot be released or even presented at the Sprint Review. It returns to the Product Backlog for future consideration.",
+      "tag": "artifacts"
+    },
+    {
+      "id": "m09c6",
+      "front": "Who creates the Definition of Done?",
+      "back": "If it is an organizational standard, all Scrum Teams follow it as a minimum. Otherwise the Scrum Team must create one appropriate for the product. The Developers are required to conform to it.",
+      "tag": "artifacts"
+    },
+    {
+      "id": "m09c7",
+      "front": "Multiple Scrum Teams on one product: what about the Definition of Done?",
+      "back": "They must mutually define and comply with the same Definition of Done. They also share the same Product Goal, Product Backlog, and Product Owner.",
+      "tag": "artifacts"
+    },
+    {
+      "id": "m09c8",
+      "front": "The Scrum Master's two accountabilities",
+      "back": "Establishing Scrum as defined in the Scrum Guide, and the Scrum Team's effectiveness. Scrum Masters are true leaders who serve the Scrum Team and the larger organization.",
+      "tag": "accountabilities"
+    },
+    {
+      "id": "m09c9",
+      "front": "Four ways the Scrum Master serves the Product Owner",
+      "back": "Techniques for Product Goal definition and Product Backlog management; helping the team understand the need for clear and concise items; establishing empirical product planning for a complex environment; facilitating stakeholder collaboration as requested or needed.",
+      "tag": "accountabilities"
+    },
+    {
+      "id": "m09c10",
+      "front": "Who sizes Product Backlog items, and what may the Product Owner do?",
+      "back": "The Developers who will be doing the work are responsible for the sizing. The Product Owner may influence them by helping them understand and select trade-offs, never by setting the number.",
+      "tag": "backlog"
+    },
+    {
+      "id": "m09c11",
+      "front": "Founder trap: negotiating quality instead of scope",
+      "back": "Quality does not decrease during the Sprint and the Developers must conform to the Definition of Done. Scope is the negotiable variable. Recovery move: ask for the smallest version that still meets the Definition of Done.",
+      "tag": "antipatterns"
+    },
+    {
+      "id": "m09c12",
+      "front": "Founder trap: being un-contradictable",
+      "back": "A bad ordering call and a good one draw the same pushback, which is none. Recovery move: ask for the counter-argument before stating your position, name which decisions are reversible, and use the Retrospective to surface assumptions.",
+      "tag": "antipatterns"
+    }
+  ]
+}

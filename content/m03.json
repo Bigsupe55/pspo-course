@@ -1,0 +1,482 @@
+{
+  "id": "m03",
+  "num": 3,
+  "week": 1,
+  "title": "What a Product Owner Actually Is",
+  "subtitle": "One sentence of accountability, four bullets of craft, and the specific ways it bends when the person ordering the backlog also owns the pipeline.",
+  "minutes": 30,
+  "why": "A Product Owner who cannot state the accountability in one sentence defends their calendar instead of their decisions, and quietly lets the loudest person in the room do the ordering.",
+  "objectives": [
+    "State the Product Owner accountability in one sentence and explain what every clause in it is doing",
+    "List the four Product Backlog management bullets and say why two of them are about being understood",
+    "Separate accountability from responsibility sharply enough to delegate without losing the job",
+    "Explain why the Product Owner is one person, and what route the Guide leaves open to everyone else",
+    "Name the specific ways owning the sales pipeline improves and distorts your ordering decisions"
+  ],
+  "beats": [
+    {
+      "type": "hook",
+      "body": "You have been doing this job for two years without the title.\n\nSomebody decided the demo shows a pinned March snapshot instead of a live clock. Somebody decided Ask the Ledger keeps printing the query it ran. Somebody decided reconciliation to Corvus Financials was the adoption gate, and then shipped every other item first. Somebody decided five roles get a seat on the welcome screen and two do not.\n\nThat somebody was you, every time. So this module is not about learning a new job. It is about naming exactly what you are on the hook for, which turns out to be a single sentence, and then understanding why that sentence is worded so carefully."
+    },
+    {
+      "type": "teach",
+      "title": "The whole job, in one sentence",
+      "body": "Here it is, before any caveats. You are accountable for **maximizing the value of the product resulting from the work of the Scrum Team**.\n\nNotice what is not in there. Not writing requirements. Not managing the team. Not being the voice of the customer. Not running the meetings. Not accepting completed items. Those are all things a Product Owner might spend a Tuesday doing, and not one of them is the accountability.\n\nThe accountability is an outcome: the product became as valuable as it could have, given what this team was able to do. If that outcome fails, it is yours. Everything else in this module is a means to it."
+    },
+    {
+      "type": "guide",
+      "quote": "The Product Owner is accountable for maximizing the value of the product resulting from the work of the Scrum Team. How this is done may vary widely across organizations, Scrum Teams, and individuals.",
+      "cite": "Product Owner",
+      "gloss": "One outcome is yours, and the Guide flatly refuses to tell you how to achieve it."
+    },
+    {
+      "type": "teach",
+      "title": "Read it again, one clause at a time",
+      "body": "**Maximizing.** Not delivering, not shipping. A maximum implies choices refused. If you never say no, you are not maximizing anything, you are queueing.\n\n**The value of the product.** Not the value of a Sprint, a release, or your quarter. The product.\n\n**Resulting from the work of the Scrum Team.** This clause protects you. You are not accountable for value the team could never have produced: a council vote, a budget cycle, a market that is not ready. You are accountable for whether what they did build was the most valuable thing they could have built.\n\n**How this is done may vary widely.** The Guide refuses to prescribe a method, because value in municipal finance is not value in a consumer app.",
+      "callout": {
+        "kind": "why",
+        "text": "The refusal is deliberate. A prescribed method for maximizing value would be a defined process, and value on complex work is exactly the thing you cannot know in advance."
+      }
+    },
+    {
+      "type": "check",
+      "q": {
+        "id": "m03k1",
+        "kind": "mcq",
+        "stem": "The demo console shipped every top priority item from the discovery roadmap. The one item not built is R-07, reconciliation and the system-of-record boundary, which discovery named as THE adoption gate and which Priya Raman, Northfield's Treasurer, says decides whether she can use the product at all. It needs a real backend. Judged against the Product Owner accountability, what happened here?",
+        "options": [
+          "Nothing went wrong. Everything deliverable was delivered, and the remaining item was blocked by a technical dependency",
+          "Value may not have been maximized, because the highest-value item was deferred in favour of items that could be finished, and that ordering call belongs to the Product Owner",
+          "The Developers failed, because they selected work they could complete instead of work that mattered",
+          "This is a Scrum Master problem, since the impediment of having no backend was never removed"
+        ],
+        "answer": 1,
+        "explain": "Maximizing the value of the product means the team's weeks went to the most valuable available work. Deferring the named adoption gate in favour of demonstrable progress is an ordering decision, and ordering Product Backlog items is one of the four things the Product Owner is accountable for. Option A describes what happened without judging it, which is the answer that lets everybody off. Option C misplaces the accountability: Developers decide how, not what order. Option D names something real but secondary, because an impediment is worth removing exactly in proportion to the value of the item it blocks, and that proportion is your call.",
+        "cite": "Scrum Guide 2020, Product Owner",
+        "tag": "value"
+      }
+    },
+    {
+      "type": "teach",
+      "title": "The four bullets, and why they are the whole craft",
+      "body": "The Guide names four things under Product Backlog management. They look like a job description. They are actually one complete loop.\n\nOne: develop and **explicitly communicate** the Product Goal. Where this product is going.\n\nTwo: **create and clearly communicate** Product Backlog items. What might get it there.\n\nThree: **order** them. Which one next, which is the only genuinely scarce resource you control.\n\nFour: ensure the Product Backlog is **transparent, visible and understood**. So other people can inspect your thinking and argue with it.\n\nRead the verbs. Two of the four are communication, and the fourth is entirely about other people understanding. Most of this job is making your reasoning inspectable by somebody who disagrees."
+    },
+    {
+      "type": "guide",
+      "quote": "The Product Owner is also accountable for effective Product Backlog management, which includes: Developing and explicitly communicating the Product Goal; Creating and clearly communicating Product Backlog items; Ordering Product Backlog items; and, Ensuring that the Product Backlog is transparent, visible and understood.",
+      "cite": "Product Owner",
+      "gloss": "Four bullets, exactly. Learn them in this order, because the exam quotes them almost word for word."
+    },
+    {
+      "type": "analogy",
+      "title": "The signature line",
+      "body": "You can hire an accountant to do your taxes. They pull the documents, pick the depreciation method, fill every box, catch a deduction you missed, and file it. Every task moved. That is **responsibility**, and responsibility travels.\n\nYour name is still on the signature line. If the return is wrong, nobody at the IRS wants to hear about your accountant. That is **accountability**, and it does not travel. There is no form for transferring it.\n\nSo when the Guide says you may delegate the work but remain accountable, it is not being generous. It is describing the only arrangement that exists. You can give away every task in those four bullets. You cannot give away being the person the outcome belongs to.",
+      "callout": {
+        "kind": "note",
+        "text": "Your Treasurer persona lives this exact structure. Priya Raman's stated fear is personal liability, because her name goes on the warrant even though she keyed none of the invoices. Different signature line, same rule."
+      }
+    },
+    {
+      "type": "guide",
+      "quote": "The Product Owner may do the above work or may delegate the responsibility to others. Regardless, the Product Owner remains accountable.",
+      "cite": "Product Owner",
+      "gloss": "Hand off the work all day long. The outcome stays yours."
+    },
+    {
+      "type": "check",
+      "q": {
+        "id": "m03k2",
+        "kind": "mcq",
+        "stem": "You are stretched across sales, legal, and product. A colleague who spent six years as a Product Owner at a much larger govtech vendor offers to write and order the Product Backlog items for the reconciliation work. What does the Scrum Guide allow?",
+        "options": [
+          "Nothing. The four Product Backlog management bullets must be performed by the Product Owner personally",
+          "He may do the work, and the accountability for it stays with you",
+          "He may write the items but not order them, since ordering is an exclusively personal act",
+          "He becomes the Product Owner for that slice of the backlog, so the accountability travels with the work"
+        ],
+        "answer": 1,
+        "explain": "The Guide says the Product Owner may do the above work or may delegate the responsibility to others, and regardless, the Product Owner remains accountable. Option A invents a prohibition, and refusing help from someone who has held this accountability inside a competitor you are trying to displace would be a bad decision wearing compliance as a costume. Option C sounds sophisticated and appears nowhere in the Guide. Option D is the real trap: splitting the backlog splits the ordering decision, which is precisely what one person, not a committee, rules out. Delegate the doing. The answering is not available for delegation.",
+        "cite": "Scrum Guide 2020, Product Owner",
+        "tag": "accountabilities"
+      }
+    },
+    {
+      "type": "teach",
+      "title": "One person, not a committee",
+      "body": "Six words, and they carry weight.\n\nA committee cannot order a backlog. Ordering is a single total sequence, and a negotiation between people with equal authority produces a compromise sequence that satisfies no theory of value at all. You get alternating items: one for sales, one for engineering, one for whoever was loudest on Tuesday.\n\nSo Scrum concentrates the decision in one person, deliberately, and then hands everybody else a specific route: convince them.\n\nThat route is not a consolation prize. It is the actual mechanism. Stakeholders bring evidence and consequences, and a Product Owner who never changes their mind is doing the job badly. What nobody gets to do is overrule you."
+    },
+    {
+      "type": "guide",
+      "quote": "The Product Owner is one person, not a committee. The Product Owner may represent the needs of many stakeholders in the Product Backlog. Those wanting to change the Product Backlog can do so by trying to convince the Product Owner.",
+      "cite": "Product Owner",
+      "gloss": "Single decision maker, and the way in for everyone else is persuasion rather than authority."
+    },
+    {
+      "type": "trap",
+      "myth": "The Product Owner collects what stakeholders want and puts it in the backlog. Deciding against a senior stakeholder is above their pay grade.",
+      "truth": "The Guide gives the Product Owner the content and ordering of the Product Backlog, and says those wanting to change it can do so by trying to convince the Product Owner. Convince, not instruct.",
+      "why": "PSPO I builds whole questions on this. Watch for stems where a senior manager, a key customer, or the Scrum Master adds an item to the backlog or reorders it. The correct answer is almost never that the Product Owner simply complies, and almost never that they refuse to listen. It is that the conversation happens and the decision stays theirs afterwards."
+    },
+    {
+      "type": "teach",
+      "title": "Respect is not manners, it is authority",
+      "body": "The Guide says that for Product Owners to succeed, the entire organization must respect their decisions. That reads like a line about politeness. It is not. It is a statement about where a decision can be overturned, and the answer is nowhere.\n\nThen it does something unusual and very useful: it tells you where those decisions are visible. In the **content and ordering of the Product Backlog**, and through the **inspectable Increment at the Sprint Review**.\n\nThat is your accountability made auditable. Anyone who wants to know what you actually decided does not read your deck or your quarterly plan. They read the order of the list, and they look at what shipped. Two places, both public, both hard to spin."
+    },
+    {
+      "type": "guide",
+      "quote": "For Product Owners to succeed, the entire organization must respect their decisions. These decisions are visible in the content and ordering of the Product Backlog, and through the inspectable Increment at the Sprint Review.",
+      "cite": "Product Owner",
+      "gloss": "Your decisions are not opinions. They are a list order and a working Increment, and both are out in the open."
+    },
+    {
+      "type": "check",
+      "q": {
+        "id": "m03k3",
+        "kind": "mcq",
+        "stem": "Your CEO opens the Product Backlog the night before Sprint Planning and moves three items to the top because a prospect mentioned them on a call. He messages the Developers directly to tell them. What is the Scrum-correct response?",
+        "options": [
+          "Accept the new order. He is the CEO, and organizational authority sits above the Product Owner accountability",
+          "Ask the Scrum Master to overrule him, since the Scrum Master is accountable for establishing Scrum",
+          "Take the prospect signal seriously, decide the order yourself, and make it explicit that the Product Backlog is ordered by one person and that person is you",
+          "Split the backlog so the CEO owns sales-driven items and you own the rest"
+        ],
+        "answer": 2,
+        "explain": "The entire organization must respect the Product Owner's decisions, and those wanting to change the Product Backlog do so by trying to convince the Product Owner. A live prospect call is genuine evidence, so the conversation is legitimate and the reorder may even turn out to be right. What is not legitimate is the order changing without you in it. Option A dissolves the accountability, which is the exact failure the Guide is warning about. Option B misreads the Scrum Master, who coaches the organization and makes the problem visible but does not adjudicate priority. Option D is the founder-friendly answer, and it rebuilds the committee the Guide rules out.",
+        "cite": "Scrum Guide 2020, Product Owner",
+        "tag": "accountabilities"
+      }
+    },
+    {
+      "type": "teach",
+      "title": "The one power that is yours alone",
+      "body": "Almost all of this accountability runs on influence, communication, and ordering. There is exactly one unilateral power, and the Guide is blunt about it: only the Product Owner has the authority to cancel the Sprint.\n\nThe trigger is narrow. A Sprint could be cancelled if the **Sprint Goal becomes obsolete**. Not because the work is going slowly. Not because something shinier appeared. Not because a stakeholder is unhappy. Obsolete means achieving the goal would no longer be worth doing.\n\nIt is rare, and it should stay rare. Cancelling burns the remaining days, sends everyone back to Sprint Planning, and costs trust. But when the goal is genuinely dead, spending two more weeks reaching it is worse.",
+      "callout": {
+        "kind": "warn",
+        "text": "Exam traps clustered here: the Scrum Master cannot cancel a Sprint, the Developers cannot, stakeholders cannot, and a slipping forecast is never on its own a reason to cancel."
+      }
+    },
+    {
+      "type": "guide",
+      "quote": "A Sprint could be cancelled if the Sprint Goal becomes obsolete. Only the Product Owner has the authority to cancel the Sprint.",
+      "cite": "The Sprint",
+      "gloss": "One trigger, one person. Memorise both halves, because the exam tests them separately."
+    },
+    {
+      "type": "teach",
+      "title": "The founder-PO superpower",
+      "body": "Most Product Owners sit three people away from the customer. A salesperson hears an objection and types it into a CRM field, a product manager reads the field a month later, and the Product Owner gets a digest of a digest. Signal decays at every hop, and what survives is whatever was easiest to write down.\n\nYou have none of that. You are on the call. You hear Dana Whitcomb say she loves Anomaly Review and immediately distrusts it, in her own words, including the pause before she says it.\n\nThat is a real structural advantage and it is worth more than most of what a course can teach you. Unfiltered signal is the asset."
+    },
+    {
+      "type": "civic",
+      "title": "The same wire, running the other way",
+      "body": "Three hazards, all from that one fact.\n\n**The loudest stakeholder is you.** The Guide says stakeholders change the backlog by convincing the Product Owner. When they are the same person, that conversation takes four seconds, inside your head, with no counter-argument and no record.\n\n**Nobody will contradict the founder twice.** A Lead Engineer who thinks your ordering is wrong will say so once. He is not going to spend that credibility every month.\n\n**A sales promise becomes a backlog commitment silently.** You describe a feature in a demo, it feels settled by the time you hang up, and it enters the backlog already decided rather than as a candidate that has to compete like everything else."
+    },
+    {
+      "type": "sim",
+      "title": "Five seats, and two roles that did not get one",
+      "setup": "The demo console needs a welcome screen: pick a seat, see the console as that person. You have ten researched personas and room for a handful of seats. You ship five: Finance Director, Town Manager, Select Board member, External Auditor, and Resident. Accounts Payable and IT stay in the role switcher but are cut from the welcome screen, with the reason written down: neither signs a contract. Angela Pike, Northfield's Accounts Payable clerk, is the persona whose daily work this product changes most, and the one who hit the wall in discovery because the console only lets her look. The decision is made and recorded. Now a colleague asks you to defend it.",
+      "choices": [
+        {
+          "label": "Keep the five seats, and add one line to the decision record stating what this decision is not: it orders the welcome screen, not the roadmap. Then keep 'act on a flag' near the top of the backlog.",
+          "outcome": "The demo keeps its buyer focus. The item that actually serves the AP clerk stays visible and contested instead of being quietly deprioritised by association. When somebody asks again in a month, the record answers for you.",
+          "verdict": "good",
+          "lesson": "Ordering by economic buyer and ordering by user value are two different decisions, and they get silently merged when only one of them is written down. This is the fourth bullet, keeping the backlog transparent and understood, doing real work."
+        },
+        {
+          "label": "Defend it exactly as written. The welcome screen is a sales surface, the seats go to people who sign, and the reason is already recorded.",
+          "outcome": "It holds, and the demo does its job in front of Tom Iverson. Six months later the pilot stalls in week three because the AP clerk, who opens the thing daily, was never designed for. She is also the person Dana Whitcomb asks whether it is worth the switch.",
+          "verdict": "mixed",
+          "lesson": "Prioritising by who signs the contract is a legitimate value judgment, not a mistake. It becomes one when the scope of the decision is never stated, and a rule made for a demo screen quietly becomes the rule for the product."
+        },
+        {
+          "label": "Reverse it. Add Accounts Payable to the welcome screen, since she is the user whose work changes most.",
+          "outcome": "Six seats now, and no argument from anyone. Tom Iverson, the Town Manager, who has ninety seconds and no patience, is one option among six, so the seat meant to convert him is diluted. Nothing about Angela's actual experience changed, because her wall is that she can only look, not which screen she lands on.",
+          "verdict": "bad",
+          "lesson": "Adding to a list is the cheapest way to avoid making a decision, and it usually fixes nothing. Her problem was never seat allocation. Changing the wrong artifact feels responsive and delivers zero value."
+        },
+        {
+          "label": "Put it to the team and take a vote, since it affects both the demo and the roadmap.",
+          "outcome": "You get a split. Two people want AP on user-value grounds, one wants buyer focus, and the compromise is five seats plus a small 'other roles' link nobody clicks. The reasoning behind the original decision is now nowhere in the record.",
+          "verdict": "bad",
+          "lesson": "The Product Owner is one person, not a committee. Consulting people is cheap and good. A vote replaces a defensible ordering with an average of preferences, and an average has no theory of value underneath it."
+        }
+      ]
+    },
+    {
+      "type": "write",
+      "prompt": "In one sentence, state what you are accountable for as Ledgerline's Product Owner. Not what you do. What outcome is yours when it fails.",
+      "starter": "I am accountable for ______, which is true when ______ and false when ______.",
+      "rubric": [
+        "It is one sentence naming an outcome, not a set of activities. If it reads as a list of duties strung together, it is a job description and it fails",
+        "It contains none of the four bullet verbs as the main claim. Writing, ordering, communicating, and refining are means, and this sentence is about the end",
+        "It is bounded by what your team can actually produce. Revenue, a signed pilot, or a Select Board vote are outcomes you influence but do not control, and claiming them makes the sentence unfalsifiable",
+        "It cannot be handed to somebody else. Owning the backlog is a task. Owning whether the product became as valuable as it could have is an accountability",
+        "It names how you would know it failed, in a way somebody else could observe without asking you"
+      ],
+      "model": "I am accountable for whether the weeks this team spends go to the most valuable work available to it, which is true when a town finance office is still using what we shipped after the demo is over, and false the first time we ship a Sprint of things that demo beautifully and change nobody's Tuesday."
+    },
+    {
+      "type": "keypoints",
+      "points": [
+        "Accountable for maximizing the value of the product resulting from the work of the Scrum Team. One sentence, one outcome, and how it is done may vary widely.",
+        "Four bullets: develop and explicitly communicate the Product Goal, create and clearly communicate items, order them, and keep the Product Backlog transparent, visible and understood.",
+        "You may delegate the work and you remain accountable. Responsibility travels, accountability does not.",
+        "One person, not a committee. Others change the Product Backlog by trying to convince you, and the organization must respect the decision you land on.",
+        "Your decisions are visible in the content and ordering of the Product Backlog, and through the inspectable Increment at the Sprint Review.",
+        "Only the Product Owner has the authority to cancel the Sprint, and only when the Sprint Goal becomes obsolete."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "id": "m03q1",
+      "kind": "mcq",
+      "stem": "A board member asks you to describe the Product Owner accountability in one line. Which is closest to the Scrum Guide?",
+      "options": [
+        "Gathering requirements from stakeholders and translating them into work the Developers can build",
+        "Maximizing the value of the product resulting from the work of the Scrum Team",
+        "Ensuring the team delivers everything committed to in Sprint Planning, on time",
+        "Representing the voice of the customer inside the Scrum Team"
+      ],
+      "answer": 1,
+      "explain": "That is the Guide's opening sentence for the accountability, near enough verbatim. Option A is what many organizations actually ask a Product Owner to do, which is why it is the most tempting, and it describes a scribe rather than a decision maker. Option C confuses value with delivery and imports a fixed-scope commitment the Guide does not make. Option D is the phrase almost everyone reaches for, and 'voice of the customer' appears nowhere in the Scrum Guide 2020. You may represent the needs of many stakeholders, which is a different and weaker claim.",
+      "cite": "Scrum Guide 2020, Product Owner",
+      "tag": "accountabilities"
+    },
+    {
+      "id": "m03q2",
+      "kind": "multi",
+      "stem": "Select the TWO items below that the Scrum Guide lists under effective Product Backlog management.",
+      "options": [
+        "Sizing Product Backlog items so the Developers can forecast",
+        "Ordering Product Backlog items",
+        "Accepting completed items at the end of the Sprint",
+        "Ensuring that the Product Backlog is transparent, visible and understood",
+        "Maintaining the Sprint Backlog throughout the Sprint"
+      ],
+      "answer": [1, 3],
+      "explain": "The four bullets are developing and explicitly communicating the Product Goal, creating and clearly communicating Product Backlog items, ordering them, and ensuring the Product Backlog is transparent, visible and understood. Option A is wrong on the Guide's own words: the Developers who will be doing the work are responsible for the sizing, and the Product Owner may influence them by helping them understand and select trade-offs. Option C describes a formal acceptance step that does not exist in the Guide. Option E belongs to the Developers, since the Sprint Backlog is a plan by and for them.",
+      "cite": "Scrum Guide 2020, Product Owner",
+      "tag": "backlog"
+    },
+    {
+      "id": "m03q3",
+      "kind": "mcq",
+      "stem": "A Product Owner delegates writing and refining all Product Backlog items to a business analyst, who does it well for six months. The Product Backlog then turns out to be ordered around the analyst's assumptions rather than customer value. Who is accountable?",
+      "options": [
+        "The business analyst, since they did the work",
+        "The Product Owner, who may delegate the responsibility but remains accountable",
+        "The Scrum Team collectively, since everyone inspects the Product Backlog",
+        "Nobody, since delegation was explicit and agreed"
+      ],
+      "answer": 1,
+      "explain": "The Guide addresses this in one sentence: the Product Owner may do the work or delegate the responsibility to others, and regardless, the Product Owner remains accountable. Option A is the everyday intuition and it is exactly backwards, because responsibility for tasks moves and accountability for outcomes does not. Option C confuses shared inspection with shared accountability. Option D is the one worth noticing, because it is how the failure actually feels from inside: everyone agreed, so nobody is answerable, and six months disappear before anyone notices the backlog stopped being about the customer.",
+      "cite": "Scrum Guide 2020, Product Owner",
+      "tag": "accountabilities"
+    },
+    {
+      "id": "m03q4",
+      "kind": "mcq",
+      "stem": "An organization sets up a weekly product council: the Product Owner, the head of sales, and the CTO, who jointly agree the Product Backlog order by majority vote. What does the Scrum Guide say?",
+      "options": [
+        "This is a reasonable way to include stakeholders, since the Product Owner may represent the needs of many stakeholders",
+        "The Product Owner is one person, not a committee, and those wanting to change the Product Backlog do so by trying to convince the Product Owner",
+        "This is fine as long as the Product Owner retains a veto",
+        "This is fine as long as the Scrum Master facilitates the council"
+      ],
+      "answer": 1,
+      "explain": "A vote is not persuasion, and the moment the order can be settled without the Product Owner agreeing, the accountability has moved to a group that cannot hold it. Option A quotes a real sentence about representing many stakeholders and then uses it to justify the opposite structure, which is a classic exam construction. Option C is the subtle one, because a veto sounds like retained authority while everything below the veto has already been decided by others. Option D changes who is in the room without changing where the decision lives.",
+      "cite": "Scrum Guide 2020, Product Owner",
+      "tag": "accountabilities"
+    },
+    {
+      "id": "m03q5",
+      "kind": "tf",
+      "stem": "True or false: before an item can be released, the Product Owner must formally accept it as complete.",
+      "answer": false,
+      "explain": "False. The Scrum Guide describes no Product Owner acceptance or sign-off step anywhere. The gate that does exist is the Definition of Done: the moment a Product Backlog item meets it, an Increment is born, and work that does not meet it returns to the Product Backlog. The Increment may also be delivered to stakeholders before the Sprint ends, and the Sprint Review is never a gate to releasing value. Acceptance rituals are common practice in real teams, and the exam is testing whether you can tell practice from the framework.",
+      "cite": "Scrum Guide 2020, Increment",
+      "tag": "antipatterns"
+    },
+    {
+      "id": "m03q6",
+      "kind": "mcq",
+      "stem": "Ten days into a fifteen day Sprint, a state rule change makes the Sprint Goal pointless: the compliance report the Sprint was built around will not be required at all. Who can cancel the Sprint, and on what grounds?",
+      "options": [
+        "The Scrum Master, since they are accountable for the Scrum Team's effectiveness",
+        "The Developers, since they own the Sprint Backlog and the plan",
+        "The Product Owner, because a Sprint could be cancelled if the Sprint Goal becomes obsolete and only the Product Owner has that authority",
+        "The Scrum Team by consensus, since a cancellation affects everyone"
+      ],
+      "answer": 2,
+      "explain": "Both halves of the Guide's sentence are being tested here. The trigger is that the Sprint Goal becomes obsolete, and the authority sits with one person. Options A, B, and D each hand it to somebody who does not have it, and D is the most seductive because cancelling really does affect everyone and consensus sounds respectful. Consult all you like. The decision is not shared. Note also what does not appear as a valid trigger anywhere: the team being behind, a stakeholder being unhappy, or a better idea arriving.",
+      "cite": "Scrum Guide 2020, The Sprint",
+      "tag": "events"
+    },
+    {
+      "id": "m03q7",
+      "kind": "mcq",
+      "stem": "A new VP tells you that from now on she will set the top five backlog items each month, and that you should focus on writing the items well. Which statement best captures the Scrum Guide's position?",
+      "options": [
+        "This is acceptable, since the Product Owner may delegate Product Backlog management responsibilities",
+        "For Product Owners to succeed, the entire organization must respect their decisions, and ordering Product Backlog items is one of those decisions",
+        "This is acceptable as long as the VP attends Sprint Planning to explain her ordering",
+        "The Scrum Master should escalate this to the VP's manager"
+      ],
+      "answer": 1,
+      "explain": "Ordering is one of the four accountabilities, and the Guide states directly that the organization must respect the Product Owner's decisions. Option A inverts delegation: you may delegate work downward while keeping the accountability, but you cannot have the decision taken upward and keep it. Option C makes the takeover more transparent without making it Scrum. Option D is not the Scrum Master's move as described; they lead and coach the organization in its Scrum adoption and remove barriers between stakeholders and Scrum Teams, which is coaching, not going over somebody's head.",
+      "cite": "Scrum Guide 2020, Product Owner",
+      "tag": "accountabilities"
+    },
+    {
+      "id": "m03q8",
+      "kind": "mcq",
+      "stem": "Your CEO asks how he can tell what you have actually decided as Product Owner, rather than what you say in the weekly sync. Per the Scrum Guide, where are your decisions visible?",
+      "options": [
+        "In the Sprint Backlog and the Daily Scrum",
+        "In the content and ordering of the Product Backlog, and through the inspectable Increment at the Sprint Review",
+        "In the Product Goal and the Definition of Done",
+        "In the roadmap and the release plan"
+      ],
+      "answer": 1,
+      "explain": "The Guide names exactly these two places, in the same sentence as the requirement that the organization respect those decisions. The pairing is the point: one artifact shows what you chose to do next, and one working Increment shows what that choice actually produced. Option A belongs to the Developers. Option C mixes a commitment you own with one the Developers must conform to. Option D describes artifacts that do not exist in Scrum at all, which is why it is on the list.",
+      "cite": "Scrum Guide 2020, Product Owner",
+      "tag": "artifacts"
+    },
+    {
+      "id": "m03q9",
+      "kind": "mcq",
+      "stem": "During Sprint Planning, the Developers estimate that a reconciliation item is far larger than you assumed and will consume most of the Sprint. You believe they are being conservative. What does the Scrum Guide support?",
+      "options": [
+        "You set the size, since you are accountable for maximizing value and the size affects what fits",
+        "The Developers who will be doing the work are responsible for the sizing, and you may influence them by helping them understand and select trade-offs",
+        "The Scrum Master mediates and sets a size both sides accept",
+        "The item is deferred to the next Sprint, since disputed items cannot be selected"
+      ],
+      "answer": 1,
+      "explain": "The Guide's wording is exact and it comes with a real lever for you: you may influence the Developers by helping them understand and select trade-offs. That means splitting the item, clarifying which part carries the value, or naming what you would give up. It does not mean setting the number. Option A is the most common Product Owner overreach in the wild. Option C invents a mediation role. Option D invents a rule about disputes, and also removes the conversation that was about to produce a smaller, more valuable item.",
+      "cite": "Scrum Guide 2020, Product Backlog",
+      "tag": "backlog"
+    },
+    {
+      "id": "m03q10",
+      "kind": "mcq",
+      "stem": "In Sprint Planning, what does the Product Owner do about the Sprint Goal?",
+      "options": [
+        "Writes the Sprint Goal and presents it to the Developers for acceptance",
+        "Proposes how the product could increase its value and utility in the current Sprint, after which the whole Scrum Team collaborates to define the Sprint Goal",
+        "Approves the Sprint Goal once the Developers have drafted it",
+        "Has no involvement, since the Sprint Goal is a commitment by the Developers"
+      ],
+      "answer": 1,
+      "explain": "Topic One is worded carefully: the Product Owner proposes how the product could increase its value and utility, and the whole Scrum Team then collaborates to define a Sprint Goal, which must be finalized prior to the end of Sprint Planning. Options A and C both make it a handoff with an approval step in one direction or the other. Option D takes a true fact, that the Sprint Goal is a commitment by the Developers, and draws the wrong conclusion from it. Whose commitment it is and who helps forge it are two different questions.",
+      "cite": "Scrum Guide 2020, Sprint Planning",
+      "tag": "events"
+    },
+    {
+      "id": "m03q11",
+      "kind": "multi",
+      "stem": "A founder who is also the Product Owner closes a demo by describing a feature that does not exist yet. Select the TWO statements that best describe the Scrum risk this creates.",
+      "options": [
+        "The item enters the Product Backlog as a settled commitment rather than as a candidate that must compete for order",
+        "The Product Owner is no longer permitted to order the Product Backlog, since a stakeholder promise overrides it",
+        "The convincing step the Guide describes has effectively been skipped, because the stakeholder and the Product Owner are the same person",
+        "The Sprint Goal automatically becomes obsolete and the Sprint should be cancelled",
+        "The Developers become accountable for the promise, since they will build it"
+      ],
+      "answer": [0, 2],
+      "explain": "The Guide gives stakeholders one route into the Product Backlog: convince the Product Owner. That route has a built-in friction, someone has to make a case and someone has to weigh it, and the friction disappears entirely when both parties share a skull. The result is an item that arrives pre-ordered without ever being compared to anything. Option B is wrong because nothing removes your ordering accountability, which is exactly the problem: you still own the decision you never consciously made. Option D misuses cancellation. Option E moves accountability to people who do not hold it.",
+      "cite": "Scrum Guide 2020, Product Owner",
+      "tag": "antipatterns"
+    },
+    {
+      "id": "m03q12",
+      "kind": "mcq",
+      "stem": "A Product Owner says: 'I cannot decide that, I have to check with the business.' She says it about most decisions. What is the most accurate Scrum assessment?",
+      "options": [
+        "This is correct behaviour, since the Product Owner represents the needs of many stakeholders",
+        "The accountability is not really held: the organization is not respecting the Product Owner's decisions, and the decisions are being made elsewhere",
+        "This is fine, because the Product Owner may delegate the responsibility to others",
+        "This is a Scrum Master failure, since they are accountable for the Scrum Team's effectiveness"
+      ],
+      "answer": 1,
+      "explain": "The Guide names the condition for success: the entire organization must respect the Product Owner's decisions. A Product Owner who routinely cannot decide is a messenger, and the actual ordering is happening somewhere the Scrum Team cannot inspect. Option A takes representing needs and stretches it into needing permission. Option C misapplies delegation, which is about handing down the work while keeping the accountability, not handing up the decision. Option D is partly true in practice, since a Scrum Master would work on exactly this, and it is not the assessment of what has gone wrong.",
+      "cite": "Scrum Guide 2020, Product Owner",
+      "tag": "antipatterns"
+    }
+  ],
+  "cards": [
+    {
+      "id": "m03c1",
+      "front": "The Product Owner accountability, in one sentence",
+      "back": "Accountable for maximizing the value of the product resulting from the work of the Scrum Team. How this is done may vary widely across organizations, Scrum Teams, and individuals.",
+      "tag": "accountabilities"
+    },
+    {
+      "id": "m03c2",
+      "front": "The four Product Backlog management bullets",
+      "back": "Developing and explicitly communicating the Product Goal. Creating and clearly communicating Product Backlog items. Ordering Product Backlog items. Ensuring that the Product Backlog is transparent, visible and understood.",
+      "tag": "backlog"
+    },
+    {
+      "id": "m03c3",
+      "front": "Can a Product Owner delegate the work?",
+      "back": "Yes. The Product Owner may do the work or may delegate the responsibility to others. Regardless, the Product Owner remains accountable.",
+      "tag": "accountabilities"
+    },
+    {
+      "id": "m03c4",
+      "front": "Accountability versus responsibility",
+      "back": "Responsibility is the doing, and it travels to whoever you hand it to. Accountability is whose problem the outcome is, and it does not travel. Like hiring an accountant and still signing the return.",
+      "tag": "accountabilities"
+    },
+    {
+      "id": "m03c5",
+      "front": "One person or a committee?",
+      "back": "The Product Owner is one person, not a committee. They may represent the needs of many stakeholders in the Product Backlog, but the decision is not shared and cannot be voted on.",
+      "tag": "accountabilities"
+    },
+    {
+      "id": "m03c6",
+      "front": "How does anyone else change the Product Backlog?",
+      "back": "Those wanting to change the Product Backlog can do so by trying to convince the Product Owner. Persuasion is the only route. Nobody gets to instruct or overrule.",
+      "tag": "backlog"
+    },
+    {
+      "id": "m03c7",
+      "front": "What must the organization do for a Product Owner to succeed?",
+      "back": "For Product Owners to succeed, the entire organization must respect their decisions. Not agree with them. Respect them, meaning the decision stands where it was made.",
+      "tag": "accountabilities"
+    },
+    {
+      "id": "m03c8",
+      "front": "Where are the Product Owner's decisions visible?",
+      "back": "In the content and ordering of the Product Backlog, and through the inspectable Increment at the Sprint Review. Two public places, not a slide deck.",
+      "tag": "artifacts"
+    },
+    {
+      "id": "m03c9",
+      "front": "Who can cancel a Sprint, and when?",
+      "back": "Only the Product Owner has the authority to cancel the Sprint. A Sprint could be cancelled if the Sprint Goal becomes obsolete. Slow progress is not a trigger.",
+      "tag": "events"
+    },
+    {
+      "id": "m03c10",
+      "front": "Who is responsible for sizing Product Backlog items?",
+      "back": "The Developers who will be doing the work are responsible for the sizing. The Product Owner may influence them by helping them understand and select trade-offs.",
+      "tag": "backlog"
+    },
+    {
+      "id": "m03c11",
+      "front": "What does the Product Owner do in Sprint Planning Topic One?",
+      "back": "Proposes how the product could increase its value and utility in the current Sprint. The whole Scrum Team then collaborates to define the Sprint Goal, which is finalized before Sprint Planning ends.",
+      "tag": "events"
+    },
+    {
+      "id": "m03c12",
+      "front": "Things the Guide never says a Product Owner does",
+      "back": "Accepting or signing off items. Writing user stories. Managing the Developers. Being the voice of the customer. Sizing items. All common practice, none of it in the Scrum Guide 2020.",
+      "tag": "antipatterns"
+    }
+  ]
+}

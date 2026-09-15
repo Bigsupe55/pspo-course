@@ -1,0 +1,483 @@
+{
+  "id": "m07",
+  "num": 7,
+  "week": 3,
+  "title": "The Sprint and Sprint Planning",
+  "subtitle": "The fixed window everything else lives inside, and the conversation that starts it.",
+  "minutes": 30,
+  "why": "A Product Owner who cannot hold a Sprint steady reorders the work every other day, which feels responsive and finishes nothing.",
+  "objectives": [
+    "Explain what a Sprint is and why its length never moves",
+    "Recite the four rules that hold during a Sprint and name the one that is your lever",
+    "Run your part of all three Sprint Planning topics without taking over the third",
+    "Write a Sprint Goal that states an outcome instead of listing tickets",
+    "State who can cancel a Sprint and the only condition that allows it"
+  ],
+  "beats": [
+    {
+      "type": "hook",
+      "body": "Last Tuesday, reconciliation was the most important thing in the company. By Thursday it was the demo for a larger prospect town. Both calls were defensible. Your one engineer started both and finished neither. That is not a discipline problem. It is a container problem, and the Sprint is the container."
+    },
+    {
+      "type": "teach",
+      "title": "The container everything else lives inside",
+      "body": "A Sprint is a fixed length window, one month or less, in which the team turns ideas into something usable. Everything else in Scrum happens inside it: Sprint Planning at the front, a Daily Scrum each day, then Sprint Review and Sprint Retrospective. Fixed length means the length does not move because the work is unfinished. If an item is not done, the window still closes and the item goes back to the Product Backlog. That is the point. A window that stretches to fit the work teaches you nothing, because you can never compare one window to the next.",
+      "callout": {
+        "kind": "why",
+        "text": "Consistency is a product of the Sprint, not just the software. Same shape every time is what makes any forecast you give a municipal buyer worth anything."
+      }
+    },
+    {
+      "type": "guide",
+      "quote": "Sprints are the heartbeat of Scrum, where ideas are turned into value.",
+      "cite": "The Sprint",
+      "gloss": "Not a deadline. A pulse. The value is that it keeps happening at a rate everyone can plan around."
+    },
+    {
+      "type": "guide",
+      "quote": "They are fixed length events of one month or less to create consistency. A new Sprint starts immediately after the conclusion of the previous Sprint.",
+      "cite": "The Sprint",
+      "gloss": "No gap week to catch up, no warm-up round. One ends, the next begins."
+    },
+    {
+      "type": "analogy",
+      "title": "The pay period",
+      "body": "Payroll does not wait for the work to feel finished. The period closes on the calendar, hours are counted, checks go out, and a new period opens the same day. Nobody proposes extending the period because a project ran long. That fixed edge is exactly what makes payroll comparable month over month: the container never changes shape, so any change you see is real. A Sprint runs the same trick on product work. The window is the constant. How much fits inside it varies, and that variation is your data.",
+      "visual": "sprint-timeline"
+    },
+    {
+      "type": "guide",
+      "quote": "During the Sprint:\n\nNo changes are made that would endanger the Sprint Goal;\nQuality does not decrease;\nThe Product Backlog is refined as needed; and,\nScope may be clarified and renegotiated with the Product Owner as more is learned.",
+      "cite": "The Sprint",
+      "gloss": "Four rules that hold for the whole window. Learn them as a set, because the exam quotes them almost word for word."
+    },
+    {
+      "type": "teach",
+      "title": "Read the fourth rule again",
+      "body": "Three of those rules constrain everyone. The fourth one names you. Scope may be clarified and renegotiated with the Product Owner as more is learned, which means the Developers are expected to come back to you mid-Sprint when the work turns out different than they thought. You are not locked out for a month. What you cannot do is push a change that endangers the Sprint Goal, and you cannot buy time by letting quality drop. Scope is negotiable inside a Sprint. The Goal and the quality bar are not."
+    },
+    {
+      "type": "trap",
+      "myth": "You own the Product Backlog, so you can put new work into the Sprint whenever a stakeholder calls.",
+      "truth": "During the Sprint, no changes are made that would endanger the Sprint Goal. Scope may be clarified and renegotiated with the Product Owner, which is a conversation with the Developers, not an instruction to them.",
+      "why": "PSPO I loves the mid-Sprint urgent request. The tempting wrong answers are add it because value changed, let the Scrum Master decide, and refuse everything until the next Sprint. The correct shape is: talk with the Developers about scope inside the existing Sprint Goal, and cancel only if the Goal itself has become obsolete."
+    },
+    {
+      "type": "guide",
+      "quote": "Shorter Sprints can be employed to generate more learning cycles and limit risk of cost and effort to a smaller time frame. Each Sprint may be considered a short project.",
+      "cite": "The Sprint",
+      "gloss": "Sprint length is a risk dial. Shorter means you find out you were wrong sooner, and you paid less to find out."
+    },
+    {
+      "type": "teach",
+      "title": "Sprint length is a risk instrument",
+      "body": "Every Sprint is a bet. You wager the team's time on a guess about what is valuable. Sprint length is the size of the bet. A one week Sprint risks one week of a one engineer company and gives you a real answer four times a month. A one month Sprint risks four times as much before anybody outside the room sees anything. On Ledgerline, where nearly every claim about what a town finance office wants is still an untested guess, smaller bets are usually the better trade.",
+      "callout": {
+        "kind": "note",
+        "text": "The Guide never names a best length. It says one month or less, fixed, and that shorter Sprints generate more learning cycles."
+      }
+    },
+    {
+      "type": "check",
+      "q": {
+        "id": "m07ck1",
+        "kind": "mcq",
+        "stem": "Six days into a two week Sprint, the Developers realize the selected work is larger than they thought and ask for four extra days so the Sprint can finish complete. What should happen?",
+        "options": [
+          "Extend the Sprint by four days, since the Sprint Goal is still achievable with the extra time",
+          "Keep the Sprint length fixed, renegotiate scope with the Developers, and return unfinished items to the Product Backlog",
+          "Cancel the Sprint and re-plan, because the forecast was wrong",
+          "Reduce the Definition of Done for this Sprint so the selected items can all be called Done"
+        ],
+        "answer": 1,
+        "explain": "Sprints are fixed length events. Extending is never an option, which is what makes one Sprint comparable to the next. Cancelling is only permitted when the Sprint Goal becomes obsolete, and being behind is not obsolete. Lowering the quality bar is forbidden outright: during the Sprint, quality does not decrease. What remains is the fourth rule, scope clarified and renegotiated with the Product Owner, with the leftovers going back to the Product Backlog.",
+        "cite": "Scrum Guide 2020, The Sprint",
+        "tag": "events"
+      }
+    },
+    {
+      "type": "guide",
+      "quote": "A Sprint could be cancelled if the Sprint Goal becomes obsolete. Only the Product Owner has the authority to cancel the Sprint.",
+      "cite": "The Sprint",
+      "gloss": "One of the very few places the Guide gives you sole authority. Note the condition attached to it."
+    },
+    {
+      "type": "teach",
+      "title": "Cancelling is not a punishment",
+      "body": "Only you can cancel a Sprint, and only for one reason: the Sprint Goal became obsolete. Obsolete means the goal no longer makes sense, not that the team is behind. Behind is ordinary and gets handled by renegotiating scope. Obsolete looks like this: you built the Sprint around a pilot with a larger prospect town, and on day three that town pulls the pilot. The goal now points at nothing. Cancel, hold Sprint Planning, start a new Sprint. In practice this is rare, and it should be, because short Sprints rarely live long enough to go obsolete."
+    },
+    {
+      "type": "civic",
+      "title": "The gate that cannot be mocked",
+      "body": "Every item on the Ledgerline roadmap ships in the demo build except one: R-07, the tie-out between the Corvus Financials feed, the bank file, and the ledger. Discovery named it the adoption gate. Priya Raman, Northfield's Treasurer, says it decides whether she can use the product at all, because her signature is on the warrant. It needs a real backend that is months away. So it cannot be a Sprint Goal. But this can be: prove that one month of ledger records ties to the town bank statement to the penny, for one town. Same gate, one Sprint wide."
+    },
+    {
+      "type": "teach",
+      "title": "Sprint Planning, plainly",
+      "body": "Sprint Planning is the working session that starts the Sprint. The whole Scrum Team is there and the plan is built together. It answers three questions in order: why is this Sprint valuable, what can be Done this Sprint, and how will the chosen work get done. Your weight in the room drops sharply as it moves from the first question to the third. In the first, you lead. In the second, you are half the conversation. In the third, you answer questions and otherwise keep your hands in your pockets."
+    },
+    {
+      "type": "guide",
+      "quote": "Sprint Planning initiates the Sprint by laying out the work to be performed for the Sprint. This resulting plan is created by the collaborative work of the entire Scrum Team.\n\nThe Product Owner ensures that attendees are prepared to discuss the most important Product Backlog items and how they map to the Product Goal.",
+      "cite": "Sprint Planning",
+      "gloss": "Your homework is due before the meeting starts. Prepared means the top of the backlog is ordered, understood, and visibly connected to the Product Goal."
+    },
+    {
+      "type": "guide",
+      "quote": "Topic One: Why is this Sprint valuable?\nThe Product Owner proposes how the product could increase its value and utility in the current Sprint. The whole Scrum Team then collaborates to define a Sprint Goal that communicates why the Sprint is valuable to stakeholders. The Sprint Goal must be finalized prior to the end of Sprint Planning.",
+      "cite": "Sprint Planning",
+      "gloss": "You propose. The team defines. And it is not homework for later, the Goal is finished before anyone leaves the room."
+    },
+    {
+      "type": "teach",
+      "title": "Propose, then let go",
+      "body": "The word proposes is doing real work in that sentence. You arrive with an argument: here is what I think would make the product more valuable this Sprint, and here is why I believe it. Then the team argues with you. The Developers know what is cheap this month. The Scrum Master knows what keeps derailing you. The Sprint Goal that comes out is usually better than the one you walked in with, and it belongs to everyone, which is why the team will actually defend it when a stakeholder pushes on Wednesday."
+    },
+    {
+      "type": "trap",
+      "myth": "The Product Owner writes the Sprint Goal and presents it to the team at Sprint Planning.",
+      "truth": "The Product Owner proposes how the product could increase its value and utility in the current Sprint. The whole Scrum Team then collaborates to define a Sprint Goal. The Sprint Goal is a commitment by the Developers, and it must be finalized prior to the end of Sprint Planning.",
+      "why": "Two exam facts hide in one sentence: the Product Owner proposes but the whole team defines, and the Goal is finalized before Sprint Planning ends. Any answer that lets the Sprint Goal emerge later in the Sprint, or that has the Product Owner hand one down, is wrong."
+    },
+    {
+      "type": "guide",
+      "quote": "Topic Two: What can be Done this Sprint?\nThrough discussion with the Product Owner, the Developers select items from the Product Backlog to include in the current Sprint. The Scrum Team may refine these items during this process, which increases understanding and confidence.",
+      "cite": "Sprint Planning",
+      "gloss": "Through discussion with you. Selected by them. You are in the conversation and not in the decision."
+    },
+    {
+      "type": "trap",
+      "myth": "The Product Owner decides how many items go into the Sprint, because the Product Owner sets the priorities.",
+      "truth": "Through discussion with the Product Owner, the Developers select items from the Product Backlog to include in the current Sprint. The Developers who will be doing the work are responsible for the sizing.",
+      "why": "The exam constantly separates influence from authority. You order the Product Backlog and you argue for value. Selection and sizing belong to the Developers. Answers where the Product Owner sets the amount of work, or where a manager sets it, are always wrong."
+    },
+    {
+      "type": "guide",
+      "quote": "Topic Three: How will the chosen work get done?\nFor each selected Product Backlog item, the Developers plan the work necessary to create an Increment that meets the Definition of Done. This is often done by decomposing Product Backlog items into smaller work items of one day or less. How this is done is at the sole discretion of the Developers. No one else tells them how to turn Product Backlog items into Increments of value.",
+      "cite": "Sprint Planning",
+      "gloss": "Sole discretion. That phrase appears exactly once in the Guide, and it is aimed at people like you."
+    },
+    {
+      "type": "teach",
+      "title": "What you do during Topic Three",
+      "body": "Almost nothing, and it is harder than it sounds. No one else tells the Developers how to turn Product Backlog items into Increments of value, and no one else includes the person who signs their paycheck. Stay if they want you there, because questions come up and you are the fastest answer to anything that starts with do we actually need. Do not suggest an approach unless asked. Do not ask who is taking which task. If the plan looks wrong to you, ask a question about the outcome, never about the method."
+    },
+    {
+      "type": "check",
+      "q": {
+        "id": "m07ck2",
+        "kind": "tf",
+        "stem": "Because the Product Owner is accountable for value, the Product Owner may ask the Developers to break a selected item down a specific way during Topic Three of Sprint Planning.",
+        "answer": false,
+        "explain": "False. How the chosen work gets done is at the sole discretion of the Developers, and the Guide adds that no one else tells them how to turn Product Backlog items into Increments of value. You may answer questions and clarify what outcome you want, but the decomposition is theirs. Being accountable for value never converts into authority over method.",
+        "cite": "Scrum Guide 2020, Sprint Planning",
+        "tag": "events"
+      }
+    },
+    {
+      "type": "guide",
+      "quote": "The Sprint Goal, the Product Backlog items selected for the Sprint, plus the plan for delivering them are together referred to as the Sprint Backlog.\n\nSprint Planning is timeboxed to a maximum of eight hours for a one-month Sprint. For shorter Sprints, the event is usually shorter.",
+      "cite": "Sprint Planning",
+      "gloss": "Why plus what plus how equals the Sprint Backlog. You supply the why, you negotiate the what, the Developers own the how."
+    },
+    {
+      "type": "teach",
+      "title": "How to write a Sprint Goal that survives contact",
+      "body": "A Sprint Goal is one objective, stated as an outcome, that stays true even when the scope underneath it changes. Test it three ways. One: is it a single objective, or two objectives joined by the word and? Two: if you delete two selected items on Wednesday, is the goal still achievable? If not, it is a work list wearing a goal costume. Three: could a stakeholder read it and tell you whether they care? Weak: finish R-07 tickets 41, 42 and 44. Strong: prove one month of ledger records ties to the town bank statement to the penny."
+    },
+    {
+      "type": "civic",
+      "title": "The feed that died and nobody was paged",
+      "body": "Open Data Connections. The Corvus Financials sync reads Error, last synced two days ago, zero records. Every budget number on every other screen is computed from that feed. Nobody was paged, because feed monitoring is filed as R-13, a P1. Here is the ordering problem. R-07, reconciliation, is the adoption gate, and reconciling against a feed that can die silently is worthless. A dependency does not care about your priority labels. When a P1 is the only path to a P0, it is not really a P1."
+    },
+    {
+      "type": "sim",
+      "title": "Sprint Planning with one engineer",
+      "setup": "Sprint Planning for a two week Sprint. In the room: you, your engineer, your Scrum Master. You want reconciliation progress, because Priya Raman's answer to can I use this depends on it. Your engineer says the real tie-out needs backend work that will not fit in two weeks. He also says the Corvus feed can die without anyone noticing, which would make any tie-out demo a lie. Separately, a larger prospect town has asked for a walkthrough in three weeks.",
+      "choices": [
+        {
+          "label": "Propose a Sprint Goal about reconciliation and ask him to fit as much of R-07 as he can.",
+          "outcome": "He selects the backend work. It does not finish. The Sprint ends with a half-built tie-out you cannot show anyone, and the prospect town sees the same demo as last month.",
+          "verdict": "bad",
+          "lesson": "A Sprint Goal you cannot reach inside one Sprint is a wish, not a goal. You propose value that fits the window, and the Developers select what they believe they can get to Done."
+        },
+        {
+          "label": "Propose the value, then let the goal be shaped by what he says is reachable: make feed health honest and visible so no number on screen is silently wrong.",
+          "outcome": "The team defines the Sprint Goal together: a user can trust every number on screen, because a stale or failed feed is visible where the numbers are. Feed monitoring lands, and the reconciliation work in later Sprints now has something to stand on.",
+          "verdict": "good",
+          "lesson": "You propose how the product could increase its value. The whole Scrum Team defines the Sprint Goal. And ordering by dependency beats ordering by label, because a P1 that blocks a P0 is not a P1."
+        },
+        {
+          "label": "Skip the goal, hand over the top five backlog items, and let him sort it out.",
+          "outcome": "Work happens. On Wednesday a question from the prospect town arrives and there is nothing to test it against, so everything gets reordered again. The Sprint Review has output and no story.",
+          "verdict": "bad",
+          "lesson": "Without a Sprint Goal there is nothing for scope to be renegotiated against, and no coherence. The Sprint Goal must be finalized prior to the end of Sprint Planning, not skipped."
+        },
+        {
+          "label": "Set the Sprint Goal on the prospect walkthrough and defer reconciliation one more Sprint.",
+          "outcome": "The walkthrough goes fine. Then Priya asks her question again, and the answer is unchanged for the fourth month running, while your demo polish keeps improving.",
+          "verdict": "mixed",
+          "lesson": "Demo readiness is real value, and sometimes it is the right call. Repeatedly deferring the one gate that decides adoption is how visible output quietly replaces outcome."
+        }
+      ]
+    },
+    {
+      "type": "write",
+      "prompt": "Write the Sprint Goal for Ledgerline's next two week Sprint. One sentence. State an outcome a person outside the team would notice, not the tickets that produce it.",
+      "starter": "By the end of this Sprint, a [who] can [do what], so that [why it matters].",
+      "rubric": [
+        "One objective. If it splits at the word and into two independent goals, it fails.",
+        "Stated as an outcome someone outside the team could observe, not as work completed.",
+        "Survives scope renegotiation: if two selected items get cut on Wednesday, the goal is still achievable.",
+        "Names value clearly enough that a stakeholder can tell you whether they care.",
+        "Contains no ticket numbers, no item counts, and no list of features."
+      ],
+      "model": "By the end of this Sprint, a Finance Director can tell at a glance whether the numbers on screen are trustworthy, because every screen shows the freshness and health of the data behind it. Why this passes: it is one objective, it is observable by a real named person, and it stays achievable whether the team ships a banner, a per-screen badge, or an alert. The selected items can change all week without the goal moving, which is exactly what the fourth during-the-Sprint rule expects."
+    },
+    {
+      "type": "keypoints",
+      "points": [
+        "A Sprint is fixed length, one month or less, and the next one starts immediately after the last one ends.",
+        "During the Sprint: no changes that endanger the Sprint Goal, quality does not decrease, refinement continues, scope may be renegotiated with you.",
+        "Only the Product Owner can cancel a Sprint, and only if the Sprint Goal becomes obsolete.",
+        "You propose value in Topic One, the whole Scrum Team defines the Sprint Goal, and it is finalized before Sprint Planning ends.",
+        "Topic Three belongs to the Developers alone. Sprint Backlog equals Sprint Goal plus selected items plus the plan."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "id": "m07q1",
+      "kind": "mcq",
+      "stem": "Halfway through a Sprint, Tom Iverson, Northfield's Town Manager, emails you asking for a small change to the Vendor Register export. It is genuinely valuable and would take about a day. What is the most appropriate action?",
+      "options": [
+        "Add it to the Sprint Backlog yourself, since you are accountable for value",
+        "Discuss it with the Developers as a possible scope change that does not endanger the Sprint Goal",
+        "Tell the manager that Scrum forbids any change once a Sprint has started",
+        "Ask the Scrum Master to decide whether it fits in the Sprint"
+      ],
+      "answer": 1,
+      "explain": "Scope may be clarified and renegotiated with the Product Owner as more is learned, so a conversation is exactly right, as long as no change endangers the Sprint Goal. Adding it yourself is wrong because the Sprint Backlog is a plan by and for the Developers. Blanket refusal is wrong because Scrum explicitly allows scope renegotiation inside the Sprint. The Scrum Master deciding is wrong because that is neither their accountability nor their authority.",
+      "cite": "Scrum Guide 2020, The Sprint",
+      "tag": "events"
+    },
+    {
+      "id": "m07q2",
+      "kind": "mcq",
+      "stem": "Two days into a Sprint, the state announces a rule change that makes the entire premise of this Sprint's goal irrelevant. Who may cancel the Sprint, and on what grounds?",
+      "options": [
+        "The Scrum Master, because they are accountable for the team's effectiveness",
+        "The Developers, because the Sprint Backlog is their plan",
+        "The Product Owner, because the Sprint Goal has become obsolete",
+        "The Scrum Team by consensus, because the Sprint belongs to all of them"
+      ],
+      "answer": 2,
+      "explain": "Only the Product Owner has the authority to cancel the Sprint, and the stated condition is that the Sprint Goal becomes obsolete, which is exactly what happened here. The Scrum Master and the Developers have no cancellation authority no matter how sensible their view. Consensus is a tempting distractor because Scrum is collaborative, but the Guide names one person here on purpose.",
+      "cite": "Scrum Guide 2020, The Sprint",
+      "tag": "events"
+    },
+    {
+      "id": "m07q3",
+      "kind": "multi",
+      "stem": "Which two statements about the Sprint Goal are true according to the Scrum Guide 2020? Pick two.",
+      "options": [
+        "It must be finalized prior to the end of Sprint Planning",
+        "It is written by the Product Owner and communicated to the Developers",
+        "It is the single objective for the Sprint",
+        "It may be replaced mid-Sprint if a more valuable objective appears",
+        "It is optional for Sprints shorter than one month"
+      ],
+      "answer": [0, 2],
+      "explain": "The Sprint Goal is the single objective for the Sprint and must be finalized prior to the end of Sprint Planning. The Product Owner proposes, but the whole Scrum Team collaborates to define it, so option two fails. Replacing the goal mid-Sprint is not a described move: changes that endanger the Sprint Goal are excluded, and an obsolete goal leads to cancellation instead. Nothing in the Guide makes the Sprint Goal optional at any Sprint length.",
+      "cite": "Scrum Guide 2020, Sprint Planning and Commitment: Sprint Goal",
+      "tag": "events"
+    },
+    {
+      "id": "m07q4",
+      "kind": "tf",
+      "stem": "After a Sprint ends, the Scrum Team may take a few days to clean up and prepare before starting the next Sprint.",
+      "answer": false,
+      "explain": "False. A new Sprint starts immediately after the conclusion of the previous Sprint. There is no gap, no cleanup week, and no preparation phase between Sprints. Preparation work such as Product Backlog refinement is an ongoing activity that happens inside Sprints, not between them.",
+      "cite": "Scrum Guide 2020, The Sprint",
+      "tag": "events"
+    },
+    {
+      "id": "m07q5",
+      "kind": "order",
+      "kindnote": "sequence",
+      "instruction": "Put these Sprint Planning moments in the order the Scrum Guide describes them.",
+      "items": [
+        "The Product Owner ensures attendees are prepared to discuss the most important Product Backlog items and how they map to the Product Goal",
+        "The Product Owner proposes how the product could increase its value and utility in the current Sprint",
+        "The whole Scrum Team collaborates to define the Sprint Goal",
+        "The Developers select items from the Product Backlog for the Sprint, through discussion with the Product Owner",
+        "The Developers plan the work necessary to create an Increment that meets the Definition of Done"
+      ],
+      "explain": "Preparation comes before the event. Then Topic One, where you propose value and the whole team defines the Sprint Goal. Then Topic Two, where the Developers select. Then Topic Three, where the Developers plan the how. The Sprint Goal is finalized before the event ends, which is why it sits ahead of selection rather than after it.",
+      "cite": "Scrum Guide 2020, Sprint Planning",
+      "tag": "events"
+    },
+    {
+      "id": "m07q6",
+      "kind": "mcq",
+      "stem": "Your Sprint is one month long. What is the maximum timebox for Sprint Planning?",
+      "options": [
+        "Four hours",
+        "Eight hours",
+        "One full working day plus a follow-up session if needed",
+        "There is no maximum, the team decides"
+      ],
+      "answer": 1,
+      "explain": "Sprint Planning is timeboxed to a maximum of eight hours for a one-month Sprint, and for shorter Sprints the event is usually shorter. Four hours is the Sprint Review maximum for a one-month Sprint, which is the classic mix-up. Adding a follow-up session would break the timebox. The team does choose to use less than the maximum, but the maximum itself is fixed by the Guide.",
+      "cite": "Scrum Guide 2020, Sprint Planning",
+      "tag": "events"
+    },
+    {
+      "id": "m07q7",
+      "kind": "sort",
+      "stem": "Sort each Sprint Planning responsibility into the accountability that owns it.",
+      "buckets": ["Product Owner", "Developers", "Whole Scrum Team"],
+      "items": [
+        { "text": "Proposes how the product could increase its value and utility in the current Sprint", "bucket": "Product Owner" },
+        { "text": "Ensures attendees are prepared to discuss the most important Product Backlog items", "bucket": "Product Owner" },
+        { "text": "Selects the Product Backlog items to include in the Sprint", "bucket": "Developers" },
+        { "text": "Decides how the chosen work will get done", "bucket": "Developers" },
+        { "text": "Creates the plan for delivering the Increment", "bucket": "Developers" },
+        { "text": "Collaborates to define the Sprint Goal", "bucket": "Whole Scrum Team" },
+        { "text": "Creates the plan for the Sprint by the collaborative work of everyone present", "bucket": "Whole Scrum Team" }
+      ],
+      "explain": "You own preparation and the value proposal. The Developers own selection, sizing, and the how. The Sprint Goal and the resulting plan are collaborative, which is the detail most people get wrong in both directions: they either hand the Goal to the Product Owner or hand selection to the whole team.",
+      "cite": "Scrum Guide 2020, Sprint Planning",
+      "tag": "accountabilities"
+    },
+    {
+      "id": "m07q8",
+      "kind": "mcq",
+      "stem": "On day eight of a two week Sprint, the Developers tell you that finishing everything selected will require skipping their usual automated test pass. They ask for your approval. What do you say?",
+      "options": [
+        "Approve it once, since the Sprint Goal matters more than a single test pass",
+        "Refuse, and instead discuss which selected items can be dropped so the Sprint Goal is still met",
+        "Approve it and add a follow-up item to the Product Backlog to restore the tests next Sprint",
+        "Ask the Scrum Master to approve the exception on the team's behalf"
+      ],
+      "answer": 1,
+      "explain": "During the Sprint, quality does not decrease. That rule has no Product Owner override, so options one and three are wrong even though the second one sounds responsible. The Scrum Master cannot approve a quality reduction either. Scope is the negotiable variable: renegotiate what is in, keep the Sprint Goal, keep the quality bar.",
+      "cite": "Scrum Guide 2020, The Sprint",
+      "tag": "events"
+    },
+    {
+      "id": "m07q9",
+      "kind": "multi",
+      "stem": "Which two of these are true of a Sprint according to the Scrum Guide 2020? Pick two.",
+      "options": [
+        "Each Sprint may be considered a short project",
+        "Sprint length may be extended when the Sprint Goal is nearly met",
+        "Shorter Sprints can be employed to generate more learning cycles and limit risk",
+        "A Sprint may be paused when key stakeholders are unavailable",
+        "The Sprint Goal is set by the Product Owner alone"
+      ],
+      "answer": [0, 2],
+      "explain": "Both correct statements come straight from the section on the Sprint. Length cannot be extended, because Sprints are fixed length events, and nothing in Scrum allows pausing a Sprint. The Sprint Goal is proposed by the Product Owner but defined by the whole Scrum Team, and it is a commitment by the Developers.",
+      "cite": "Scrum Guide 2020, The Sprint",
+      "tag": "events"
+    },
+    {
+      "id": "m07q10",
+      "kind": "mcq",
+      "stem": "Which of these is the strongest Sprint Goal for a Sprint at a municipal finance product company?",
+      "options": [
+        "Complete tickets R-07a, R-07b, and R-13, and start the prospect deck",
+        "Improve the dashboard",
+        "A Finance Director can tell whether the numbers on screen are trustworthy, because every screen shows the health of the data behind it",
+        "Deliver 32 points of reconciliation work"
+      ],
+      "answer": 2,
+      "explain": "A Sprint Goal is a single objective stated as an outcome, and it must stay achievable while the underlying scope is renegotiated. Option three does that: the team can change what it builds and still hit it. Option one is a work list, and it also carries an unrelated second objective. Option two is too vague to tell anyone whether the Sprint succeeded. Option four measures output, and story points are a common practice rather than anything in the Scrum Guide.",
+      "cite": "Scrum Guide 2020, Commitment: Sprint Goal",
+      "tag": "events"
+    },
+    {
+      "id": "m07q11",
+      "kind": "mcq",
+      "stem": "Your Scrum Team keeps discovering mid-Sprint that municipal buyers wanted something different from what was planned. Which change most directly reduces that risk?",
+      "options": [
+        "Adding a formal approval step before Sprint Planning",
+        "Shortening the Sprint",
+        "Increasing the Sprint Planning timebox",
+        "Assigning items to individual Developers so accountability is clearer"
+      ],
+      "answer": 1,
+      "explain": "The Guide is explicit that shorter Sprints can be employed to generate more learning cycles and limit risk of cost and effort to a smaller time frame. More approvals add delay rather than learning. A longer planning session does not help, because the missing information does not exist yet in a complex environment. Assigning work to individuals contradicts self-management and would not surface a buyer's changed mind any sooner.",
+      "cite": "Scrum Guide 2020, The Sprint",
+      "tag": "empiricism"
+    }
+  ],
+  "cards": [
+    {
+      "id": "m07c1",
+      "front": "What is a Sprint, in one line?",
+      "back": "A fixed length event of one month or less, the container for all other Scrum events, where ideas are turned into value. A new Sprint starts immediately after the previous one ends.",
+      "tag": "events"
+    },
+    {
+      "id": "m07c2",
+      "front": "The four rules that hold during the Sprint",
+      "back": "No changes are made that would endanger the Sprint Goal; quality does not decrease; the Product Backlog is refined as needed; scope may be clarified and renegotiated with the Product Owner as more is learned.",
+      "tag": "events"
+    },
+    {
+      "id": "m07c3",
+      "front": "Who can cancel a Sprint, and when?",
+      "back": "Only the Product Owner, and only if the Sprint Goal becomes obsolete. Being behind schedule is not a reason to cancel.",
+      "tag": "accountabilities"
+    },
+    {
+      "id": "m07c4",
+      "front": "The three Sprint Planning topics",
+      "back": "Why is this Sprint valuable, what can be Done this Sprint, and how will the chosen work get done.",
+      "tag": "events"
+    },
+    {
+      "id": "m07c5",
+      "front": "What does the Product Owner do in Topic One?",
+      "back": "Proposes how the product could increase its value and utility in the current Sprint. The whole Scrum Team then collaborates to define the Sprint Goal, which must be finalized before Sprint Planning ends.",
+      "tag": "events"
+    },
+    {
+      "id": "m07c6",
+      "front": "Who decides how the chosen work gets done?",
+      "back": "The Developers, at their sole discretion. No one else tells them how to turn Product Backlog items into Increments of value.",
+      "tag": "accountabilities"
+    },
+    {
+      "id": "m07c7",
+      "front": "What is the Sprint Backlog made of?",
+      "back": "The Sprint Goal (why), the Product Backlog items selected for the Sprint (what), and the plan for delivering them (how). It is a plan by and for the Developers.",
+      "tag": "artifacts"
+    },
+    {
+      "id": "m07c8",
+      "front": "Sprint Planning timebox",
+      "back": "Eight hours maximum for a one-month Sprint. Usually shorter for shorter Sprints.",
+      "tag": "events"
+    },
+    {
+      "id": "m07c9",
+      "front": "Why choose a shorter Sprint?",
+      "back": "Shorter Sprints generate more learning cycles and limit risk of cost and effort to a smaller time frame. Each Sprint may be considered a short project.",
+      "tag": "empiricism"
+    },
+    {
+      "id": "m07c10",
+      "front": "How do you test a Sprint Goal?",
+      "back": "One objective, not two joined by and. Stated as an outcome someone outside the team can observe. Still achievable if selected items are dropped mid-Sprint.",
+      "tag": "events"
+    },
+    {
+      "id": "m07c11",
+      "front": "Who is responsible for sizing Product Backlog items?",
+      "back": "The Developers who will be doing the work. The Product Owner may influence them by helping them understand and select trade-offs.",
+      "tag": "backlog"
+    }
+  ]
+}

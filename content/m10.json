@@ -1,0 +1,435 @@
+{
+  "id": "m10",
+  "num": 10,
+  "week": 4,
+  "title": "Measuring Value",
+  "subtitle": "The Scrum Guide makes you accountable for value and then refuses to tell you what value is. Here is how to fill that hole honestly.",
+  "minutes": 30,
+  "why": "If you cannot tell the difference between shipping and helping, you can run a flawless Sprint cadence for a year and move nothing that matters.",
+  "objectives": [
+    "State exactly what the Scrum Guide 2020 does and does not say about value",
+    "Name the four Evidence-Based Management Key Value Areas and what each one is a lens onto",
+    "Explain why Current Value and Unrealized Value pull against each other",
+    "Separate outputs from outcomes in your own delivery record",
+    "Choose one measure Ledgerline could start collecting next month and defend it"
+  ],
+  "beats": [
+    {
+      "type": "hook",
+      "body": "Your own notes say it plainly. Every P0 and P1 item from discovery is built in the demo build, plus two P2 items, each as its own commit. That is a real delivery record. It is also true that the one thing discovery named as the adoption gate, the tie-out between the Corvus Financials feed, the bank file, and the ledger, is the single item not built, because it needs a real backend months away. So: was the last quarter valuable? You cannot answer that from a commit log. That question is the whole module."
+    },
+    {
+      "type": "guide",
+      "quote": "The Product Owner is accountable for maximizing the value of the product resulting from the work of the Scrum Team. How this is done may vary widely across organizations, Scrum Teams, and individuals.",
+      "cite": "Scrum Guide 2020, Product Owner",
+      "gloss": "You are on the hook for value, and the Guide deliberately declines to define value or tell you how to measure it. That second sentence is not an oversight, it is a refusal."
+    },
+    {
+      "type": "teach",
+      "title": "The hole in the middle of your job",
+      "body": "The word value runs all through the Guide. Increments of value. Maximizing value. Never a definition, never a measure. That is consistent with the framework being purposefully incomplete: value in a hospital, a bank, and a small town office are genuinely different things, and a definition covering all three would be useless. But you still have to answer the question on Monday. So the honest move is to reach for something outside the Guide, and to say out loud that you are doing it.",
+      "callout": {
+        "kind": "why",
+        "text": "The exam tests this exact gap. If an option claims the Guide defines value, prescribes a value metric, or requires ROI, it is wrong on the face of it."
+      }
+    },
+    {
+      "type": "trap",
+      "myth": "The Scrum Guide tells a Product Owner how to measure value: velocity, ROI, or a burn-down.",
+      "truth": "None of those words carry that weight in the Guide. Velocity and ROI never appear. Burn-downs appear once, in a list of practices that exist, immediately followed by the statement that these do not replace the importance of empiricism.",
+      "why": "PSPO I plants confident, senior-sounding metrics in the distractors. If an option names a measurement instrument as required by Scrum, that is almost always the wrong answer."
+    },
+    {
+      "type": "teach",
+      "title": "Where Evidence-Based Management comes from",
+      "body": "[[PRACTICE]] Evidence-Based Management, or EBM, is a framework published by Scrum.org, developed with the Professional Scrum Trainer community, Ken Schwaber and Christina Schwaber. Current version May 2024. It is official Scrum.org material and it is not in the Scrum Guide. Hold two facts at once. EBM is not a named PSPO I focus area (it belongs to PSPO II and PAL-EBM), but Product Value is a PSPO I focus area, and EBM is the vocabulary Scrum.org uses to talk about it. So learn the four area names and the ideas. Do not memorize the measure tables.",
+      "callout": {
+        "kind": "warn",
+        "text": "Community study guides often claim the EBM Guide is a required second document for PSPO I. No Scrum.org page says that. Treat it as folklore."
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "The woodpile",
+      "body": "You spend a Saturday splitting and stacking three cords of firewood. At dusk the pile is beautiful and you can photograph it. That is the output, and it is genuinely measurable. The outcome is different: a house that is warm in February. If the wood is green it will hiss and smoke and heat nothing, and there is no way to tell that by looking at the stack. The stack is not a lie. It just answers a different question than the one you care about. Most product reporting is a photograph of the woodpile."
+    },
+    {
+      "type": "teach",
+      "title": "Output is not outcome",
+      "body": "[[PRACTICE]] EBM sorts measures into five categories: Inputs, Activities, Outputs, Outcomes, Impacts. Its verdict is blunt: measuring activities and outputs is easy, while measuring outcomes is difficult, and delivering more features does not necessarily lead to improved customer experiences. That is this whole module in one line. Commits, story points, features shipped, Sprints completed: all outputs. Whether Priya can close her warrant cycle without a spreadsheet is an outcome. Only one of those shows up in a git log, which is exactly why teams drift toward reporting the other one.",
+      "callout": {
+        "kind": "note",
+        "text": "EBM also says every feature and every requirement really represents a hypothesis about value, and beliefs in what is valuable are merely assumptions until they are validated by customers."
+      }
+    },
+    {
+      "type": "check",
+      "q": {
+        "id": "m10k1",
+        "kind": "mcq",
+        "stem": "You are picking the one number to put at the top of your quarterly update. Which of these is an outcome measure rather than an output measure?",
+        "options": [
+          "Roadmap items implemented in the demo build this quarter.",
+          "Commits merged to the staging branch.",
+          "Percentage of a town's authorized users who logged in within 30 days of go-live.",
+          "Screens designed and design-reviewed."
+        ],
+        "answer": 2,
+        "explain": "Logins by authorized users measure a change in somebody's behaviour outside your team, which is what an outcome is. The other three count things your team produced, which is the definition of an output. None of them is a lie. The danger is that outputs are easy to gather and outcomes are not, so the easy number ends up as the headline and quietly becomes the thing next quarter is spent maximizing.",
+        "cite": "Evidence-Based Management Guide 2024, measurement categories",
+        "tag": "value"
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "The house you live in and the house you want",
+      "body": "Stand in your kitchen. What the house does for you tonight, warm, dry, one bad outlet, is Current Value. The distance between that and the house you actually want is Unrealized Value. How fast a decision turns into a finished room is Time-to-Market. Whether the wiring, the foundation, and the permits let you build anything new at all is Ability to Innovate. The first two are about you, the resident. The second two are about the builder. Nobody renovates by staring at one dial, and a builder who is fast and capable but never asks what you want will hand you a beautiful wrong house.",
+      "visual": "value-quadrants"
+    },
+    {
+      "type": "teach",
+      "title": "Current Value and Unrealized Value",
+      "body": "[[PRACTICE]] Current Value: measures that quantify the value that the product delivers today. It considers only what exists right now, not value that might exist in the future. Example measures: Revenue per Employee, Product Cost Ratio, Employee Satisfaction, Customer Satisfaction, Customer Usage Index. Unrealized Value: measures that quantify the potential future value that could be realized if the organization met the needs of all potential customers or users. EBM also calls it the satisfaction gap between a beneficiary's desired outcome and their current experience. Example measures: Potential Market Share, Customer or User Satisfaction Gap, Desired Customer Experience."
+    },
+    {
+      "type": "check",
+      "q": {
+        "id": "m10k2",
+        "kind": "mcq",
+        "stem": "Ledgerline has no paying customers. Eight towns are in pilot discussion, and roughly 400 towns in the region are Northfield's size and run the same way. Which Key Value Area does the size of that unserved group belong to?",
+        "options": [
+          "Current Value, because the market exists today.",
+          "Unrealized Value, because it is potential future value that could be realized if you met the needs of all potential customers or users.",
+          "Ability to Innovate, because reaching them requires new capability.",
+          "None of them. Key Value Areas apply only to products with active customers."
+        ],
+        "answer": 1,
+        "explain": "Unrealized Value is defined by potential, and one of its own questions is whether additional value can be created by the organization in this market or other markets. Option 1 fails on the definition: Current Value considers only what exists right now, and nothing is delivered to those towns today. Option 3 confuses the capability to build with the value that could be captured. Option 4 is the most tempting and the most wrong: a pre-revenue product is mostly Unrealized Value, which is the whole reason the area exists.",
+        "cite": "Evidence-Based Management Guide 2024, Key Value Areas",
+        "tag": "value"
+      }
+    },
+    {
+      "type": "teach",
+      "title": "Time-to-Market and Ability to Innovate",
+      "body": "[[PRACTICE]] Time-to-Market: measures that quantify how quickly the organization can deliver and learn from feedback they gather from experiments. Examples: Release Frequency, Lead Time, Time-to-Learn, Time to Pivot, Mean Time to Repair. Ability to Innovate: measures that quantify the effectiveness of an organization in delivering new capabilities. Its two questions are the useful part. What prevents the organization from delivering new value? What prevents customers or users from benefiting from that innovation? Examples: Innovation Rate, Technical Debt, On-Product Index, Production Incident Count, Time Spent Context-Switching."
+    },
+    {
+      "type": "check",
+      "q": {
+        "id": "m10k3",
+        "kind": "sort",
+        "stem": "Drop each Ledgerline measure into the Key Value Area it belongs to. Use the official definitions, not your gut.",
+        "buckets": ["Current Value", "Unrealized Value", "Time-to-Market", "Ability to Innovate"],
+        "items": [
+          {"text": "Percentage of authorized users in a pilot town who logged in within 30 days", "bucket": "Current Value"},
+          {"text": "Minutes Dana still spends rebuilding the monthly report in a spreadsheet", "bucket": "Unrealized Value"},
+          {"text": "Days from a discovery finding to a change a pilot town can actually see", "bucket": "Time-to-Market"},
+          {"text": "Share of engineering effort going to new capability rather than keeping two demo builds alive", "bucket": "Ability to Innovate"},
+          {"text": "Select Board reports generated from the platform per month by an existing customer", "bucket": "Current Value"},
+          {"text": "Time from a dead Corvus Financials feed to somebody being alerted", "bucket": "Time-to-Market"},
+          {"text": "Hours per Sprint lost because two demo branches share no merge base", "bucket": "Ability to Innovate"},
+          {"text": "Gap between what Glen the Purchasing Officer wants (managing) and what the product does (monitoring)", "bucket": "Unrealized Value"}
+        ],
+        "explain": "Current Value counts only what exists today for people who already have the product. Unrealized Value is the gap: desired experience minus current experience, plus the market you have not reached. Time-to-Market is speed of delivering and learning. Ability to Innovate is what stops you delivering new capability at all, which is why merge overhead and effort split live there. Note what that reveals: the branch problem is not a nuisance, it is an Ability to Innovate measure with a name.",
+        "cite": "Evidence-Based Management Guide 2024, not the Scrum Guide",
+        "tag": "value"
+      }
+    },
+    {
+      "type": "teach",
+      "title": "The tension that makes this useful",
+      "body": "[[PRACTICE]] Current Value and Unrealized Value pull against each other, and that is the point. Every hour spent making today's customer happier is an hour not spent reaching the ones you do not have. High Current Value with low Unrealized Value means a mature product near its ceiling. High Unrealized Value with low Current Value means a promising product nobody uses yet, which is roughly where Ledgerline sits. Time-to-Market and Ability to Innovate are not a third and fourth priority. They are the machinery that converts Unrealized Value into Current Value.",
+      "callout": {
+        "kind": "why",
+        "text": "EBM's own warning: improving only Ability to Innovate and Time-to-Market without watching Current Value and Unrealized Value means optimizing internal process that may never satisfy a customer."
+      }
+    },
+    {
+      "type": "civic",
+      "title": "The adoption gate that cannot be mocked",
+      "body": "Run the four lenses over your own quarter. Output: the whole P0 and P1 block shipped in the demo build, plus configurable thresholds and mobile, each its own commit. Time-to-Market looks excellent. Ability to Innovate looks fine. Now Current Value: nobody is paying, so value delivered today is close to zero. Unrealized Value: large, and concentrated in one item. R-07, the tie-out between the Corvus feed, the bank file, and the ledger, is what Priya Raman says decides whether she can use Ledgerline at all, because her signature is on the warrant. It is the only item that cannot be faked, and the only one not built."
+    },
+    {
+      "type": "trap",
+      "myth": "A Sprint where everything got Done is by definition a valuable Sprint.",
+      "truth": "The Scrum Guide says an Increment is a concrete stepping stone toward the Product Goal, and that in order to provide value, the Increment must be usable. Done is a quality gate, not a value verdict.",
+      "why": "PSPO I likes options that equate completion with value. Meeting the Definition of Done makes work releasable. Whether releasing it helped anybody is a separate question, and it is your question, not the Developers'."
+    },
+    {
+      "type": "sim",
+      "title": "The quarter that looked great",
+      "setup": "You are writing the quarterly update for your co-founder and two prospective investors. The honest facts: twenty-plus roadmap items shipped in the demo build, nothing left to build there without a backend, zero paying customers, eight towns in pilot discussion, and the one adoption gate discovery identified is months of backend work away. Your instinct is to lead with the commit count, because it is real, it is impressive, and you earned it.",
+      "choices": [
+        {
+          "label": "Report the output honestly, then set one outcome measure beside it: zero towns can currently tie a Ledgerline number to their own ERP. Name reconciliation as the gate and as the next objective.",
+          "outcome": "The update gets shorter, harder to read, and considerably more credible. Everyone now knows what would count as progress next quarter, including you. The commit count stays in, but it stops being the headline, so it stops doing the job of hiding the gap.",
+          "verdict": "good",
+          "lesson": "An output number is not dishonest. Making it the headline when an outcome number exists and is worse is where the dishonesty starts."
+        },
+        {
+          "label": "Lead with the delivery record. It is true, it is verifiable, and the backend work is genuinely blocked on calendar time, not on effort.",
+          "outcome": "Nobody catches it, which is the problem. Next quarter you optimize for the number you reported, and the demo build gets features twenty-one and twenty-two while the gate stays exactly where it is. You will have measured activities and outputs because they were easy, which is precisely the failure EBM names.",
+          "verdict": "bad",
+          "lesson": "Whatever sits at the top of the update becomes the thing the next quarter is spent maximizing. Choose it as if that were true, because it is."
+        },
+        {
+          "label": "Skip metrics entirely. With no paying customers every number is noise, so tell the story qualitatively and wait for a signed pilot.",
+          "outcome": "Defensible for Current Value, which really is near zero. But Unrealized Value is measurable right now and cheaply: you have eight towns in conversation and you can ask each how long the monthly close takes today. Waiting for a customer before measuring means arriving at your first pilot with no baseline to improve against.",
+          "verdict": "mixed",
+          "lesson": "Pre-revenue does not mean unmeasurable. It means the useful measures are satisfaction gap and time to learn, not revenue."
+        },
+        {
+          "label": "Build a full EBM scorecard: all four Key Value Areas, several measures under each, refreshed monthly.",
+          "outcome": "You spend a week on instrumentation for a two-person company, and most cells stay empty or go stale, which is worse than no scorecard because a stale number still gets quoted in a board meeting. EBM deliberately prescribes no specific measures, precisely so you can pick the few that would change a decision.",
+          "verdict": "mixed",
+          "lesson": "The test for a measure is not whether it fills a framework box. It is whether a plausible reading of it would make you do something different."
+        }
+      ]
+    },
+    {
+      "type": "civic",
+      "title": "The six-hour request nobody counts",
+      "body": "Margaret Shaw, the Town Clerk, wants the Records Desk: a dated, provenance-stamped response she can hand a resident. It is filed as R-18, a P1, behind three P0s. The buyer does not feel this pain, so the item looks soft. Then Margaret shows you her own log. Northfield sees about five records requests a month that need real digging. A little over a fifth of those run past six hours. Clerk time costs the town about 31 dollars an hour once benefits are counted. And most requests, in substance, are about vendor payments and check registers, which is exactly what the product already publishes."
+    },
+    {
+      "type": "teach",
+      "title": "Quantifying value when the buyer is not the beneficiary",
+      "body": "Do the arithmetic in public. Five requests a month, a little over a fifth of them deep, is about 1.1 deep requests a month at roughly six hours and 31 dollars an hour: near 205 dollars a month, about 2,450 a year per town in raw labor. That is honest, and it is small next to a 4,800 dollar pilot. So do not stop there. What also moves is Margaret's Tuesday, the town's exposure when a request is mishandled, and the fact that the same ledger already answers most requests. Name the beneficiary, name the buyer, and do not pretend they are the same person.",
+      "callout": {
+        "kind": "note",
+        "text": "A small honest number beats a large invented one. It also tells you what this item is: a differentiator in a demo, not a business case on its own."
+      }
+    },
+    {
+      "type": "write",
+      "prompt": "Pick exactly one Key Value Measure Ledgerline could genuinely start collecting next month, with the people and tools you have today. Name the Key Value Area it sits in, say how you would collect it, and say what decision a bad reading would change.",
+      "starter": "Measure: ____\nKey Value Area: ____\nHow I collect it next month: ____\nIf the number came back low, I would ____ instead of ____.",
+      "rubric": [
+        "Names one measure, not a dashboard. If you listed four, you have not chosen.",
+        "Correctly places it in Current Value, Unrealized Value, Time-to-Market, or Ability to Innovate, using the official definitions.",
+        "Is observable: a person or a system produces the number, and you can say which.",
+        "Is cheap: collectible next month by a two-person company with no paying customers, with no new instrumentation project.",
+        "Would change a decision. State the specific reordering or reversal a bad reading triggers. If every reading leads to the same plan, the measure is decoration."
+      ],
+      "model": "Measure: minutes per month a finance director spends rebuilding the monthly budget-to-actual report outside the ERP, in a spreadsheet. Key Value Area: Unrealized Value, specifically the Customer or User Satisfaction Gap, the difference between a desired experience and the current one. Collection: one 20-minute call with each of the eight towns already in pilot discussion, the same three questions each time, written down the same way. The cost is eight calls I am trying to book anyway. Decision it changes: discovery claims reconciliation is the adoption gate. If the median comes back at 20 minutes and nobody mentions tying to the bank, then R-07 is a multi-month backend bet on an assumption I never tested, and role-aware views plus the Records Desk should move ahead of it. If it comes back at half a day with the bank raised unprompted, I stop hedging and make the tie-out the Product Goal."
+    },
+    {
+      "type": "check",
+      "q": {
+        "id": "m10k4",
+        "kind": "sort",
+        "stem": "This one decides marks on the exam. Which column does each statement belong in?",
+        "buckets": ["In the Scrum Guide 2020", "Evidence-Based Management, not the Scrum Guide"],
+        "items": [
+          {"text": "The Product Owner is accountable for maximizing the value of the product resulting from the work of the Scrum Team.", "bucket": "In the Scrum Guide 2020"},
+          {"text": "Current Value, Unrealized Value, Time-to-Market, Ability to Innovate.", "bucket": "Evidence-Based Management, not the Scrum Guide"},
+          {"text": "In order to provide value, the Increment must be usable.", "bucket": "In the Scrum Guide 2020"},
+          {"text": "Measures fall into five categories: Inputs, Activities, Outputs, Outcomes, Impacts.", "bucket": "Evidence-Based Management, not the Scrum Guide"},
+          {"text": "The Sprint Review should never be considered a gate to releasing value.", "bucket": "In the Scrum Guide 2020"},
+          {"text": "The satisfaction gap between a beneficiary's desired outcome and their current experience.", "bucket": "Evidence-Based Management, not the Scrum Guide"},
+          {"text": "Scrum is founded on empiricism and lean thinking.", "bucket": "In the Scrum Guide 2020"},
+          {"text": "Every feature and every requirement really represents a hypothesis about value.", "bucket": "Evidence-Based Management, not the Scrum Guide"}
+        ],
+        "explain": "The left column is quoted from the Scrum Guide 2020. The right column comes from the Scrum.org Evidence-Based Management Guide, 2024 version. EBM is official Scrum.org material, which is exactly why it feels like Scrum, and it is a focus area of PSPO II and PAL-EBM rather than PSPO I. Knowing which document a sentence came from is worth marks on its own.",
+        "cite": "Scrum Guide 2020, Product Owner and Increment; EBM Guide 2024",
+        "tag": "value"
+      }
+    },
+    {
+      "type": "keypoints",
+      "points": [
+        "You are accountable for maximizing value, and the Scrum Guide deliberately never defines value or prescribes a measure.",
+        "The four EBM Key Value Areas are Current Value, Unrealized Value, Time-to-Market, and Ability to Innovate. Official Scrum.org, not the Scrum Guide.",
+        "Current Value and Unrealized Value are market outcomes. Time-to-Market and Ability to Innovate are the capability that converts one into the other.",
+        "Output is not outcome. Commits, features, and completed Sprints are the easy half of the measurement, and the half that hides the gap.",
+        "EBM prescribes no specific measures. Pick few, pick cheap, and pick ones a bad reading would actually change."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "id": "m10q1",
+      "kind": "mcq",
+      "stem": "A stakeholder asks which value metric the Scrum Guide 2020 requires a Product Owner to report each Sprint. What is the accurate answer?",
+      "options": [
+        "Velocity, since it is the Guide's measure of delivered value per Sprint.",
+        "Return on investment for the Increment, reported at the Sprint Review.",
+        "None. The Guide makes the Product Owner accountable for maximizing value and explicitly says how this is done may vary widely across organizations, Scrum Teams, and individuals.",
+        "The burn-down chart, which the Guide requires for tracking progress toward the Product Goal."
+      ],
+      "answer": 2,
+      "explain": "The Guide assigns the accountability and refuses the method, in consecutive sentences. Velocity does not appear in the Scrum Guide 2020 at all. ROI does not appear either. Burn-downs are mentioned once, as one of several practices that exist alongside burn-ups and cumulative flows, and the Guide immediately says they do not replace the importance of empiricism, which is the opposite of requiring one.",
+      "cite": "Scrum Guide 2020, Product Owner and The Sprint",
+      "tag": "value"
+    },
+    {
+      "id": "m10q2",
+      "kind": "mcq",
+      "stem": "Ledgerline ships every P0 and P1 item from discovery into the demo build in one quarter. No town is using the product. Which reading of the quarter is most defensible?",
+      "options": [
+        "High Current Value, since a large amount of working functionality now exists.",
+        "Low Current Value and high Unrealized Value, since value delivered today is near zero while the gap between what towns want and what they have is still large.",
+        "High Ability to Innovate and therefore high value, since the team proved it can deliver.",
+        "The quarter cannot be assessed until the product has paying customers."
+      ],
+      "answer": 1,
+      "explain": "Current Value considers only what exists right now for actual users and customers, so a product nobody uses delivers close to zero of it, however much was built. Unrealized Value is potential future value if you met the needs of all potential users, which is exactly Ledgerline's state. Option 1 confuses functionality with delivered value, the core output-versus-outcome error. Option 3 is a real capability signal, and capability is not value delivered. Option 4 gives up too early: the satisfaction gap is measurable before revenue exists.",
+      "cite": "Evidence-Based Management Guide 2024, Key Value Areas",
+      "tag": "value"
+    },
+    {
+      "id": "m10q3",
+      "kind": "multi",
+      "stem": "Select the TWO Key Value Areas that Evidence-Based Management describes as organizational capability rather than customer outcome.",
+      "options": [
+        "Current Value",
+        "Time-to-Market",
+        "Unrealized Value",
+        "Ability to Innovate",
+        "Customer Satisfaction"
+      ],
+      "answer": [1, 3],
+      "explain": "The EBM Guide splits them explicitly: market value areas, Unrealized Value and Current Value, reflect customer outcomes, while organizational capability areas, Ability to Innovate and Time-to-Market, reflect the organization's ability to deliver valuable customer outcomes. Customer Satisfaction is a distractor pitched at the wrong level: it is an example measure under Current Value, not a Key Value Area.",
+      "cite": "Evidence-Based Management Guide 2024, Key Value Areas",
+      "tag": "value"
+    },
+    {
+      "id": "m10q4",
+      "kind": "tf",
+      "stem": "The Evidence-Based Management Guide specifies which Key Value Measures an organization must collect under each Key Value Area.",
+      "answer": false,
+      "explain": "The guide states that to encourage adaptability, EBM defines no specific Key Value Measures, and that the ones it lists are presented to show the kinds of measures that might help. The 2024 guide happens to list 31 example measures across the four areas, which is easy to mistake for a prescription. It is a menu, not a requirement, so a question asking which measure is mandatory has no correct positive answer.",
+      "cite": "Evidence-Based Management Guide 2024, Appendix",
+      "tag": "value"
+    },
+    {
+      "id": "m10q5",
+      "kind": "mcq",
+      "stem": "The Records Desk serves residents, who never sign a contract. Tom Iverson, the Town Manager, signs. How should a Product Owner handle the value case for that item?",
+      "options": [
+        "Drop it. If the buyer does not feel the pain, the item has no value.",
+        "Quantify the beneficiary's value honestly, say who actually pays, and let the buyer weigh a real number rather than a story. About five digging-required requests a month, a little over a fifth of them past six hours, at 31 dollars an hour, is a real if modest figure.",
+        "Inflate the estimate so it clears the pilot price, since records-request effort is hard to measure precisely anyway.",
+        "Move it to a P0, because transparency is the company's mission."
+      ],
+      "answer": 1,
+      "explain": "Value is judged by stakeholders, and the Guide lets the Product Owner represent the needs of many stakeholders in the Product Backlog, including people who never sign anything. The honest arithmetic here lands near 2,450 dollars a year per town, which is small, and saying so is what keeps you credible when you claim a large number elsewhere. Option 1 collapses value into revenue. Option 3 destroys the only asset you have with a municipal buyer. Option 4 promotes on mission rather than evidence, and the item still sits behind three genuine adoption gates.",
+      "cite": "Scrum Guide 2020, Product Owner",
+      "tag": "value"
+    },
+    {
+      "id": "m10q6",
+      "kind": "mcq",
+      "stem": "Your Lead Engineer proposes tracking deployment frequency and lead time for changes, and dropping the monthly call where a pilot contact walks you through their close process, because it produces no numbers. What is the strongest Product Owner response?",
+      "options": [
+        "Agree. Deployment frequency and lead time are recognised EBM measures, and the call is anecdote rather than evidence.",
+        "Refuse both measures. Time-to-Market is internal process, and only customer outcomes count as value.",
+        "Keep both. Those two are Time-to-Market measures describing your capability to deliver, and the close-process call is the cheapest Unrealized Value signal you have. Improving only capability while you stop watching outcomes is the exact imbalance EBM warns about.",
+        "Defer to the Scrum Master, since measurement of team performance is a Scrum Master accountability."
+      ],
+      "answer": 2,
+      "explain": "EBM's balance warning is explicit: targeting improvements only in Ability to Innovate and Time-to-Market without monitoring Current Value and Unrealized Value means focusing on internal processes that may not further satisfy customers. Option 1 makes that mistake and also treats a qualitative signal as no signal. Option 2 overcorrects: capability measures are real, and they are what convert potential value into delivered value. Option 4 invents an accountability. The Scrum Master is accountable for establishing Scrum and for the Scrum Team's effectiveness, not for product value.",
+      "cite": "Evidence-Based Management Guide 2024, balance warning; Scrum Guide 2020, Scrum Master",
+      "tag": "value"
+    },
+    {
+      "id": "m10q7",
+      "kind": "mcq",
+      "stem": "Discovery names the tie-out between the Corvus Financials feed, the bank file, and the ledger as the adoption gate. It is the one roadmap item that cannot be faked in the demo build, and it needs months of backend work. Every other P0 and P1 item is done. What does this pattern most clearly illustrate?",
+      "options": [
+        "Poor Sprint Planning, since the team should have sequenced the hardest item first.",
+        "Measurable output progress can rise steadily while progress toward the outcome that decides adoption stays at zero.",
+        "A Definition of Done problem, since mock implementations should never count as Done.",
+        "A Scrum Master failure to remove an impediment."
+      ],
+      "answer": 1,
+      "explain": "This is the module's central lesson made concrete: the delivery record and the adoption record moved in different directions, and only one of them was visible in a commit log. Option 1 assumes sequencing was free, but the constraint was a real backend, not willpower. Option 3 is worth a separate conversation, though mock work can legitimately meet a Definition of Done for a demo product. Option 4 misassigns the problem: nobody was blocked, and the work was correctly identified as long-lead. The failure mode here is measurement, not process.",
+      "cite": "Evidence-Based Management Guide 2024, measurement categories",
+      "tag": "value"
+    },
+    {
+      "id": "m10q8",
+      "kind": "tf",
+      "stem": "According to the Scrum Guide 2020, the Sprint Review is the point at which value is released, so an Increment should not go to stakeholders before it.",
+      "answer": false,
+      "explain": "The Guide says the opposite in two consecutive sentences: an Increment may be delivered to stakeholders prior to the end of the Sprint, and the Sprint Review should never be considered a gate to releasing value. This is a frequent PSPO I trap, because the Sprint Review genuinely is where the sum of the Increments is presented, which makes the gate reading feel plausible. Presenting and gating are different things.",
+      "cite": "Scrum Guide 2020, Increment",
+      "tag": "value"
+    },
+    {
+      "id": "m10q9",
+      "kind": "mcq",
+      "stem": "A team has excellent release frequency, low lead time, low technical debt, and rising employee engagement, but has not asked a customer anything in six months. In EBM terms, what is the risk?",
+      "options": [
+        "None. Strong capability measures are a leading indicator of value, so the outcomes will follow.",
+        "The team is improving Time-to-Market and Ability to Innovate without monitoring Current Value and Unrealized Value, so it is optimizing internal processes that may never satisfy customers or achieve value.",
+        "The team is measuring outcomes instead of outputs and should switch back.",
+        "Employee engagement sits under Current Value, so the areas are already balanced."
+      ],
+      "answer": 1,
+      "explain": "This is EBM's explicit balance warning, and it adds that the pattern can indicate a lack of outcome-based goals. Option 1 states a hope as though it were a mechanism: shipping faster in the wrong direction is still the wrong direction. Option 3 is backwards, since every measure listed is a capability measure. Option 4 is a real but incomplete point, because Employee Satisfaction is indeed an example Current Value measure, and one internal measure does not balance a scorecard with no customer signal in it at all.",
+      "cite": "Evidence-Based Management Guide 2024, balance warning",
+      "tag": "value"
+    },
+    {
+      "id": "m10q10",
+      "kind": "order",
+      "instruction": "Order these four EBM measurement categories from the easiest to measure to the hardest, as the guide frames them.",
+      "stem": "Put these in order, easiest to measure first.",
+      "items": [
+        "Activities, such as hours worked on the reconciliation spike",
+        "Outputs, such as roadmap items shipped in the demo build",
+        "Outcomes, such as a treasurer closing a warrant cycle without a spreadsheet",
+        "Impacts, such as reduced budget leakage across every town in the region"
+      ],
+      "explain": "EBM says plainly that measuring activities and outputs is easy while measuring outcomes is difficult, and impacts sit further out again because they are separated from your work by time and by other people's behaviour. The ordering matters because effort flows downhill: teams report what is easy, and easy measures say nothing about whether anyone is better off. Note the guide's other line here, that input, activity, output and impact measures do not tell an organization anything about its capability to deliver valuable outcomes.",
+      "cite": "Evidence-Based Management Guide 2024, measurement categories",
+      "tag": "value"
+    },
+    {
+      "id": "m10q11",
+      "kind": "mcq",
+      "stem": "Which statement about Evidence-Based Management and PSPO I is accurate?",
+      "options": [
+        "EBM is a named PSPO I focus area and the EBM Guide is required reading for the exam.",
+        "EBM is not a named PSPO I focus area, but Product Value is, and EBM is the vocabulary Scrum.org uses for it. EBM is a named focus area for PSPO II.",
+        "EBM replaces the Scrum Guide's account of value for Product Owners.",
+        "EBM is a Scrum Alliance framework taught in CSPO courses."
+      ],
+      "answer": 1,
+      "explain": "Scrum.org lists Evidence Based Management under Evolving the Agile Organization, a competency PSPO I does not draw from, and PSPO I's named practice assessments are only the Scrum Open and the Product Owner Open. But Product Value is a PSPO I focus area, and Scrum.org's own Resources for Product Owners page, named as the primary study resource, contains EBM modules. Option 3 is wrong because the Scrum Guide has no account of value to replace. Option 4 misattributes it: EBM is Scrum.org, developed with Ken Schwaber and Christina Schwaber.",
+      "cite": "Scrum.org PSPO I focus areas; EBM Guide 2024",
+      "tag": "value"
+    },
+    {
+      "id": "m10q12",
+      "kind": "mcq",
+      "stem": "Which of these would be the weakest choice as the single measure to start collecting next month at Ledgerline?",
+      "options": [
+        "Minutes a pilot-town finance director spends rebuilding the monthly report in a spreadsheet.",
+        "Total lines of code in the demo build, tracked weekly.",
+        "Days between a discovery finding and a change a pilot contact can see.",
+        "Number of the eight pilot-discussion towns that mention bank reconciliation unprompted."
+      ],
+      "answer": 1,
+      "explain": "Lines of code is an output at best and an input at worst, it is trivially gameable, and no plausible reading of it changes a decision you would make. The other three each fail one way and change something: option 1 is a satisfaction gap that could reorder the whole backlog, option 3 is a Time-to-Learn style measure that tells you whether your loop is closing, and option 4 tests the specific assumption that reconciliation is the adoption gate. The test is never which measure looks rigorous, it is which one a bad reading would act on.",
+      "cite": "Evidence-Based Management Guide 2024, measurement categories",
+      "tag": "value"
+    }
+  ],
+  "cards": [
+    {"id": "m10c1", "front": "What does the Scrum Guide 2020 say about how to measure value?", "back": "Nothing. It makes the Product Owner accountable for maximizing value, then says how this is done may vary widely across organizations, Scrum Teams, and individuals. No definition, no metric.", "tag": "value"},
+    {"id": "m10c2", "front": "Name the four EBM Key Value Areas.", "back": "Current Value, Unrealized Value, Time-to-Market, Ability to Innovate. Official Scrum.org Evidence-Based Management, not the Scrum Guide.", "tag": "value"},
+    {"id": "m10c3", "front": "Current Value, official definition", "back": "Measures that quantify the value that the product delivers today. It considers only what exists right now, not value that might exist in the future.", "tag": "value"},
+    {"id": "m10c4", "front": "Unrealized Value, official definition", "back": "Measures that quantify the potential future value that could be realized if the organization met the needs of all potential customers or users. Also framed as the satisfaction gap between a beneficiary's desired outcome and their current experience.", "tag": "value"},
+    {"id": "m10c5", "front": "Time-to-Market, official definition", "back": "Measures that quantify how quickly the organization can deliver and learn from feedback they gather from experiments. Examples: Release Frequency, Lead Time, Time-to-Learn, Time to Pivot.", "tag": "value"},
+    {"id": "m10c6", "front": "Ability to Innovate, official definition", "back": "Measures that quantify the effectiveness of an organization in delivering new capabilities. Its questions: what prevents us delivering new value, and what prevents customers benefiting from it.", "tag": "value"},
+    {"id": "m10c7", "front": "Which two Key Value Areas are market outcomes, and which two are organizational capability?", "back": "Market: Unrealized Value and Current Value. Capability: Ability to Innovate and Time-to-Market. The capability pair is how you convert Unrealized Value into Current Value.", "tag": "value"},
+    {"id": "m10c8", "front": "EBM's five measurement categories", "back": "Inputs, Activities, Outputs, Outcomes, Impacts. Activities and outputs are easy to measure, outcomes are difficult, and more features does not necessarily mean a better customer experience.", "tag": "value"},
+    {"id": "m10c9", "front": "Does EBM prescribe specific measures?", "back": "No. To encourage adaptability, EBM defines no specific Key Value Measures. The 31 measures listed in the 2024 guide are examples of the kinds of measures that might help.", "tag": "value"},
+    {"id": "m10c10", "front": "EBM's balance warning", "back": "Improving only Ability to Innovate and Time-to-Market without monitoring Current Value and Unrealized Value means optimizing internal process that may not satisfy customers. It can indicate a lack of outcome-based goals.", "tag": "value"},
+    {"id": "m10c11", "front": "Is EBM examinable on PSPO I?", "back": "Not as a named focus area, that is PSPO II and PAL-EBM. But Product Value is a PSPO I focus area and EBM is Scrum.org's vocabulary for it. Learn the four names and the ideas, not the measure tables.", "tag": "value"},
+    {"id": "m10c12", "front": "One-line test for a measure worth collecting", "back": "Would a bad reading make you do something different? If every reading leads to the same plan, the measure is decoration. Also: observable, and cheap enough to collect next month.", "tag": "value"}
+  ]
+}

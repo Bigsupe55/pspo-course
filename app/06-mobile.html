@@ -1,0 +1,108 @@
+<style>
+/* ============================================================
+   TOUCH + PHONE
+   Loaded after the desktop styles so it wins ties.
+   ============================================================ */
+
+/* Tap hygiene. No grey flash, no 300ms delay, no iOS text inflation. */
+html{-webkit-text-size-adjust:100%}
+button,.opt,.simchoice,.tile,.navitem,.exdot,.ord-nudge button,.mcard{
+  -webkit-tap-highlight-color:transparent;
+  touch-action:manipulation;
+}
+
+/* The order and sort items are TAP targets, not drag targets. Earlier they
+   advertised dragging that was never implemented, so the cursors are corrected
+   here and the interaction is spelled out in .howto. */
+.ord-item{cursor:default}
+.tile{cursor:pointer;font-family:var(--sans);text-align:left}
+.howto{font-size:12.5px;color:var(--ink-2);margin-bottom:11px;display:flex;align-items:center;gap:7px}
+.howto::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--spark);flex:none}
+
+/* Picked-up state has to be unmistakable on a small screen. */
+.tile[data-sel="1"]{border-color:var(--accent);background:var(--accent-soft);box-shadow:0 0 0 2px var(--accent);font-weight:500}
+.pool.armed{border:1px dashed var(--accent)}
+.sort-grid.armed .bucket{border-color:var(--accent)}
+.pool{border:1px dashed transparent}
+.tile[disabled]{cursor:default;opacity:1}
+
+@media (max-width:900px){
+  /* Viewport units that survive a collapsing browser toolbar. */
+  .app{min-height:100dvh}
+
+  /* Anything under 16px makes iOS zoom the whole page on focus. */
+  textarea.ta,input,select{font-size:16px}
+
+  /* Reading sizes. Slightly smaller display type, unchanged body copy. */
+  :root{--step-2:1.3rem;--step-3:1.55rem;--step-4:1.9rem}
+  .view{padding:22px 16px calc(90px + env(safe-area-inset-bottom))}
+  .hero .lede{font-size:var(--step-0)}
+  .mhead .sub{font-size:var(--step-0)}
+  .b-hook{font-size:var(--step-0);padding-left:16px}
+  .b-analogy,.b-guide,.b-civic,.q,.b-write{padding-left:18px;padding-right:18px}
+  .beats{gap:28px}
+
+  /* Touch targets. Nothing interactive under about 44px. */
+  .btn{padding:12px 18px;font-size:15px;min-height:44px}
+  .btn-sm{padding:10px 14px;font-size:13.5px;min-height:40px}
+  .opt{padding:14px 15px;font-size:15px;line-height:1.5}
+  .opt .key{font-size:12px}
+  .simchoice{padding:15px 16px;font-size:15px}
+  .navitem{padding:12px 20px 12px 14px;font-size:15px;min-height:46px}
+  .tile{padding:12px 14px;font-size:14.5px;min-height:44px}
+  .bucket{min-height:104px}
+  .ord-item{padding:12px;font-size:14.5px}
+  .ord-nudge{flex-direction:row;gap:6px}
+  .ord-nudge button{width:42px;height:38px;font-size:12px;border-radius:6px}
+  .chip{font-size:11px;padding:4px 9px}
+
+  /* Sticky bars clear the home indicator. */
+  .exnav{padding-bottom:calc(12px + env(safe-area-inset-bottom))}
+  .rail{padding-bottom:env(safe-area-inset-bottom)}
+  .topbar{padding:9px 14px;min-height:56px}
+  .menu-btn{min-height:40px}
+
+  /* 80 jump dots would eat the screen, so cap and scroll them. */
+  .exdots{max-height:132px;overflow-y:auto;gap:6px;padding:2px}
+  .exdot{width:38px;height:38px;font-size:12px}
+
+  /* Flashcards are the main one-handed surface: big card, thumb-reachable
+     buttons pinned to the bottom of the screen. */
+  .fc{padding:30px 20px;min-height:190px}
+  .fc .front{font-size:1.3rem}
+  .fcbar{
+    position:sticky;bottom:0;z-index:15;margin-top:20px;
+    padding:12px 0 calc(12px + env(safe-area-inset-bottom));
+    background:linear-gradient(to top,var(--paper) 72%,transparent);
+    gap:10px;
+  }
+  .fcbar .btn{flex:1;min-height:54px;font-size:16px;font-weight:600}
+  .fcbar .btn-ghost{flex:0 0 auto;min-width:76px}
+  .fcmeta{margin-top:10px}
+
+  /* Stat tiles read better two-up than squeezed four-up. */
+  .tiles{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
+  .tile-stat{padding:14px 15px}
+
+  .planbox{padding:18px 18px}
+  .modfoot .btn,.q-actions .btn{flex:1 1 auto}
+  .scoreband{padding:22px 20px}
+  .tagbar{grid-template-columns:96px 1fr 44px;font-size:12px}
+}
+
+/* Narrow phones: let everything go single column. */
+@media (max-width:430px){
+  .tiles{grid-template-columns:1fr 1fr}
+  .sort-grid{grid-template-columns:1fr}
+  .fcbar{flex-wrap:nowrap}
+  .b-trap .cell{padding:15px 16px}
+  .exdots{max-height:118px}
+}
+
+/* Coarse pointers get the same treatment even on a big screen (tablets). */
+@media (pointer:coarse){
+  .ord-nudge button{width:42px;height:38px}
+  .opt,.simchoice{padding:14px 16px}
+  .btn{min-height:44px}
+}
+</style>

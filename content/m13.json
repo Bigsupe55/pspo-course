@@ -1,0 +1,707 @@
+{
+  "id": "m13",
+  "num": 13,
+  "week": 5,
+  "title": "Antipatterns and Exam Traps",
+  "subtitle": "The habits that quietly wreck a team from the Product Owner's chair, and the exact wording PSPO I uses to find out what you actually know.",
+  "minutes": 35,
+  "why": "Most Product Owners fail slowly, through habits that look like diligence from their own side of the table, and most exam candidates fail on a single word they read past.",
+  "objectives": [
+    "Name eleven Product Owner antipatterns, describe how each one looks from the Developers' side, and state the move that recovers from it",
+    "Separate what is actually in the Scrum Guide 2020 from the practices most of the industry assumes are Scrum",
+    "Decode a question stem down to the one word that decides the answer",
+    "Reject an answer that is true in your real job and still wrong per the Guide",
+    "Spot 2017-era practice material and discard the wrong answers it teaches"
+  ],
+  "beats": [
+    {
+      "type": "hook",
+      "body": "You have already met most of these. Not in a course, in your own week. You carry the roadmap, all government sales, contracts, hiring, and the Security Officer hat, and you have a Lead Engineer who owns engineering priorities inside the Sprint. Every Product Owner antipattern in the first half of this module is what a competent, overloaded person does while genuinely trying to help. The second half is a different animal: the precise sentences the exam uses to find out whether you learned Scrum or learned the software industry."
+    },
+    {
+      "type": "teach",
+      "title": "What an antipattern actually is",
+      "body": "[[PRACTICE]] The word antipattern is not in the Scrum Guide. The definition below comes from the CSPO workshop material, and it is the sharpest one available: a pattern that you think will improve things, but it doesn't.\n\nThat is the whole hazard. Nobody adopts one on purpose. Each one below is a reasonable person solving a real problem in a way that moves the cost onto the Developers, where the person causing it cannot see it.\n\nSo each gets three things: the name, what it looks like from the Developers' side of the table, and the specific move that gets you out. The Developers' view is the part that matters. That is the side you cannot see from where you sit.",
+      "callout": {
+        "kind": "why",
+        "text": "The CSPO learning objective asks you to identify the impact of at least three antipatterns on the Scrum Team. Impact, not definition. Naming one costs nothing. Tracing what it does to somebody else is the actual skill."
+      }
+    },
+    {
+      "type": "guide",
+      "quote": "The Product Owner is one person, not a committee. The Product Owner may represent the needs of many stakeholders in the Product Backlog. Those wanting to change the Product Backlog can do so by trying to convince the Product Owner.",
+      "cite": "Product Owner",
+      "gloss": "One name owns the order. Everyone else gets to argue, and that is a feature, not a consolation prize."
+    },
+    {
+      "type": "teach",
+      "title": "Antipatterns 1 and 2: the proxy and the committee",
+      "body": "**The proxy Product Owner.** You hold the title, someone else holds the decision. Every real answer needs a trip upstairs.\n\n*Developers see:* questions coming back days later, changed, with no reasoning attached. So they stop asking and start guessing.\n\n*The move:* name who actually decides, then either give them the accountability or take the authority. A PO who cannot order the backlog is a messenger.\n\n**The Product Owner by committee.** Order gets negotiated in a weekly meeting and nobody owns the result.\n\n*Developers see:* the top of the backlog reshuffling every week, with no one able to explain why.\n\n*The move:* one name on the order. Everyone else convinces that person."
+    },
+    {
+      "type": "civic",
+      "title": "Nobody appointed the committee",
+      "body": "Two documents at a young company describe who decides, and they disagree. The operations handbook makes the CEO owner of the roadmap and of final product decisions, with the lead engineer as backup. The investor one-pager lists three co-founders, one of them a Chief Product Officer. Meanwhile the real cadence is a weekly sync covering top priorities, plus one long planning session every few months.\n\nThat is exactly the shape a Product Owner by committee takes in a small company. Nobody appointed a committee. The calendar built one, because a recurring meeting with three opinions in it will produce an order whether or not anyone owns it.\n\nThe recovery is not another meeting. It is one written line naming who orders the backlog, and everyone else convincing that person."
+    },
+    {
+      "type": "teach",
+      "title": "Antipatterns 3 and 4: the absentee and the transcriber",
+      "body": "**The absentee Product Owner.** [[PRACTICE]] The CSPO deck calls this seagull management: fly in, make noise, dump on everyone, fly out. You surface at the Sprint Review with strong views about work you never watched get built.\n\n*Developers see:* two weeks of small decisions made without you, then a public verdict they cannot appeal.\n\n*The move:* be reachable inside the Sprint. Answer on the day asked.\n\n**The Product Owner as transcriber.** Stakeholders dictate, you type. The backlog becomes an inbox with formatting.\n\n*Developers see:* items describing a solution nobody can trace to a problem, so they cannot offer a cheaper one.\n\n*The move:* record the outcome and who wants it. Leave the solution open."
+    },
+    {
+      "type": "check",
+      "q": {
+        "id": "m13k1",
+        "kind": "mcq",
+        "stem": "A Scrum Team's Developers have stopped asking their Product Owner questions during the Sprint. They make assumptions instead, and rework surfaces at the Sprint Review. The Product Owner is diligent, attends every Review, and gives detailed feedback there. What is the most likely antipattern and its impact?",
+        "options": [
+          "Micromanagement, because detailed feedback removes the Developers' self-management",
+          "The absentee Product Owner, because feedback arrives only after the work is finished, so learning that was cheap mid-Sprint becomes expensive rework",
+          "Gold plating, because the Developers are adding polish nobody asked for",
+          "The Product Owner by committee, because multiple stakeholders are involved"
+        ],
+        "answer": 1,
+        "explain": "The tell is timing, not tone. Feedback exists, but only at the end, so every question the Developers had mid-Sprint got answered by guessing. That is the seagull pattern the CSPO deck names, and the impact is rework. Option A is tempting because the feedback is detailed, but micromanagement means directing how the work is done, which is not described here. Option C describes over-building, not assumption-driven rework. Option D needs multiple deciders, and the scenario has exactly one.",
+        "cite": "Scrum Guide 2020, Product Owner",
+        "tag": "antipatterns"
+      }
+    },
+    {
+      "type": "teach",
+      "title": "Antipatterns 5 and 6: the gatekeeper and the pressure",
+      "body": "**The Product Owner as gatekeeper.** You accept or reject each item at the Review, like a customs desk.\n\n*Developers see:* quality defined after the fact by one person's mood, so the Definition of Done stops meaning anything.\n\n*The move:* move the decision earlier. The Definition of Done already settles whether something is finished, and the Developers own conforming to it.\n\n**The Product Owner who pressures sizing.** The engineer says two weeks, you ask whether it is really two weeks, and keep asking.\n\n*Developers see:* a number that is now yours, not theirs, so the forecast carries no information at all.\n\n*The move:* trade scope, not numbers. Ask what could be dropped to fit, and let them re-size."
+    },
+    {
+      "type": "guide",
+      "quote": "The Developers who will be doing the work are responsible for the sizing. The Product Owner may influence the Developers by helping them understand and select trade-offs.",
+      "cite": "Product Backlog",
+      "gloss": "You get to shape what the work is. You do not get to shape how big it is."
+    },
+    {
+      "type": "teach",
+      "title": "Antipatterns 7 and 8: the full Sprint and the loudest voice",
+      "body": "**The Product Owner who fills the Sprint to capacity.** If they can do five, put five in, every Sprint.\n\n*Developers see:* no room for the thing they learn on day four, so every discovery becomes a negotiation instead of an adjustment.\n\n*The move:* the Sprint Goal is what must hold. Let the item list be honestly smaller than the ceiling.\n\n**The Product Owner who orders by whoever spoke last.** The most recent conversation wins.\n\n*Developers see:* work reordered around a meeting they were not in, and effort abandoned halfway.\n\n*The move:* order against the Product Goal, out loud, so people can argue with the reason rather than repeat the request."
+    },
+    {
+      "type": "civic",
+      "title": "Four verdicts on one screen",
+      "body": "Ask the Ledger turns a plain question into a table, prints the query it ran, and exports CSV. Yusuf Adeyemi, the external auditor, calls it core. Dana Whitcomb would trade it for saved views she can rely on. Margaret Shaw is afraid of it, because a resident might be standing behind her. Ruth Delgado will never open it.\n\nFour stakeholders, four verdicts, and whichever one you heard most recently sounds most convincing. Ordering by the last conversation is the antipattern, and it looks like responsiveness from the inside.\n\nThe recovery was not a compromise. It was a distinction: keep it for analyst and auditor roles, hide the query text from everyone else, add a plain results mode. Cutting a feature and cutting its exposure are different decisions."
+    },
+    {
+      "type": "analogy",
+      "title": "The freezer at the back of the garage",
+      "body": "There is a freezer in somebody's garage right now holding a bag of soup from 2019. It is not there because anyone will eat it. It is there because throwing it away feels like admitting the afternoon spent making it was wasted.\n\nSo the freezer fills, and the useful things migrate to the front where they can be found, and the back becomes a museum of intentions.\n\nA Product Backlog does this faster, because deleting an item feels like breaking a promise to whoever asked for it. It is not. The promise was to consider it. You considered it, for two years."
+    },
+    {
+      "type": "teach",
+      "title": "Antipatterns 9 and 10: the archive and the polish",
+      "body": "**The backlog as a promise archive.** Nothing is ever deleted, because deletion feels like a broken promise.\n\n*Developers see:* four hundred items, of which maybe twelve are real, so they cannot tell what is next by looking. The artifact stops being transparent, which is the one thing you are accountable for.\n\n*The move:* delete. An item nobody will pull in a year is noise, and you can always write it again in a sentence.\n\n**Gold plating.** [[PRACTICE]] The CSPO deck's term: continuing past the point where extra effort adds no value.\n\n*Developers see:* the sixth revision of a screen while the adoption gate sits unbuilt.\n\n*The move:* say what would be enough, before they start."
+    },
+    {
+      "type": "guide",
+      "quote": "Scrum Teams are cross-functional, meaning the members have all the skills necessary to create value each Sprint. They are also self-managing, meaning they internally decide who does what, when, and how.",
+      "cite": "Scrum Team",
+      "gloss": "Who, when, and how are theirs. Notice that what is worth doing is still yours."
+    },
+    {
+      "type": "teach",
+      "title": "Antipattern 11: micromanagement",
+      "body": "[[PRACTICE]] The deck defines it as ineffectiveness from excessive observation, supervision, or hands-on involvement from management. In a founder-led company it arrives wearing a helpful face: you know the codebase, so you say which file, which order, which afternoon.\n\n*Developers see:* their judgment routed around. So they stop exercising it, and now you really do have to make every call, which confirms your original instinct. The trap closes.\n\n*The move:* state the outcome and the constraint, then stop talking. If you cannot resist specifying the how, that is a signal about trust, and trust is a Retrospective topic rather than a backlog item.\n\nWatching the work is fine. Directing it is the line."
+    },
+    {
+      "type": "sim",
+      "title": "The item you did not write",
+      "setup": "Glen Ostrowski, Northfield's part-time Purchasing Officer, emails you a fully specified backlog item. It has a title, acceptance criteria, a rough wireframe, a requested position at the top of the backlog, and a date, because a bid opens then. He has copied your Lead Engineer. The content is genuinely good: Glen knows procurement better than anyone at your company, and half of it is detail you would not have known to ask for. The parts you disagree with are the position and the date.",
+      "choices": [
+        {
+          "label": "Paste it in as written and put it where he asked. He knows procurement better than you do.",
+          "outcome": "It ships in two Sprints and works. Three weeks later Dana Whitcomb sends a similarly formatted item, having heard from Glen that this is how you get things built. Your backlog order is now set by whoever writes the best email.",
+          "verdict": "bad",
+          "lesson": "Domain expertise is an input to ordering, never a substitute for it. Ordering Product Backlog items is one of your four named accountabilities, and delegating it by default is not delegation, it is drift."
+        },
+        {
+          "label": "Reply that only the Product Owner orders the backlog, and ask him to route future requests through you.",
+          "outcome": "Glen is correct and annoyed. He stops writing detail and starts writing one-line requests, because the detailed version was rejected. You have protected the accountability and lost the best procurement input in the company.",
+          "verdict": "mixed",
+          "lesson": "You were right about the rule and wrong about which part to push back on. The Guide says those wanting to change the Product Backlog do so by trying to convince the Product Owner. Glen was doing exactly that. He just attached an order to it."
+        },
+        {
+          "label": "Keep his content, drop the position and the date, rewrite the top as the outcome and who needs it, then tell him where it sits and against which Product Goal.",
+          "outcome": "Glen pushes back once on the position, you show him what sits above it and why, and he concedes on two of three points. The next thing he sends is framed as a problem with a deadline attached rather than a solution with a slot reserved.",
+          "verdict": "good",
+          "lesson": "You kept the expertise and kept the accountability, which is the whole trick. Making the order visible turns a request into an argument you can actually have, which is transparency doing its job."
+        },
+        {
+          "label": "Forward it to the Developers and ask whether it is worth doing before you decide.",
+          "outcome": "They tell you it is about four days of work and technically straightforward, which is exactly what you asked and not at all what you needed. Nobody answers whether it is worth four days, so it stays in the inbox for a month.",
+          "verdict": "mixed",
+          "lesson": "Sizing is theirs. Value is yours. Handing them a value question produces a sizing answer, and the decision quietly stalls in the gap between the two."
+        }
+      ]
+    },
+    {
+      "type": "keypoints",
+      "points": [
+        "Antipatterns are competent people helping in a way that moves the cost onto somebody who cannot refuse it.",
+        "Proxy, committee, absentee, transcriber: all four are failures of who decides.",
+        "Gatekeeper, sizing pressure, micromanagement: all three take something the Guide assigns to the Developers.",
+        "Full Sprints, loudest-voice ordering, and the promise archive all destroy the transparency you are accountable for.",
+        "The recovery move is nearly always the same shape: state the outcome, make the reasoning visible, then stop."
+      ]
+    },
+    {
+      "type": "teach",
+      "title": "Half two: one document, graded strictly",
+      "body": "PSPO I is graded against the Scrum Guide 2020 and nothing else. Not against what works. Not against what your last team did. Not against the CSPO deck, which teaches good practice that is not Scrum.\n\nThe pass mark is 85 percent, which is thin enough that the winning strategy is eliminating whole categories of error rather than winning the hard questions.\n\nAnd the specific category that fails experienced people is this: an answer that is true in the real world and wrong per the Guide. You are about to build a filter for exactly that. Everything in this half is either a thing the industry believes and the Guide does not say, or a single word that decides an answer.",
+      "callout": {
+        "kind": "warn",
+        "text": "Scrum.org states plainly that the free Open Assessments are easier than the certification assessments. Passing the Product Owner Open is a floor, not a readiness signal."
+      }
+    },
+    {
+      "type": "trap",
+      "myth": "Story points are how Scrum teams size work.",
+      "truth": "The phrase story point appears zero times in the Scrum Guide 2020, and the Guide names no estimation technique at all. Refinement adds \"details, such as a description, order, and size\", and \"The Developers who will be doing the work are responsible for the sizing.\"",
+      "why": "Any option that requires a specific unit, technique, or ceremony to size work is wrong on the framework no matter how well it works for you. Points, planning poker, and t-shirt sizes are all optional tactics."
+    },
+    {
+      "type": "trap",
+      "myth": "Velocity is the Scrum measure of a team's progress, and a Product Owner forecasts dates from it.",
+      "truth": "Velocity appears zero times in the Guide. Forecasting is explicitly optional and plural: \"Various practices exist to forecast progress, like burn-downs, burn-ups, or cumulative flows. While proven useful, these do not replace the importance of empiricism.\"",
+      "why": "Watch for options that treat velocity as a commitment device or a productivity measure. The Guide's own line, that these practices do not replace empiricism, is the answer the exam wants."
+    },
+    {
+      "type": "trap",
+      "myth": "Product Backlog items must be written as user stories.",
+      "truth": "The phrase user story appears zero times in the Guide. Your accountability is \"Creating and clearly communicating Product Backlog items\". The format is entirely unconstrained.",
+      "why": "The exam offers options that quietly require a format, an INVEST check, or a persona. All optional. [[PRACTICE]] User stories are a genuinely useful technique, taught in CSPO, and they are not Scrum."
+    },
+    {
+      "type": "trap",
+      "myth": "You need a Sprint 0 to set up architecture, tooling, and the initial backlog.",
+      "truth": "Sprint 0 appears zero times, and it is structurally impossible. Every Sprint exists to produce a usable Increment, and \"A new Sprint starts immediately after the conclusion of the previous Sprint.\"",
+      "why": "This one is seductive for a founder, because setup work is real. The Guide's answer is that the setup happens inside a Sprint that also produces something usable, however small."
+    },
+    {
+      "type": "trap",
+      "myth": "Teams run hardening, stabilisation, or release Sprints to finish off undone work before shipping.",
+      "truth": "Hardening appears zero times. \"Work cannot be considered part of an Increment unless it meets the Definition of Done\", and during the Sprint \"Quality does not decrease\". A Sprint that exists to finish undone work contradicts both.",
+      "why": "A hardening Sprint is proof that previous Increments were not Done. The exam tests whether you spot the contradiction rather than the convenience."
+    },
+    {
+      "type": "trap",
+      "myth": "A Definition of Ready is required before an item can enter Sprint Planning.",
+      "truth": "There is no Definition of Ready in Scrum. The word ready appears exactly once, lowercase, as a property: \"Product Backlog items that can be Done by the Scrum Team within one Sprint are deemed ready for selection in a Sprint Planning event.\" Readiness is a characteristic, not a gate.",
+      "why": "[[PRACTICE]] Teams do adopt one as a working agreement, and it can help. On the exam, any answer treating it as required, or as a formal artifact or commitment, is wrong."
+    },
+    {
+      "type": "trap",
+      "myth": "The Daily Scrum is the three questions: what I did, what I will do, what is blocking me.",
+      "truth": "Removed in 2020, and listed on the official revisions page as an explicit change. \"The Developers can select whatever structure and techniques they want, as long as their Daily Scrum focuses on progress toward the Sprint Goal and produces an actionable plan for the next day of work.\"",
+      "why": "This is the single most common stale answer, because virtually every pre-2020 blog post, video, and free practice quiz still teaches it as required structure."
+    },
+    {
+      "type": "trap",
+      "myth": "Backlog grooming is a recurring Scrum meeting the Product Owner runs.",
+      "truth": "The word grooming does not appear, and the activity is not an event. \"Product Backlog refinement is the act of breaking down and further defining Product Backlog items into smaller more precise items. This is an ongoing activity.\"",
+      "why": "Two errors ride together here: the old name, and the promotion of an activity into a sixth event. Scrum has five events, all inside the Sprint. Refinement is not one of them."
+    },
+    {
+      "type": "trap",
+      "myth": "The Product Owner accepts or rejects each item at the Sprint Review and signs off the Increment.",
+      "truth": "Reject appears zero times in the Guide. Accept appears twice, only as acceptable and unacceptable, about process deviation. The Definition of Done already settles it: \"If a Product Backlog item does not meet the Definition of Done, it cannot be released or even presented at the Sprint Review. Instead, it returns to the Product Backlog for future consideration.\"",
+      "why": "The decision has already been made by the Definition of Done before anyone reaches the Review, and the Developers are the ones required to conform to it. Any answer giving the PO a sign-off gate is wrong."
+    },
+    {
+      "type": "trap",
+      "myth": "The Scrum Master manages the team and chairs the Daily Scrum.",
+      "truth": "\"The Scrum Master is accountable for establishing Scrum as defined in the Scrum Guide\" and for the Scrum Team's effectiveness. \"Scrum Masters are true leaders who serve the Scrum Team and the larger organization.\" The Daily Scrum is \"a 15-minute event for the Developers of the Scrum Team.\"",
+      "why": "The Scrum Master ensures events take place and stay within the timebox. That is not the same as running them, and it is certainly not managing people. Options that make the Scrum Master a manager, a chairperson, or a status collector are all wrong."
+    },
+    {
+      "type": "trap",
+      "myth": "A burndown chart is required, and a team without one is not doing Scrum.",
+      "truth": "Burndown as one word appears zero times. Burn-downs appears once, in a list of optional forecasting practices alongside burn-ups and cumulative flows, immediately followed by the warning that these \"do not replace the importance of empiricism\".",
+      "why": "The Guide names exactly three artifacts: Product Backlog, Sprint Backlog, Increment. Any answer adding a fourth, whether a chart, a board, or a roadmap, is adding something Scrum does not require."
+    },
+    {
+      "type": "check",
+      "q": {
+        "id": "m13k2",
+        "kind": "sort",
+        "instruction": "Sort each item into whether the Scrum Guide 2020 actually defines it, or whether it is a useful practice from somewhere else.",
+        "buckets": ["Defined in the Scrum Guide 2020", "Useful practice, not in the Guide"],
+        "items": [
+          {"text": "Product Goal", "bucket": "Defined in the Scrum Guide 2020"},
+          {"text": "Definition of Done", "bucket": "Defined in the Scrum Guide 2020"},
+          {"text": "Definition of Ready", "bucket": "Useful practice, not in the Guide"},
+          {"text": "Sprint Goal", "bucket": "Defined in the Scrum Guide 2020"},
+          {"text": "Story points", "bucket": "Useful practice, not in the Guide"},
+          {"text": "Product Backlog refinement", "bucket": "Defined in the Scrum Guide 2020"},
+          {"text": "Velocity", "bucket": "Useful practice, not in the Guide"},
+          {"text": "Sizing by the Developers", "bucket": "Defined in the Scrum Guide 2020"},
+          {"text": "User story format", "bucket": "Useful practice, not in the Guide"},
+          {"text": "Burndown chart", "bucket": "Useful practice, not in the Guide"}
+        ],
+        "explain": "The four Guide items are easy to miss for the opposite reason to the practices: refinement and sizing feel like techniques, but both are named in the Product Backlog section, and the three commitments are named explicitly. The six practices are all things you may reasonably use on a real team. The exam simply will not credit them as Scrum. Burn-downs get a single mention, in a list of optional forecasting practices, which is the opposite of a requirement.",
+        "cite": "Scrum Guide 2020, Product Backlog and Scrum Artifacts",
+        "tag": "artifacts"
+      }
+    },
+    {
+      "type": "teach",
+      "title": "Precision traps: when one word decides it",
+      "body": "The next ten are different in kind. Nothing here is a myth from outside Scrum. These are places where the Guide chose a word carefully, and the exam writes an option that swaps it for a near-synonym.\n\nThe method is the same every time. Find the noun that names who, or the verb that names what, and check it against the exact phrasing. Accountable is not responsible. Ordered is not prioritized. Sizing is not estimating. For the Developers is not with the Developers.\n\nRead these ten slowly. They are worth more marks per minute of study than anything else in this course, because the exam can generate an unlimited number of questions from each one."
+    },
+    {
+      "type": "trap",
+      "myth": "Accountable and responsible mean the same thing, so a Product Owner who delegates backlog writing has delegated the accountability.",
+      "truth": "\"The Product Owner may do the above work or may delegate the responsibility to others. Regardless, the Product Owner remains accountable.\" You can hand off the work. The accountability does not move.",
+      "why": "Options built on this look like: the Product Owner must personally write every item, or, since the Business Analyst writes the items, the Business Analyst is accountable for the backlog. Both wrong, in opposite directions."
+    },
+    {
+      "type": "trap",
+      "myth": "The Product Backlog is prioritized.",
+      "truth": "It is ordered. Your accountability reads \"Ordering Product Backlog items\", and the artifact is \"an emergent, ordered list of what is needed to improve the product.\" Prioritized was removed back in the 2011 revision.",
+      "why": "The distinction is real, not pedantic. Priority is a label many items can share. Order is a single sequence, so it forces the decision that priority lets you avoid. If an option says prioritized, it is quoting an old Guide."
+    },
+    {
+      "type": "trap",
+      "myth": "The Product Owner estimates the work, or approves the Developers' estimates.",
+      "truth": "No inflection of the word estimate appears anywhere in the Scrum Guide 2020. \"The Developers who will be doing the work are responsible for the sizing. The Product Owner may influence the Developers by helping them understand and select trade-offs.\"",
+      "why": "Influence by explaining trade-offs is allowed and expected. Setting, negotiating down, or approving a size is not. The word estimate in an answer option is itself a signal that the option was written against the 2017 Guide."
+    },
+    {
+      "type": "trap",
+      "myth": "The Sprint Goal is set by the Product Owner, since the PO owns value.",
+      "truth": "The PO \"proposes how the product could increase its value and utility in the current Sprint. The whole Scrum Team then collaborates to define a Sprint Goal.\" And yet: \"the Sprint Goal is a commitment by the Developers\". Crafted by everyone, committed to by the Developers, finalized before Sprint Planning ends.",
+      "why": "This is a favourite because both halves sound wrong on their own. You propose the why. The team forges the wording. The Developers own the commitment. Any option assigning all three to one accountability is wrong."
+    },
+    {
+      "type": "trap",
+      "myth": "Absolutes about the Product Owner are always wrong on this exam.",
+      "truth": "Almost always, with one loud exception: \"A Sprint could be cancelled if the Sprint Goal becomes obsolete. Only the Product Owner has the authority to cancel the Sprint.\"",
+      "why": "Candidates who learn the heuristic that absolutes are traps get this one wrong on principle. Learn the exception explicitly. Note also the trigger: the Sprint Goal has become obsolete, not the Sprint is going badly, and not a stakeholder demanded it."
+    },
+    {
+      "type": "trap",
+      "myth": "The Product Owner must attend the Daily Scrum to answer questions and keep the team aligned.",
+      "truth": "\"The Daily Scrum is a 15-minute event for the Developers of the Scrum Team... If the Product Owner or Scrum Master are actively working on items in the Sprint Backlog, they participate as Developers.\"",
+      "why": "You may attend, but only in the capacity of a Developer actually working on Sprint Backlog items, and never as an audience the Developers report to. Options describing the Daily Scrum as a status meeting for the PO or a Scrum Master are wrong twice over."
+    },
+    {
+      "type": "trap",
+      "myth": "Refinement is a Scrum event, usually held once a Sprint.",
+      "truth": "Scrum has exactly five events: the Sprint, and inside it Sprint Planning, Daily Scrum, Sprint Review, Sprint Retrospective. Refinement \"is an ongoing activity to add details, such as a description, order, and size.\" No timebox, no attendee list, no prescribed frequency.",
+      "why": "[[PRACTICE]] Booking a recurring refinement session is fine and common. Calling it an event, or claiming a required timebox of ten percent of capacity, is a 2011-era number that no current Guide contains."
+    },
+    {
+      "type": "trap",
+      "myth": "The Product Goal is a separate artifact, or lives in a roadmap document above the backlog.",
+      "truth": "\"The Product Goal is in the Product Backlog. The rest of the Product Backlog emerges to define 'what' will fulfill the Product Goal.\" It is the Product Backlog's commitment, not an artifact of its own, and \"They must fulfill (or abandon) one objective before taking on the next.\"",
+      "why": "Two testable pieces here. Location: inside the backlog. Sequence: one objective at a time, fulfilled or abandoned, never three Product Goals running in parallel because three stakeholders each wanted one."
+    },
+    {
+      "type": "trap",
+      "myth": "Work can only be released after the Sprint Review approves it.",
+      "truth": "\"Multiple Increments may be created within a Sprint... However, an Increment may be delivered to stakeholders prior to the end of the Sprint. The Sprint Review should never be considered a gate to releasing value.\"",
+      "why": "The Guide uses the word gate to deny it, which is unusually direct, and the exam quotes that denial. Release when it is Done and valuable. The Review inspects the outcome and decides what happens next, which is a different job entirely."
+    },
+    {
+      "type": "trap",
+      "myth": "Sprints are usually two weeks, and a team may run a six-week Sprint when the work is large.",
+      "truth": "\"They are fixed length events of one month or less to create consistency.\" One month is the ceiling, full stop. There is no lower bound and no default. Shorter Sprints \"generate more learning cycles and limit risk of cost and effort to a smaller time frame.\"",
+      "why": "Look for options offering six weeks, a quarter, or a variable length that flexes with the work. All wrong. Fixed length is the point: it is what makes one Sprint comparable to the next."
+    },
+    {
+      "type": "check",
+      "q": {
+        "id": "m13k3",
+        "kind": "multi",
+        "stem": "Select the THREE statements that are true according to the Scrum Guide 2020.",
+        "options": [
+          "Only the Product Owner has the authority to cancel the Sprint",
+          "The Product Owner is accountable for effective Product Backlog management and may delegate the work while remaining accountable",
+          "The Product Owner sets the Sprint Goal and the Developers accept it",
+          "An Increment may be delivered to stakeholders prior to the end of the Sprint",
+          "The Product Owner is responsible for sizing Product Backlog items so the forecast is realistic"
+        ],
+        "answer": [0, 1, 3],
+        "explain": "Those three are close to verbatim. Option C fails on both halves: the whole Scrum Team collaborates to define the Sprint Goal, and it is a commitment by the Developers rather than something handed to them. Option E inverts the sizing rule: the Developers who will be doing the work are responsible for the sizing, and the Product Owner may only influence by helping them understand and select trade-offs. Notice that the stem told you how many to select. Count your selections against that number before moving on, because choosing two of three is a lost mark even though nothing you picked was wrong.",
+        "cite": "Scrum Guide 2020, Product Owner and The Sprint",
+        "tag": "accountabilities"
+      }
+    },
+    {
+      "type": "teach",
+      "title": "The 2017 problem",
+      "body": "The 2020 Guide was released on 18 November 2020. An enormous share of the free practice material online predates it, including some articles on Scrum.org's own blog, and it will confidently teach you wrong answers.\n\nSo before you trust any practice question, video, or blog post, check its date. If it is older than 18 November 2020, assume the wording is stale even when the underlying idea is fine.\n\nSeven things changed. Three of them are pure vocabulary swaps that the exam can turn into a dozen questions each, and the next three trap beats cover exactly those. The rest follow after them.",
+      "callout": {
+        "kind": "warn",
+        "text": "Avoid exam dump sites entirely. Beyond the accuracy problem, seeking actual assessment questions violates the Scrum.org Standard of Conduct and can get a certification revoked."
+      }
+    },
+    {
+      "type": "trap",
+      "myth": "The Development Team is a team inside the Scrum Team, and the Product Owner works with it.",
+      "truth": "Gone in 2020. There is one Scrum Team containing Developers, a Product Owner, and a Scrum Master. \"Within a Scrum Team, there are no sub-teams or hierarchies.\" The official reason for the change was to eliminate the proxy and us-and-them behaviour that a team-within-a-team produced.",
+      "why": "This is the highest-frequency stale wording of all, and it carries a second stale fact with it: the old Development Team size of 3 to 9. The 2020 number is \"typically 10 or fewer people\", and it applies to the whole Scrum Team including you."
+    },
+    {
+      "type": "trap",
+      "myth": "Scrum defines three roles: Product Owner, Scrum Master, and Development Team.",
+      "truth": "The word role appears zero times in the 2020 Guide. \"Scrum defines three specific accountabilities within the Scrum Team: the Developers, the Product Owner, and the Scrum Master.\"",
+      "why": "Any option leaning on the Product Owner role, or on role responsibilities, was written against an older Guide. The change is not cosmetic: a role is a job you hold, an accountability is an outcome you owe, and it is what makes delegating the work without delegating the accountability coherent."
+    },
+    {
+      "type": "trap",
+      "myth": "The team is self-organizing, meaning it decides who does the work and how.",
+      "truth": "The 2020 wording is self-managing, and the scope widened: the Scrum Team internally decides \"who does what, when, and how.\" The official revision note says the emphasis moved to a self-managing Scrum Team choosing who, how, and what to work on.",
+      "why": "The tell is the extra dimension. Self-organizing covered who and how. Self-managing adds what and when. An option using self-organizing is quoting 2017, and an option limiting the team to how is quoting something older still."
+    },
+    {
+      "type": "teach",
+      "title": "The other four changes",
+      "body": "**The Product Goal was introduced.** It did not exist before 2020. Any material that describes Scrum's goals without it is stale by definition.\n\n**The three commitments were formalised.** Sprint Goal and Definition of Done existed before but floated loose. 2020 attached each artifact to a commitment: Product Backlog to Product Goal, Sprint Backlog to Sprint Goal, Increment to Definition of Done.\n\n**Sprint Planning gained a third topic.** What and How became Why, What, and How, with Why being the Sprint Goal.\n\n**The Guide got shorter and less prescriptive.** Under 13 pages, with IT-specific language stripped out and the Daily Scrum questions removed. When two answers both look defensible, the less prescriptive one is usually the 2020 one."
+    },
+    {
+      "type": "check",
+      "q": {
+        "id": "m13k4",
+        "kind": "sort",
+        "instruction": "A free practice quiz you found online uses these phrases. Sort each into whether it is current 2020 wording or stale 2017 wording that will teach you a wrong answer.",
+        "buckets": ["Current, 2020 Guide", "Stale, 2017 or earlier"],
+        "items": [
+          {"text": "Developers", "bucket": "Current, 2020 Guide"},
+          {"text": "The Development Team", "bucket": "Stale, 2017 or earlier"},
+          {"text": "Three accountabilities", "bucket": "Current, 2020 Guide"},
+          {"text": "Three roles", "bucket": "Stale, 2017 or earlier"},
+          {"text": "Self-managing", "bucket": "Current, 2020 Guide"},
+          {"text": "Self-organizing", "bucket": "Stale, 2017 or earlier"},
+          {"text": "Typically 10 or fewer people", "bucket": "Current, 2020 Guide"},
+          {"text": "3 to 9 members", "bucket": "Stale, 2017 or earlier"},
+          {"text": "Sprint Planning topics: Why, What, How", "bucket": "Current, 2020 Guide"},
+          {"text": "The three Daily Scrum questions", "bucket": "Stale, 2017 or earlier"}
+        ],
+        "explain": "Every stale item on the right still circulates widely in free quizzes, and each one has a 2020 replacement that changes the correct answer rather than just the vocabulary. Note that 3 to 9 described the old Development Team only, whereas 10 or fewer covers the entire Scrum Team including the Product Owner and Scrum Master, so the numbers are not even measuring the same group. If a practice source uses two or more of the stale phrases, stop using that source.",
+        "cite": "Scrum Guide 2020, Scrum Team, and scrumguides.org revisions",
+        "tag": "accountabilities"
+      }
+    },
+    {
+      "type": "teach",
+      "title": "Reading a stem",
+      "body": "Almost every question hides one word that decides it. Find it before you look at the options.\n\n**Who.** Product Owner, Developers, Scrum Master, Scrum Team, stakeholders. Swap one for another and a true statement becomes false.\n\n**Must, could, should.** Scrum mandates very little. A must stem is asking about one of the few genuine rules. A could or best approach stem has several defensible options and is asking which one preserves transparency and empiricism.\n\n**Only, always, never.** Usually planted, with the notable exception of Sprint cancellation.\n\n**According to the Scrum Guide.** When you see this, switch off your judgment about what works and answer from the text."
+    },
+    {
+      "type": "teach",
+      "title": "The two stem shapes, and multiple answers",
+      "body": "**Which is true.** Exactly one option matches the text. The other three usually contain an invented absolute, a swapped accountability, or a stale 2017 term. Eliminate on wording, not on plausibility.\n\n**Which is best, or most appropriate.** Several options may be genuinely reasonable. The winner is almost always the one that keeps the accountability where the Guide put it, makes something visible rather than hiding it, or gets a real observation sooner. Answers that add a meeting, a document, or an approval step tend to lose.\n\n**Multiple answer.** The stem states how many to pick. It is not a hint, it is an instruction. Count your selections against the number before you move on."
+    },
+    {
+      "type": "teach",
+      "title": "The real-world filter",
+      "body": "This is the one that catches experienced people, and it will catch you specifically.\n\nWhen an option describes something you would genuinely do at your own company, that is not evidence it is right. It is a reason to check it harder. Ask one question: is this in the Guide, or is this a technique I picked up from a deck, a job, or the industry?\n\nSizing with points, a Definition of Ready before Planning, a PO signing off a release, a recurring grooming meeting, a velocity-based forecast. Every one is defensible practice. Every one is wrong as a Scrum Guide answer.\n\nOn exam day the Guide wins. On Monday, use what works, and know which is which."
+    },
+    {
+      "type": "check",
+      "q": {
+        "id": "m13k5",
+        "kind": "mcq",
+        "stem": "Which of the following, according to the Scrum Guide 2020, is true about Product Backlog refinement?",
+        "options": [
+          "It is a formal Scrum event held once per Sprint and timeboxed to ten percent of the Developers' capacity",
+          "It is an ongoing activity that adds details such as a description, order, and size",
+          "It is the Product Owner's responsibility to perform, since the Product Owner owns the Product Backlog",
+          "It must produce items that satisfy the Definition of Ready before Sprint Planning"
+        ],
+        "answer": 1,
+        "explain": "That is close to verbatim. Option A contains two errors that travel together: refinement is not one of the five events, and the ten percent figure comes from a Guide edition retired over a decade ago. Option C swaps accountability for sole responsibility, and the Guide describes refinement as an act performed by the Scrum Team rather than by the Product Owner alone. Option D imports a Definition of Ready, which does not exist in Scrum. Note that the stem said according to the Scrum Guide 2020, which is your signal to stop asking what your team does.",
+        "cite": "Scrum Guide 2020, Product Backlog",
+        "tag": "backlog"
+      }
+    },
+    {
+      "type": "keypoints",
+      "points": [
+        "The exam grades one document. An answer that is true at work and absent from the Guide is still wrong.",
+        "Accountable is not responsible, ordered is not prioritized, sizing is not estimating, and for the Developers is not with the Developers.",
+        "Only the Product Owner can cancel the Sprint, and only when the Sprint Goal has become obsolete. That absolute is real.",
+        "Story points, velocity, user stories, Sprint 0, hardening Sprints, Definition of Ready, grooming, three questions, and PO sign-off are all outside the Guide.",
+        "Check the date on every practice source. Anything before 18 November 2020 may teach you a wrong answer."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "id": "m13q1",
+      "kind": "mcq",
+      "stem": "A Product Owner at a small company routes every backlog decision through a weekly leadership sync where three people negotiate the order. The Developers report that the top of the backlog changes most weeks and nobody can explain the reasoning. Which single change most directly addresses this?",
+      "options": [
+        "Hold the leadership sync twice a week so decisions settle faster",
+        "Have the Developers order the backlog themselves, since they see the work most clearly",
+        "Name one person as Product Owner with the authority to order the backlog, and have the others convince that person",
+        "Freeze the top five items for a quarter so the order stops changing"
+      ],
+      "answer": 2,
+      "explain": "The Guide is explicit: the Product Owner is one person, not a committee, and those wanting to change the Product Backlog do so by trying to convince the Product Owner. Option A doubles the frequency of the thing causing the churn. Option B moves an accountability the Guide assigns to the Product Owner, and the Developers are accountable for the Sprint Backlog, not the Product Backlog. Option D trades unpredictability for rigidity, and the Product Backlog is meant to be emergent, so freezing it breaks adaptation to solve a governance problem.",
+      "cite": "Scrum Guide 2020, Product Owner",
+      "tag": "antipatterns"
+    },
+    {
+      "id": "m13q2",
+      "kind": "mcq",
+      "stem": "During Sprint Planning a Developer says an item will take most of the Sprint. The Product Owner, who has a customer demo coming, asks whether it is really that big, then asks twice more with slightly different framing until the Developer revises down. What has the Product Owner actually destroyed?",
+      "options": [
+        "Nothing, because the Product Owner may influence the Developers by helping them understand and select trade-offs",
+        "The information content of the forecast, because the size is now the Product Owner's number rather than the Developers'",
+        "The Sprint Goal, because it can no longer be finalized during Sprint Planning",
+        "The Definition of Done, because a smaller size implies lower quality"
+      ],
+      "answer": 1,
+      "explain": "The Developers who will be doing the work are responsible for the sizing, and a size produced under pressure tells you about the pressure rather than the work. Option A quotes a real sentence but misapplies it: influencing by explaining trade-offs means offering to cut scope or change the item, not repeating the question until the number moves. Option C is wrong because nothing here prevents the Sprint Goal being finalized. Option D confuses a size with a standard: the Definition of Done does not change because someone said a smaller number.",
+      "cite": "Scrum Guide 2020, Product Backlog",
+      "tag": "antipatterns"
+    },
+    {
+      "id": "m13q3",
+      "kind": "multi",
+      "stem": "Select the TWO items that are NOT mentioned anywhere in the Scrum Guide 2020.",
+      "options": [
+        "Product Backlog refinement",
+        "Definition of Ready",
+        "Sizing",
+        "Velocity",
+        "Sprint Goal"
+      ],
+      "answer": [1, 3],
+      "explain": "Definition of Ready does not exist in Scrum. The word ready appears exactly once, lowercase, describing items deemed ready for selection in Sprint Planning, which is a property rather than a formal gate. Velocity appears zero times, and forecasting is described as optional and plural. The three distractors are all genuinely in the Guide: refinement is named as an ongoing activity, sizing is named as the Developers' responsibility, and the Sprint Goal is the Sprint Backlog's commitment. The exam builds many questions from this exact confusion, because all five feel equally familiar from real teams.",
+      "cite": "Scrum Guide 2020, Product Backlog",
+      "tag": "artifacts"
+    },
+    {
+      "id": "m13q4",
+      "kind": "tf",
+      "stem": "True or false: at the Sprint Review, the Product Owner accepts or rejects each Product Backlog item completed during the Sprint.",
+      "answer": false,
+      "explain": "False. The word reject does not appear in the Guide, and accept appears only as acceptable and unacceptable in the Adaptation paragraph, about process deviation. The Definition of Done settles the question before the Review happens: if an item does not meet it, it cannot be released or even presented at the Sprint Review, and it returns to the Product Backlog. The Developers are required to conform to the Definition of Done. This one is worth over-learning because acceptance is near-universal practice in real tooling, which makes the wrong answer feel obviously right.",
+      "cite": "Scrum Guide 2020, Commitment: Definition of Done",
+      "tag": "artifacts"
+    },
+    {
+      "id": "m13q5",
+      "kind": "mcq",
+      "stem": "A stakeholder demands that a Sprint be stopped because a competitor has released something similar. Which statement is correct according to the Scrum Guide 2020?",
+      "options": [
+        "The Scrum Master decides, since they are accountable for the Scrum Team's effectiveness",
+        "The Scrum Team decides collectively, since it is self-managing",
+        "Only the Product Owner has the authority to cancel the Sprint, and the trigger is that the Sprint Goal has become obsolete",
+        "A Sprint cannot be cancelled once started, because the Sprint is a fixed length event"
+      ],
+      "answer": 2,
+      "explain": "This is one of the few genuine absolutes in the Guide, and candidates who learn the heuristic that absolutes are always traps get it wrong on principle. Note the two halves: who has the authority, and what the trigger is. A competitor release might make the Sprint Goal obsolete, but the demand itself is not the trigger, and a bad Sprint is not the trigger. Option B is a real principle applied to the wrong decision, since self-management covers who, what, when, and how the work is done. Option D invents a rule the Guide contradicts directly.",
+      "cite": "Scrum Guide 2020, The Sprint",
+      "tag": "events"
+    },
+    {
+      "id": "m13q6",
+      "kind": "multi",
+      "stem": "A practice quiz you found online contains the following phrases. Select the THREE that indicate it was written against the 2017 Scrum Guide and may teach you wrong answers.",
+      "options": [
+        "The Development Team is 3 to 9 people",
+        "The Scrum Team is typically 10 or fewer people",
+        "The three roles in Scrum",
+        "The Daily Scrum answers three questions",
+        "Sprint Planning addresses three topics: Why, What, and How"
+      ],
+      "answer": [0, 2, 3],
+      "explain": "All three stale phrases were replaced in the November 2020 revision. Development Team size of 3 to 9 became a whole Scrum Team of typically 10 or fewer, which is a different group as well as a different number. Roles became accountabilities, and the word role now appears zero times. The three Daily Scrum questions were removed, and the revisions page lists that removal explicitly. The two correct options are current 2020 wording, and the Why topic in Sprint Planning was itself one of the seven changes, so it is a positive marker of currency rather than a trap.",
+      "cite": "Scrum Guide 2020, Scrum Team and Sprint Planning",
+      "tag": "accountabilities"
+    },
+    {
+      "id": "m13q7",
+      "kind": "mcq",
+      "stem": "Your team has just finished a valuable, Done piece of work in the first week of a four week Sprint, and a customer would benefit from having it now. What does the Scrum Guide 2020 support?",
+      "options": [
+        "Hold it until the Sprint Review so stakeholders can inspect it first",
+        "Release it now, since an Increment may be delivered to stakeholders prior to the end of the Sprint",
+        "Release it only if the Product Owner formally accepts it in writing",
+        "Hold it until the end of the Sprint so the Increment is presented as a single coherent whole"
+      ],
+      "answer": 1,
+      "explain": "The Guide states that multiple Increments may be created within a Sprint, that an Increment may be delivered to stakeholders prior to the end of the Sprint, and, unusually directly, that the Sprint Review should never be considered a gate to releasing value. Options A and D both convert the Review into exactly the gate the Guide denies. Option C imports a formal acceptance step that does not exist in Scrum, since the Definition of Done already determines whether an Increment is born. The only real precondition is that the work meets the Definition of Done.",
+      "cite": "Scrum Guide 2020, Increment",
+      "tag": "artifacts"
+    },
+    {
+      "id": "m13q8",
+      "kind": "mcq",
+      "stem": "A Product Owner delegates writing Product Backlog items to a business analyst and delegates ordering to a weekly stakeholder vote. Which assessment is correct?",
+      "options": [
+        "Both are fine, because the Product Owner may delegate the work and remains accountable",
+        "Delegating the writing is fine and remains the Product Owner's accountability, but a stakeholder vote makes the ordering a committee decision, which the Guide rules out",
+        "Neither is allowed, because the Product Owner must personally perform all Product Backlog management",
+        "Both are problems only if the Developers object"
+      ],
+      "answer": 1,
+      "explain": "The Guide allows delegating the work of Product Backlog management while the accountability stays put. What it does not allow is the decision itself moving to a group: the Product Owner is one person, not a committee, and those wanting to change the Product Backlog do so by convincing the Product Owner. Option A misses that a vote replaces the decider rather than the labour. Option C overcorrects into the opposite error, since delegation is explicitly permitted. Option D makes a framework rule contingent on somebody complaining, which is never how the Guide works.",
+      "cite": "Scrum Guide 2020, Product Owner",
+      "tag": "accountabilities"
+    },
+    {
+      "id": "m13q9",
+      "kind": "tf",
+      "stem": "True or false: because the Product Owner is accountable for maximizing value, the Product Owner should attend every Daily Scrum to keep the Developers aligned with what matters.",
+      "answer": false,
+      "explain": "False, and it fails on the purpose of the event as well as the attendance rule. The Daily Scrum is a 15-minute event for the Developers of the Scrum Team, whose purpose is to inspect progress toward the Sprint Goal and adapt the Sprint Backlog. If the Product Owner is actively working on Sprint Backlog items they participate as a Developer, not as a Product Owner. An answer that frames it as a chance to align the team, gather status, or redirect work is describing a status meeting, which is precisely what the Guide's wording is designed to prevent.",
+      "cite": "Scrum Guide 2020, Daily Scrum",
+      "tag": "events"
+    },
+    {
+      "id": "m13q10",
+      "kind": "mcq",
+      "stem": "A Product Owner keeps every request ever made in the Product Backlog, now several hundred items, on the grounds that deleting one would break faith with the stakeholder who asked. Which accountability is most directly compromised?",
+      "options": [
+        "Developing and explicitly communicating the Product Goal",
+        "Ensuring that the Product Backlog is transparent, visible and understood",
+        "Creating and clearly communicating Product Backlog items",
+        "Ordering Product Backlog items"
+      ],
+      "answer": 1,
+      "explain": "All four are your named accountabilities, which is what makes this question work. The specific failure is transparency: a backlog nobody can read does not communicate the state of the work, and artifacts with low transparency lead to decisions that diminish value and increase risk. Option D is the closest runner-up, since ordering does get harder, but an order still exists and could be inspected. Options A and C describe activities that continue unaffected. The underlying point is that a Product Backlog is a communication artifact, not a record of everything anyone ever asked for.",
+      "cite": "Scrum Guide 2020, Product Owner",
+      "tag": "backlog"
+    },
+    {
+      "id": "m13q11",
+      "kind": "order",
+      "instruction": "You are reading an exam question. Put these four reading steps in the order that eliminates the most wrong answers earliest.",
+      "items": [
+        "Find who the stem names: Product Owner, Developers, Scrum Master, Scrum Team, or stakeholders",
+        "Find the modal verb: must and only point to a genuine rule, while could and best invite several defensible options",
+        "Eliminate any option containing a stale 2017 term or a technique the Guide never names",
+        "Among the survivors, choose the option that keeps the accountability where the Guide put it and makes something visible sooner"
+      ],
+      "explain": "Who comes first because a swapped accountability makes an otherwise perfect sentence false, and it is the cheapest error to catch. The modal verb comes next because it tells you whether you are hunting one rule or weighing several reasonable approaches. Vocabulary elimination is third, since it removes options mechanically without judgment: story points, velocity, Definition of Ready, roles, Development Team, estimate. Only then do you exercise judgment, and only among options that already survived. Doing judgment first is how experienced people talk themselves into an answer that works in real life and is not in the Guide.",
+      "cite": "Scrum Guide 2020, Scrum Definition",
+      "tag": "antipatterns"
+    },
+    {
+      "id": "m13q12",
+      "kind": "mcq",
+      "stem": "A team plans a two week Sprint 0 to set up infrastructure and write the initial Product Backlog, followed later by a one week hardening Sprint before each release. Which statement best reflects the Scrum Guide 2020?",
+      "options": [
+        "Both are acceptable, because Scrum is purposefully incomplete and teams may add practices",
+        "Sprint 0 is acceptable but hardening Sprints are not, because quality does not decrease during a Sprint",
+        "Neither is Scrum: every Sprint must produce a usable Increment, and work is not part of an Increment unless it meets the Definition of Done",
+        "Both are acceptable provided the Scrum Master approves them"
+      ],
+      "answer": 2,
+      "explain": "Neither term appears in the Guide, and both contradict its structure. A Sprint that produces no usable Increment is not a Sprint, and a hardening Sprint is evidence that earlier Increments were not Done, which contradicts both the Definition of Done and the rule that quality does not decrease. Option A is the most common wrong answer and confuses incompleteness with permission: Scrum leaves gaps for you to fill, not parts for you to replace. Option B rescues the wrong half. Option D invents an approval authority the Scrum Master does not have.",
+      "cite": "Scrum Guide 2020, The Sprint",
+      "tag": "events"
+    },
+    {
+      "id": "m13q13",
+      "kind": "mcq",
+      "stem": "A Product Owner tells the Developers which files to change and in what order, because the Product Owner used to write the code and it saves everyone time. Output rises for two Sprints, then the Developers stop proposing alternatives entirely. What is the mechanism of harm?",
+      "options": [
+        "The Product Owner has taken on the Scrum Master accountability, which one person may not hold",
+        "Directing the how removes the Developers' self-management, so their judgment stops being exercised and the Product Owner's involvement becomes genuinely necessary",
+        "The Definition of Done has been weakened, since the Product Owner is now setting quality standards",
+        "Nothing is wrong, because the Scrum Team is cross-functional and members may share skills"
+      ],
+      "answer": 1,
+      "explain": "The Scrum Team is self-managing, deciding internally who does what, when, and how, and no one outside the Developers tells them how to turn Product Backlog items into Increments of value. The specific harm is a loop: intervention suppresses judgment, suppressed judgment justifies more intervention. Option A invents a prohibition the Guide does not state and misnames the accountability anyway. Option C describes a different failure that is not present here. Option D quotes cross-functionality correctly and applies it to the wrong thing, since having a skill is not authority to direct someone else's work.",
+      "cite": "Scrum Guide 2020, Scrum Team",
+      "tag": "antipatterns"
+    }
+  ],
+  "cards": [
+    {
+      "id": "m13c1",
+      "front": "Antipattern, in one line",
+      "back": "A pattern you think will improve things, but it doesn't. Nobody adopts one on purpose, which is why you have to trace the impact on the Developers rather than judge your own intent.",
+      "tag": "antipatterns"
+    },
+    {
+      "id": "m13c2",
+      "front": "Proxy PO and PO by committee: the shared fix",
+      "back": "One named person with the authority to order the backlog. The Product Owner is one person, not a committee, and everyone else changes the backlog by convincing that person.",
+      "tag": "antipatterns"
+    },
+    {
+      "id": "m13c3",
+      "front": "The absentee PO, and what it costs",
+      "back": "Present only at the Sprint Review. The Developers make two weeks of decisions without you, then get a verdict they cannot appeal. Cheap mid-Sprint learning turns into expensive rework.",
+      "tag": "antipatterns"
+    },
+    {
+      "id": "m13c4",
+      "front": "PO pressures the size: why it is worse than it looks",
+      "back": "The Developers who will be doing the work are responsible for the sizing. A number produced under pressure describes the pressure, not the work, so the forecast carries no information at all.",
+      "tag": "antipatterns"
+    },
+    {
+      "id": "m13c5",
+      "front": "Accountable vs responsible",
+      "back": "The Product Owner may do the work or delegate the responsibility to others. Regardless, the Product Owner remains accountable. You can hand off the work. The accountability does not move.",
+      "tag": "accountabilities"
+    },
+    {
+      "id": "m13c6",
+      "front": "Ordered vs prioritized",
+      "back": "The Product Backlog is an emergent, ordered list. Priority is a label many items can share. Order is one sequence, so it forces the decision priority lets you avoid. Prioritized is pre-2011 wording.",
+      "tag": "backlog"
+    },
+    {
+      "id": "m13c7",
+      "front": "Who crafts the Sprint Goal, and who commits to it?",
+      "back": "The PO proposes how value could increase. The whole Scrum Team collaborates to define the Sprint Goal. It is a commitment by the Developers, and must be finalized prior to the end of Sprint Planning.",
+      "tag": "events"
+    },
+    {
+      "id": "m13c8",
+      "front": "The one true Product Owner absolute",
+      "back": "Only the Product Owner has the authority to cancel the Sprint, and the trigger is that the Sprint Goal has become obsolete. Not a bad Sprint, and not a stakeholder demand.",
+      "tag": "events"
+    },
+    {
+      "id": "m13c9",
+      "front": "Does the PO accept or reject work?",
+      "back": "No. Reject appears zero times in the Guide. The Definition of Done decides: an item that does not meet it cannot be released or even presented at the Sprint Review, and returns to the Product Backlog.",
+      "tag": "artifacts"
+    },
+    {
+      "id": "m13c10",
+      "front": "Refinement: event or activity?",
+      "back": "An ongoing activity, not one of the five events. It breaks down and further defines items, adding details such as a description, order, and size. No timebox and no required frequency.",
+      "tag": "backlog"
+    },
+    {
+      "id": "m13c11",
+      "front": "Where does the Product Goal live?",
+      "back": "In the Product Backlog, as its commitment. The rest of the backlog emerges to define what will fulfill it, and the team must fulfill or abandon one objective before taking on the next.",
+      "tag": "artifacts"
+    },
+    {
+      "id": "m13c12",
+      "front": "Can an Increment ship before the Sprint Review?",
+      "back": "Yes. Multiple Increments may be created within a Sprint, an Increment may be delivered prior to the end of the Sprint, and the Sprint Review should never be considered a gate to releasing value.",
+      "tag": "artifacts"
+    },
+    {
+      "id": "m13c13",
+      "front": "Nine things people think are Scrum and are not",
+      "back": "Story points, velocity, user stories, Sprint 0, hardening Sprints, Definition of Ready, backlog grooming as an event, the three Daily Scrum questions, and PO acceptance or sign-off.",
+      "tag": "artifacts"
+    },
+    {
+      "id": "m13c14",
+      "front": "Four stale 2017 terms that flag a bad practice source",
+      "back": "Development Team, roles, self-organizing, and 3 to 9 members. Also estimate, which appears zero times in 2020. Anything published before 18 November 2020 may teach a wrong answer.",
+      "tag": "accountabilities"
+    }
+  ]
+}

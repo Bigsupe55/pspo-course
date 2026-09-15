@@ -1,0 +1,435 @@
+{
+  "id": "m11",
+  "num": 11,
+  "week": 4,
+  "title": "Stakeholders and Customers",
+  "subtitle": "Who gets a say, who gets a vote, and how to find out what people actually need instead of what they say in a meeting.",
+  "minutes": 30,
+  "why": "Every backlog you order is an answer to somebody's problem. Get the somebody wrong and the ordering cannot be right, however careful the arithmetic.",
+  "objectives": [
+    "State the Scrum Guide's exact position on stakeholders and where they get to influence the backlog",
+    "Distinguish outside-in from inside-out thinking and spot which one you are doing",
+    "Run a customer conversation that produces a problem rather than a compliment",
+    "Separate buyer, user, and beneficiary using Ledgerline's ten-persona map",
+    "Decide when a clean persona model would make the product worse"
+  ],
+  "beats": [
+    {
+      "type": "hook",
+      "body": "One feature. Ask the Ledger turns a plain English question into a table, prints the query it ran above the results, and exports CSV. Yusuf Adeyemi, your external auditor, calls it core. Dana Whitcomb, the Finance Director, would trade it tomorrow for saved views she trusts. Margaret Shaw, the Town Clerk, is frightened of it because a resident might be standing behind her when it runs. Ruth Delgado on the Select Board will never open it. Four people, four honest positions, one screen. There is no answer that makes all four right, and it is your job to pick one anyway."
+    },
+    {
+      "type": "guide",
+      "quote": "The Scrum Team is responsible for all product-related activities from stakeholder collaboration, verification, maintenance, operation, experimentation, research and development, and anything else that might be required.",
+      "cite": "Scrum Guide 2020, Scrum Team",
+      "gloss": "Stakeholder collaboration is named first in that list, and it belongs to the whole team, not to a separate business analyst or account manager standing outside it."
+    },
+    {
+      "type": "teach",
+      "title": "Everything the Guide says about stakeholders",
+      "body": "It is remarkably little, and you should know the whole of it. Stakeholder collaboration is a Scrum Team responsibility. The Product Owner may represent the needs of many stakeholders in the Product Backlog. Those wanting to change the Product Backlog do so by trying to convince the Product Owner. The organization must respect the Product Owner's decisions. At the Sprint Review, the Scrum Team and stakeholders collaborate on what to do next. The Scrum Master serves the organization by removing barriers between stakeholders and Scrum Teams. That is essentially it.",
+      "callout": {
+        "kind": "why",
+        "text": "The Guide names who decides and where influence happens. It says nothing about how to find out what people need. That silence is where this module spends most of its time."
+      }
+    },
+    {
+      "type": "guide",
+      "quote": "The Product Owner is one person, not a committee. The Product Owner may represent the needs of many stakeholders in the Product Backlog. Those wanting to change the Product Backlog can do so by trying to convince the Product Owner.",
+      "cite": "Scrum Guide 2020, Product Owner",
+      "gloss": "Everyone gets a voice, one person holds the pen. The route in is persuasion, not authority, not seniority, and not a ticket filed directly with a developer."
+    },
+    {
+      "type": "teach",
+      "title": "Convince is a load-bearing word",
+      "body": "Read that last sentence as a design decision rather than a rule of etiquette. Anyone may try to convince you. That includes your co-founder, your one engineer, and the Town Manager holding the pen on a contract. What none of them get is a side door. The Guide backs this with an obligation running the other way: for Product Owners to succeed, the entire organization must respect their decisions. Both halves matter. If you cannot be convinced you are a bottleneck. If you can be overridden you are a mailbox.",
+      "callout": {
+        "kind": "note",
+        "text": "Founder trap. When you are also the CEO, you can override yourself and nobody in the room will object. Notice when you have done it."
+      }
+    },
+    {
+      "type": "guide",
+      "quote": "During the event, the Scrum Team and stakeholders review what was accomplished in the Sprint and what has changed in their environment. Based on this information, attendees collaborate on what to do next. The Product Backlog may also be adjusted to meet new opportunities. The Sprint Review is a working session and the Scrum Team should avoid limiting it to a presentation.",
+      "cite": "Scrum Guide 2020, Sprint Review",
+      "gloss": "This is the one event built for stakeholders, and the word is collaborate. They shape what happens next. They do not approve, sign off, or set the order."
+    },
+    {
+      "type": "trap",
+      "myth": "At the Sprint Review, stakeholders prioritize the Product Backlog and sign off on the Increment.",
+      "truth": "Attendees collaborate on what to do next, and the Product Backlog may be adjusted. Ordering Product Backlog items remains a Product Owner accountability, and the Sprint Review is never a gate to releasing value.",
+      "why": "PSPO I builds distractors out of real corporate rituals: demo day, sign-off, steering committee, change board. Collaboration and approval feel similar in a room and are completely different in the Guide."
+    },
+    {
+      "type": "teach",
+      "title": "Outside-in versus inside-out",
+      "body": "[[PRACTICE]] This comes from Pragmatic Institute Foundations, not from Scrum. Inside-out means the idea started inside the building and the market was consulted afterwards, if at all. Outside-in means it started with an observed market problem and worked toward a solution. Pragmatic states it as a rule with deliberate modesty: an outside-in approach increases the likelihood of product success. Not guarantees. The useful diagnostic is on your artifacts, not your intentions. Look at your roadmap, your positioning, your requirements, and ask which of them can trace a line back to something you observed. Anything that cannot is inside-out by default.",
+      "callout": {
+        "kind": "warn",
+        "text": "None of this vocabulary appears in the Scrum Guide. It is genuinely useful and it is not examinable on PSPO I."
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "The chili nobody could eat",
+      "body": "You spend a weekend perfecting a chili. Toasted whole chiles, the good tomatoes, a stock you made yourself. You bring it to the town potluck and carry the pot home nearly full, because a quarter of the room cannot do nightshades, the kids wanted something beige, and the two people who loved it were already going to like you. The chili was not bad. Skill was not the missing thing. You aimed a real ability at a target you assumed instead of checked. That is inside-out, and it almost never looks like laziness from the inside. It looks like craft."
+    },
+    {
+      "type": "teach",
+      "title": "You are hearing from the noisy 20 percent",
+      "body": "[[PRACTICE]] Pragmatic's frame, not a statistic: your inputs arrive from executives, salespeople, the newest customer, the loudest customer, and support. Every one of those is sincere and evidence-shaped, and every one is a sample of one. It also names where the answers are. NIHITO, a Pragmatic Institute mark, stands for Nothing Important Happens In The Office, and the rule that follows is that the answers to most of your questions are not in the building. Their sampling frame is worth stealing whole: your customers, your competitors' customers, evaluators who are shopping right now, and potentials who are not shopping at all.",
+      "callout": {
+        "kind": "note",
+        "text": "A backlog sourced only from existing customers never touches the group that reveals your competitive gaps, or the largest group of all, the people who are not looking for you."
+      }
+    },
+    {
+      "type": "check",
+      "q": {
+        "id": "m11k1",
+        "kind": "sort",
+        "stem": "Ledgerline has eight towns in pilot discussion out of roughly 400 towns in the region. Sort each conversation into the market group it samples.",
+        "buckets": ["Our customers", "Competitors' customers", "Evaluators, shopping now", "Potentials, not shopping"],
+        "items": [
+          {"text": "A pilot town's finance director walking you through last month's close", "bucket": "Our customers"},
+          {"text": "A town that runs Corvus Financials dashboards and is content with them", "bucket": "Competitors' customers"},
+          {"text": "A town that issued an RFP for transparency software last month", "bucket": "Evaluators, shopping now"},
+          {"text": "A 900-person town whose clerk does payroll and has never considered software for this", "bucket": "Potentials, not shopping"},
+          {"text": "A larger town that already publishes its own spend data and is proud of it", "bucket": "Competitors' customers"},
+          {"text": "A town manager comparing you against two vendors before the June appropriation vote", "bucket": "Evaluators, shopping now"}
+        ],
+        "explain": "Each group answers a different question. Your customers tell you what else to solve. Competitors' customers tell you what the incumbent leaves unsolved, which is exactly why the town that already publishes its own spend data matters: it is the group that forces you to re-derive your differentiator. Evaluators tell you why and how people buy, which is the part of the process most founders never study. Potentials tell you why nobody is shopping at all, which in a 900-person town is often the most important answer available.",
+        "cite": "Pragmatic Institute Foundations, market segmentation. Not Scrum.",
+        "tag": "stakeholders"
+      }
+    },
+    {
+      "type": "teach",
+      "title": "How to run the conversation",
+      "body": "[[PRACTICE]] Pragmatic gives four open-ended, high-gain questions. What prevents you from succeeding? How do you make buying decisions? What do you think of my company and our product? Who are my competitors and what do you think of them? Notice the properties: none is about your features, two are about buying rather than using, and none can be answered yes or no. Then the discipline: you do not learn while you are talking, this is not the time to sell or support, accept every negative with a smile, and remember they believe what they perceive. When you disagree, say that is interesting, tell me more.",
+      "callout": {
+        "kind": "why",
+        "text": "The fastest way a founder ruins a discovery call is answering the objection. The moment you defend, the interview becomes a demo and the data stops."
+      }
+    },
+    {
+      "type": "check",
+      "q": {
+        "id": "m11k2",
+        "kind": "mcq",
+        "stem": "You have twenty minutes with Priya Raman, a part-time elected Treasurer, and you have never met her. Which opening produces a problem rather than flattering noise?",
+        "options": [
+          "Would a bank reconciliation view that ties to the penny be useful to you?",
+          "Walk me through the last warrant cycle. Where did you have to leave whatever tool you were in and do it another way?",
+          "Here is a two-minute look at Anomaly Review. What do you think?",
+          "On a scale of one to ten, how painful is your current reconciliation process?"
+        ],
+        "answer": 1,
+        "explain": "Option 2 is observation in question form. It asks about a real past instance rather than a hypothetical, and it hunts for the moment she picked up a pencil, which is the highest-signal event you can find: the point where a user leaves the tool to get the job done. Option 1 is a leading question about a feature you already want to build, and she will be polite. Option 3 is a demo, which turns her into an audience. Option 4 produces a number with no story attached, and you cannot act on a 7.",
+        "cite": "Pragmatic Institute Foundations, Discover. Not Scrum.",
+        "tag": "stakeholders"
+      }
+    },
+    {
+      "type": "teach",
+      "title": "Nice-to-have, or actually a problem",
+      "body": "[[PRACTICE]] Pragmatic's test has three parts and all three must pass. Urgent: does it require immediate action, what is the source of urgency, and is that urgency growing or shrinking? A problem with no identifiable forcing function is a preference. Pervasive: one map pin or six? One loud customer is not a market. Willing to pay: is it painful enough that someone pays, who pays, in what currency, and will they pay you? Fail any one and it is not a low-priority opportunity, it is not an opportunity. Notice that currency need not be money. In a town it is often political cover.",
+      "callout": {
+        "kind": "note",
+        "text": "Ledgerline's urgency sources are unusually easy to name: the state's records-response deadline, audit season, the June appropriation vote, and a treasurer's personal liability."
+      }
+    },
+    {
+      "type": "check",
+      "q": {
+        "id": "m11k3",
+        "kind": "mcq",
+        "stem": "Glen Ostrowski, the part-time Purchasing Officer, says the demo reads as monitoring and his pain is the managing. He wants live purchase-order ceiling burn-down with alerts before the not-to-exceed is breached. Applying the urgent, pervasive, willing to pay test, what is the honest read?",
+        "options": [
+          "Fails pervasive. Glen is one part-time officer in one town, so this is a single map pin.",
+          "Passes urgent and pervasive, with willing to pay unproven and worth testing, since blowing a ceiling has a named consequence, two of twelve demo contracts already sit over ceiling at 105 and 128 percent, and the person who feels the pain is not the person who signs.",
+          "Passes all three outright. He described the pain in detail and detail is evidence of willingness to pay.",
+          "Cannot be assessed without a survey, because qualitative input never satisfies the test."
+        ],
+        "answer": 1,
+        "explain": "Urgency has a named source, an award that cannot survive a challenge and a ceiling that is legally binding, and it recurs at bid and award time. Pervasiveness is plausible because ceiling management is required by law in every town, not personal to Glen. Willingness to pay is the open one, and it is open precisely because Glen is a user rather than the buyer. Option 1 confuses one interviewee with one instance of a problem. Option 3 mistakes vividness for evidence, which is the noisy-20-percent failure. Option 4 inverts the method: qualitative comes first to find the problem, quantitative comes second to size it.",
+        "cite": "Pragmatic Institute Foundations, Validate. Not Scrum.",
+        "tag": "stakeholders"
+      }
+    },
+    {
+      "type": "teach",
+      "title": "Buyer, user, beneficiary",
+      "body": "[[PRACTICE]] Three different people, and a startup founder usually assumes they are one. The buyer signs and cares about cost, risk, and political exposure. The user opens the product on a Tuesday and cares whether it saves them an afternoon. The beneficiary gets the outcome and often never touches the product at all. In Northfield the split is stark. Tom Iverson the Town Manager approves. Dana Whitcomb the Finance Director champions and holds the budget. Angela Pike in accounts payable is the person whose actual working day the product changes most. Residents and vendors benefit and sign nothing.",
+      "visual": "stakeholder-map"
+    },
+    {
+      "type": "civic",
+      "title": "Five seats, and the two roles that did not get one",
+      "body": "The demo prologue offers a welcome seat to five roles: Finance Director, Town Manager, Select Board member, External Auditor, Resident. Accounts Payable and IT stay in the switcher but were cut from the welcome screen, and the reason is written down in the plan: neither signs a contract. That is a defensible decision and it is worth staring at. Angela is the persona whose daily work the product most directly changes, and discovery records exactly where she stops, hitting the wall because the demo only lets her look. You prioritized by economic buyer. The honest version of that decision says so out loud."
+    },
+    {
+      "type": "sim",
+      "title": "The screen nobody agrees on",
+      "setup": "A plain English question goes in, a table comes out, and the query it ran is printed above the results. CSV export. Yusuf Adeyemi the external auditor calls it core to his work. Dana the Finance Director would trade it for saved views she trusts more. Margaret the Town Clerk is afraid of it, because a resident could be at her counter watching the screen. Ruth on the Select Board will never open it. Cutting it was genuinely on the table until a live session showed it works. You have one engineer and a coverage note in discovery marking the screen avoid for the Clerk and the Board chair.",
+      "choices": [
+        {
+          "label": "Keep it, but change who meets it. The full query view for the auditor and analyst roles, a plain-language ask-a-question mode for anyone else, and absent from the Clerk and Board chair views entirely.",
+          "outcome": "The auditor keeps the thing he calls core, Margaret stops carrying a risk she never asked for, and Dana is unaffected because drill-down is what she actually wanted. You cut the exposure without cutting the capability. This is the decision your own roadmap reached after the live session, filed as R-11.",
+          "verdict": "good",
+          "lesson": "Stakeholder conflict is often a conflict about exposure, not about existence. Ask whether the disagreement is over whether the feature should exist or over who should be able to see it."
+        },
+        {
+          "label": "Cut it. Three of four stakeholders are indifferent or hostile, one engineer cannot maintain everything, and the Finance Director explicitly offered to trade it.",
+          "outcome": "You remove the one capability the auditor called core, and he is the persona for whom your differentiating story is the point rather than decoration. You also cut it on evidence gathered before the live session, which showed it genuinely works. Majority preference quietly outvoted the strongest single use case.",
+          "verdict": "bad",
+          "lesson": "Counting stakeholders is not weighing them. A feature that is essential to one persona and irrelevant to three is not a feature that three people voted down."
+        },
+        {
+          "label": "Keep it visible for everyone and add documentation plus a warning banner explaining what it does.",
+          "outcome": "Margaret's fear was never a knowledge gap, it was a resident standing behind her while a raw query renders on a public counter screen. A banner does not move a monitor. Ruth still will not open it, and now the product carries a warning that makes the whole thing feel fragile to the least technical people you serve.",
+          "verdict": "bad",
+          "lesson": "When a stakeholder's objection is about context rather than comprehension, training and documentation are the wrong instrument. Change the view, not the reader."
+        },
+        {
+          "label": "Put it to the four of them and build whatever the majority supports.",
+          "outcome": "You get a defensible-looking answer and you have handed away a decision that is yours. The Guide is unambiguous: the Product Owner is one person, not a committee, and those wanting to change the Product Backlog do so by trying to convince the Product Owner. A vote also destroys the actual finding, which was that the four are not answering the same question.",
+          "verdict": "bad",
+          "lesson": "Consult everyone, decide alone. A vote among stakeholders is not neutrality, it is a Product Owner declining to own the call."
+        }
+      ]
+    },
+    {
+      "type": "civic",
+      "title": "One person, many hats, one login",
+      "body": "Your discovery study writes ten personas as clean, separate roles, then admits what it is doing. In a town this size the same human is often Finance Director and Treasurer. The Clerk also runs payroll. The Purchasing Officer is whoever had time. State law explicitly permits one person to be both treasurer and tax collector. Your own homepage says it better than any slide: in many towns, one person is managing all of it. So the roadmap's answer splits the difference. Role separation governs permissions and views, because that is a control question. But one user must switch hats without a second login."
+    },
+    {
+      "type": "teach",
+      "title": "When a clean model makes the product worse",
+      "body": "[[PRACTICE]] Personas are a modelling tool from outside Scrum, and like every model they buy clarity by discarding something. Here the discarded thing is the actual user. Build ten tidy role-based experiences and you have built a product that forces Priya to log out and log back in to do the second half of her own job. The model was not wrong, it was load-bearing in the wrong place. Use personas to reason about needs and permissions. Do not let them define the account structure, the navigation, or the assumption that one human equals one role.",
+      "callout": {
+        "kind": "why",
+        "text": "The tell is when a design decision only makes sense if your abstraction is literally true. Ask what breaks if two personas are the same person, because in a 900-person town they usually are."
+      }
+    },
+    {
+      "type": "trap",
+      "myth": "Personas, user research, and customer interviews are part of Scrum, so a Product Owner is required to produce them.",
+      "truth": "The Scrum Guide 2020 contains none of these words. It says stakeholder collaboration is a Scrum Team responsibility, that the Product Owner may represent the needs of many stakeholders, and that Scrum is purposefully incomplete.",
+      "why": "The exam is graded against the Guide. Discovery practice is how you become a good Product Owner and it is not how you pass PSPO I. Keep both, label both, and never mix them in an exam answer."
+    },
+    {
+      "type": "write",
+      "prompt": "Write the three questions you will actually ask on a first 20-minute call with Dana Whitcomb, a Finance Director you have never met. No feature names, no demo, no pitch.",
+      "starter": "1. ____\n2. ____\n3. ____\nThe answer I am afraid of hearing: ____",
+      "rubric": [
+        "All three are open-ended and high-gain. None can be answered yes, no, or with a number on a scale.",
+        "At least one asks about a specific past instance, not a hypothetical. Walk me through the last time, not would you like it if.",
+        "At least one is about buying or deciding, not about using. How money gets approved is half the problem in municipal software.",
+        "No question names a Ledgerline feature or invites a reaction to your product. If she can answer it by praising you, rewrite it.",
+        "You name an answer that would genuinely hurt. If no possible answer changes your plan, you have written a survey, not a discovery call."
+      ],
+      "model": "1. Walk me through the last month-end close. Where did you leave the ERP and do something another way, and what were you doing instead? 2. The last time your office bought software, who had to say yes, in what order, and what nearly stopped it? 3. When the auditor or a board member questions a number, what do you actually do in the next hour? The answer I am afraid of hearing: that reconciliation takes her twenty minutes in a spreadsheet she built years ago and is completely comfortable with, which would mean the adoption gate I have been building toward is not her gate, and role-aware views plus the Records Desk should move ahead of it."
+    },
+    {
+      "type": "keypoints",
+      "points": [
+        "Stakeholder collaboration is a Scrum Team responsibility, and those wanting to change the Product Backlog do so by trying to convince the Product Owner.",
+        "The Sprint Review is collaboration on what to do next, not approval, sign-off, or stakeholder prioritization.",
+        "Outside-in beats inside-out, and the test is your artifacts: which of them trace back to something you observed?",
+        "Three-part test before anything gets built: urgent, pervasive, and someone is willing to pay. Fail one and it is not an opportunity.",
+        "The person who signs is rarely the person whose day changes. Name the buyer, the user, and the beneficiary separately, then say which one you just prioritized."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "id": "m11q1",
+      "kind": "mcq",
+      "stem": "A Town Manager who controls the budget tells your engineer directly to add a feature this Sprint, and copies you. According to the Scrum Guide 2020, what is the correct framing?",
+      "options": [
+        "The engineer should comply, since the Town Manager is the economic buyer and the organization must respect the customer.",
+        "Those wanting to change the Product Backlog do so by trying to convince the Product Owner. He may absolutely try to convince you, and the decision and the ordering remain yours.",
+        "The request must wait for the next Sprint Review, where stakeholders formally submit Product Backlog changes.",
+        "The Scrum Master decides whether the request is admissible, since they remove barriers between stakeholders and Scrum Teams."
+      ],
+      "answer": 1,
+      "explain": "The Guide's sentence is exact and it is a design decision, not etiquette: those wanting to change the Product Backlog can do so by trying to convince the Product Owner. Option 1 gives a stakeholder a side door into the Sprint, which is also how a Sprint Goal gets endangered. Option 3 invents a submission process; the Sprint Review is collaboration on what to do next, not an intake queue. Option 4 misreads the Scrum Master's service to the organization, which is about removing barriers, not gatekeeping requests.",
+      "cite": "Scrum Guide 2020, Product Owner and Scrum Master",
+      "tag": "stakeholders"
+    },
+    {
+      "id": "m11q2",
+      "kind": "mcq",
+      "stem": "Four stakeholders hold irreconcilable positions on one feature: essential, tradeable, frightening, and irrelevant. What does the Scrum Guide 2020 support as the Product Owner's move?",
+      "options": [
+        "Hold a vote and implement the majority position.",
+        "Escalate to the organization's steering group, since a four-way conflict exceeds a single person's mandate.",
+        "Decide. The Product Owner is one person, not a committee, and may represent the needs of many stakeholders in the Product Backlog. Each of them may try to convince you first.",
+        "Split the feature into four variants so every stakeholder gets the version they asked for."
+      ],
+      "answer": 2,
+      "explain": "Representing many stakeholders is exactly the job description, and a committee is exactly what the Guide rules out. Option 1 sounds fair and outsources your accountability, while also weighting four opinions equally when one may be the strongest use case in the product. Option 2 does the same upward. Option 4 is the most expensive wrong answer: four variants for one engineer, and it treats a disagreement about exposure as though it were a disagreement about function.",
+      "cite": "Scrum Guide 2020, Product Owner",
+      "tag": "stakeholders"
+    },
+    {
+      "id": "m11q3",
+      "kind": "multi",
+      "stem": "Select the TWO statements the Scrum Guide 2020 actually makes about stakeholders.",
+      "options": [
+        "The Scrum Team is responsible for all product-related activities from stakeholder collaboration onward.",
+        "The Product Owner must maintain a stakeholder map and refresh it each quarter.",
+        "At the Sprint Review, the Scrum Team and stakeholders collaborate on what to do next.",
+        "Stakeholders approve the Increment before it can be released.",
+        "Key stakeholders must attend the Sprint Retrospective to give feedback on team effectiveness."
+      ],
+      "answer": [0, 2],
+      "explain": "Both correct options come straight from the Guide, one from Scrum Team and one from Sprint Review. Stakeholder maps are a useful practice and appear nowhere in the Guide. Approval is doubly wrong: the Guide says the Sprint Review should never be considered a gate to releasing value. The Retrospective is for the Scrum Team to inspect how the Sprint went, and the Guide does not invite stakeholders into it.",
+      "cite": "Scrum Guide 2020, Scrum Team, Sprint Review, Increment, Sprint Retrospective",
+      "tag": "events"
+    },
+    {
+      "id": "m11q4",
+      "kind": "tf",
+      "stem": "The Scrum Guide 2020 requires the Product Owner to interview customers and build personas before writing Product Backlog items.",
+      "answer": false,
+      "explain": "None of those words appear in the Guide. It states that stakeholder collaboration is a Scrum Team responsibility and that the Product Owner may represent the needs of many stakeholders in the Product Backlog, and it leaves the method entirely open, consistent with the framework being purposefully incomplete. Interviews and personas are strong practice from outside Scrum. Doing them makes you better at the job. Claiming Scrum requires them loses you a mark.",
+      "cite": "Scrum Guide 2020, Scrum Team and Product Owner",
+      "tag": "stakeholders"
+    },
+    {
+      "id": "m11q5",
+      "kind": "mcq",
+      "stem": "Which of these is the clearest example of inside-out thinking?",
+      "options": [
+        "Building anomaly workflow because Dana named clear, snooze, assign and annotate as her single highest-value ask.",
+        "Leading every operator screen with the underlying technology story because it is the company's structural differentiator, after discovery found operators trust reconciliation and clear definitions instead.",
+        "Adding the Records Desk after finding that most records requests are about vendor payments and check registers.",
+        "Cutting the vendor portal from scope because no town-side persona used it."
+      ],
+      "answer": 1,
+      "explain": "Inside-out means the idea originated inside the building and the market was consulted afterwards, if at all. Option 2 is that exactly, and it is harder to resist than it looks, because the claim is true, technically impressive, and central to the company's pitch and fundraising story. The other three each trace back to an observed problem or an observed absence of use, which is the outside-in test: can this artifact draw a line back to something you actually saw?",
+      "cite": "Pragmatic Institute Foundations, outside-in thinking. Not Scrum.",
+      "tag": "stakeholders"
+    },
+    {
+      "id": "m11q6",
+      "kind": "mcq",
+      "stem": "Which question is most likely to produce flattering noise rather than a problem?",
+      "options": [
+        "What prevents you from succeeding?",
+        "How do you make buying decisions?",
+        "Would you use a feature that reconciles your ledger to the bank automatically?",
+        "Who are my competitors and what do you think of them?"
+      ],
+      "answer": 2,
+      "explain": "Option 3 is closed, leading, hypothetical, and about a feature you have already decided to build. A polite municipal employee in a twenty-minute call will say yes, and you will have learned nothing while feeling validated. The other three are Pragmatic's own high-gain questions: open-ended, unanswerable with yes or no, and pointed at the problem and the buying process rather than at your product.",
+      "cite": "Pragmatic Institute Foundations, Discover. Not Scrum.",
+      "tag": "stakeholders"
+    },
+    {
+      "id": "m11q7",
+      "kind": "mcq",
+      "stem": "A single very engaged town clerk describes a painful monthly process in vivid detail and asks for a feature. What does the three-part test say?",
+      "options": [
+        "Build it. Detailed, unprompted pain from a real user is the strongest evidence available.",
+        "Urgency looks plausible and willingness to pay may be arguable, but pervasiveness is untested. One loud voice is not a market, so go find out whether it is one map pin or six before it is an opportunity.",
+        "Drop it. A request from one person can never satisfy the test.",
+        "Ask her to survey her peers and bring back the data."
+      ],
+      "answer": 1,
+      "explain": "All three parts must pass and pervasiveness is the one this evidence does not touch, which is precisely the noisy-20-percent failure the frame exists to catch. Option 1 mistakes vividness for distribution. Option 3 overcorrects; one interview is how you find a problem, it is just not how you size one. Option 4 outsources your discovery to a stakeholder, who will ask leading questions on your behalf. Note the method's ordering: qualitative to discover what you do not know, quantitative to validate what you discovered.",
+      "cite": "Pragmatic Institute Foundations, Validate. Not Scrum.",
+      "tag": "stakeholders"
+    },
+    {
+      "id": "m11q8",
+      "kind": "sort",
+      "stem": "Sort each Ledgerline persona by the role they mainly play in the purchase. Some people genuinely occupy more than one, so choose the one that decides how you would talk to them.",
+      "buckets": ["Buyer or approver", "User", "Beneficiary who signs nothing"],
+      "items": [
+        {"text": "Tom Iverson, Town Manager, final approver", "bucket": "Buyer or approver"},
+        {"text": "Angela Pike, accounts payable, daily at transaction level", "bucket": "User"},
+        {"text": "A resident opening the public ledger with no login", "bucket": "Beneficiary who signs nothing"},
+        {"text": "Ruth Delgado, Select Board chair, approving body", "bucket": "Buyer or approver"},
+        {"text": "Carla Benitez, part-time IT coordinator, technical evaluator", "bucket": "Buyer or approver"},
+        {"text": "A paving contractor waiting 30 to 45 days to be paid", "bucket": "Beneficiary who signs nothing"},
+        {"text": "Yusuf Adeyemi, external auditor, in the product by engagement", "bucket": "User"},
+        {"text": "Margaret Shaw, Town Clerk, weekly, records requests", "bucket": "User"}
+      ],
+      "explain": "The point of the split is that these three groups need different things from you. Buyers and approvers weigh cost, risk, and political exposure, and that is who your homepage is written for. Users weigh whether their Tuesday gets better. Beneficiaries never enter the buying conversation at all and are your proof, not your pitch. Carla is the interesting case: she never signs, but as technical evaluator she can stop a purchase, which puts her on the approver side of how you prepare. Dana Whitcomb would sit in two buckets, champion and power user, which is exactly why she is the easiest persona to over-serve.",
+      "cite": "Pragmatic Institute Foundations, buyer versus user personas. Not Scrum.",
+      "tag": "stakeholders"
+    },
+    {
+      "id": "m11q9",
+      "kind": "mcq",
+      "stem": "Your persona model has ten clean roles. Discovery then notes that in a small town the same person is often Finance Director and Treasurer, and that state law permits one person to be both treasurer and tax collector. What is the right product response?",
+      "options": [
+        "Merge the personas into fewer, broader roles so the model matches reality.",
+        "Keep role separation for permissions and views, because that is a control question, and let one user switch hats without a second login.",
+        "Require a separate login per role, since segregation of duties is an auditor expectation.",
+        "Drop personas entirely, since they clearly do not describe real users."
+      ],
+      "answer": 1,
+      "explain": "This is your own roadmap's principle, and it splits the question correctly: permissions need separation, experience needs one human. Option 1 throws away the reason the model was useful, since the permission distinctions are real even when the people are not distinct. Option 3 mistakes an auditor's control concern for a login requirement, and it is precisely the design that makes Priya log out to finish her own job. Option 4 discards a tool because it has an edge, when the fix is knowing which decisions the tool is allowed to drive.",
+      "cite": "Pragmatic Institute Foundations, personas. Not Scrum.",
+      "tag": "stakeholders"
+    },
+    {
+      "id": "m11q10",
+      "kind": "tf",
+      "stem": "According to the Scrum Guide 2020, the Sprint Review should avoid being limited to a presentation.",
+      "answer": true,
+      "explain": "The Guide's own words: the Sprint Review is a working session and the Scrum Team should avoid limiting it to a presentation. That is the difference between a demo and the event Scrum actually describes. Attendees review what was accomplished and what has changed in their environment, then collaborate on what to do next, and the Product Backlog may be adjusted to meet new opportunities. If nobody in the room could change your mind about the next Sprint, you ran a status meeting.",
+      "cite": "Scrum Guide 2020, Sprint Review",
+      "tag": "events"
+    },
+    {
+      "id": "m11q11",
+      "kind": "mcq",
+      "stem": "Two roles were cut from the demo welcome screen with the written reason that neither signs a contract, and one of them is the persona whose daily work the product most directly changes. What is the most honest Product Owner reading?",
+      "options": [
+        "It is a mistake and should be reversed, because user value always outranks buyer convenience.",
+        "It is a defensible decision to prioritize the economic buyer in a sales artifact, and the discipline is saying so explicitly rather than describing it as user-centred.",
+        "It proves the persona work was wasted, since the personas did not drive the decision.",
+        "It is irrelevant to product ordering, because a welcome screen is marketing rather than product."
+      ],
+      "answer": 1,
+      "explain": "Prioritizing the buyer in an artifact whose job is to win a contract is a legitimate call, and Ledgerline's own strategy locks the lead persona as the town manager and the Select Board. What separates a good Product Owner here is naming the trade rather than dressing it as something else. Option 1 states a rule that does not exist and would sink the sale. Option 3 misreads the personas, which are what let you see the cost of the decision at all. Option 4 draws a boundary the buyer does not draw, since the welcome screen is the first product experience they get.",
+      "cite": "Scrum Guide 2020, Product Owner",
+      "tag": "stakeholders"
+    },
+    {
+      "id": "m11q12",
+      "kind": "mcq",
+      "stem": "A Product Owner says: I do not need customer visits, I get plenty of input from sales calls, the advisory board, and our loudest customer. What is the strongest objection?",
+      "options": [
+        "None. Those are all legitimate market inputs and a Product Owner should trust the organization's channels.",
+        "Every one of those inputs is real, sincere, and a sample of one, and all of them come from people already in your orbit. The groups that reveal your competitive gaps and the reasons nobody is shopping are absent by construction.",
+        "The Scrum Guide requires the Product Owner to conduct direct customer research each Sprint.",
+        "Sales input should be excluded from the Product Backlog because it is commercially biased."
+      ],
+      "answer": 1,
+      "explain": "This is the noisy 20 percent, and the failure is structural rather than a matter of anyone lying. Existing customers, evaluators, competitors' customers and potentials each answer a different question, and a channel mix drawn entirely from people you already talk to systematically omits three of the four. Option 3 invents a Scrum requirement that does not exist. Option 4 throws away real signal; the fix is broadening the sample, not banning a source.",
+      "cite": "Pragmatic Institute Foundations, Discover. Not Scrum.",
+      "tag": "stakeholders"
+    }
+  ],
+  "cards": [
+    {"id": "m11c1", "front": "How do stakeholders change the Product Backlog, per the Scrum Guide?", "back": "By trying to convince the Product Owner. The Product Owner is one person, not a committee, and may represent the needs of many stakeholders in the Product Backlog.", "tag": "stakeholders"},
+    {"id": "m11c2", "front": "What happens with stakeholders at the Sprint Review?", "back": "The Scrum Team and stakeholders review what was accomplished and what changed in their environment, then collaborate on what to do next. It is a working session, not a presentation, and not an approval gate.", "tag": "events"},
+    {"id": "m11c3", "front": "Who is responsible for stakeholder collaboration in Scrum?", "back": "The Scrum Team. The Guide names it first in the list of all product-related activities the team is responsible for, alongside verification, maintenance, operation, experimentation, and research and development.", "tag": "accountabilities"},
+    {"id": "m11c4", "front": "Outside-in versus inside-out", "back": "Outside-in starts from an observed market problem. Inside-out starts inside the building. Pragmatic's rule: an outside-in approach increases the likelihood of product success. Not in the Scrum Guide.", "tag": "stakeholders"},
+    {"id": "m11c5", "front": "What does NIHITO stand for?", "back": "Nothing Important Happens In The Office, a Pragmatic Institute mark. The accompanying rule: the answers to most of your questions are not in the building. Not Scrum.", "tag": "stakeholders"},
+    {"id": "m11c6", "front": "The four high-gain discovery questions", "back": "What prevents you from succeeding? How do you make buying decisions? What do you think of my company and our product? Who are my competitors and what do you think of them? None is about your features.", "tag": "stakeholders"},
+    {"id": "m11c7", "front": "The rules for listening in a discovery call", "back": "You do not learn while talking. This is not the time to sell or support. Accept every negative with a smile. They believe what they perceive. When you disagree: that is interesting, tell me more.", "tag": "stakeholders"},
+    {"id": "m11c8", "front": "The three-part test for whether a problem is worth solving", "back": "Urgent, pervasive, and someone is willing to pay. All three must pass. Fail one and it is not a low-priority opportunity, it is not an opportunity. Pragmatic, not Scrum.", "tag": "stakeholders"},
+    {"id": "m11c9", "front": "The four sub-questions inside willing to pay", "back": "Is it painful enough that someone pays? Who is willing to pay? What currency will they use? Will they pay YOU for it? Currency is not always money, and in a town it is often political cover.", "tag": "stakeholders"},
+    {"id": "m11c10", "front": "The four market groups worth sampling", "back": "Your customers, competitors' customers, evaluators who are shopping now, and potentials who are not shopping at all. A backlog sourced only from your customers misses three of the four.", "tag": "stakeholders"},
+    {"id": "m11c11", "front": "Buyer, user, beneficiary at Ledgerline", "back": "Buyer: Town Manager, Finance Director, Select Board, and IT as evaluator. User: the AP clerk, the Clerk, the Treasurer, the auditor. Beneficiary: residents and vendors, who sign nothing.", "tag": "stakeholders"},
+    {"id": "m11c12", "front": "When does a clean persona model make the product worse?", "back": "When one human wears several hats. State law permits one person to be treasurer and tax collector. Role separation should govern permissions and views, but one user must switch hats without a second login.", "tag": "stakeholders"}
+  ]
+}
