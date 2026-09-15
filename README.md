@@ -2,7 +2,7 @@
 
 An interactive course that teaches the Scrum Product Owner accountability and prepares you for **PSPO I**, built as a single self-contained HTML file with no framework and no dependencies.
 
-**[Open the live demo](https://bigsupe55.github.io/the-ordered-list/)**
+**[Open the live demo](https://bigsupe55.github.io/pspo-course/)**
 
 I built it while founding a govtech startup, because I needed the certification and could not find a course that taught the *why* instead of drilling definitions. It is a real product I use, not a portfolio exercise, which is why the engineering around the content is the interesting part.
 
