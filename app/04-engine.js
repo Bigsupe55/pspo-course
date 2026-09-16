@@ -199,7 +199,7 @@ function viewHome(){
   (P.exams.attempts||[]).forEach(function(a){ if(!best || a.score>best.score) best=a; });
   var s='<div class="wrap-wide">';
   s+='<div class="hero"><div class="kicker">Product Owner &middot; PSPO I &middot; then CSPO</div>';
-  s+='<h1>The Ordered List</h1>';
+  s+='<h1>Owner\'s Manual</h1>';
   s+='<p class="lede">Fourteen modules that teach what a Product Owner actually does, why they do it, and how the Scrum Guide will be worded when it asks you on the exam. Every idea lands on a real product decision in Northfield, a small town running a budget transparency platform.</p></div>';
 
   if(isDemo()){

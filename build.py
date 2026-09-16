@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# Assembles The Ordered List into one artifact HTML file.
+# Assembles Owner's Manual into one artifact HTML file.
 import json, os, sys, glob, re
 
 ROOT = os.path.dirname(os.path.abspath(__file__))

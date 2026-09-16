@@ -1,4 +1,4 @@
-# The Ordered List
+# Owner's Manual
 
 An interactive course that teaches the Scrum Product Owner accountability and prepares you for **PSPO I**, built as a single self-contained HTML file with no framework and no dependencies.
 
