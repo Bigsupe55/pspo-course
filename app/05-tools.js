@@ -461,7 +461,7 @@ function viewExams(){
   s+='</div>';
   var atts=P.exams.attempts||[];
   if(atts.length){
-    s+='<div class="sec-h"><h2>Your attempts</h2><span class="rule"></span></div><div class="tblwrap"><table class="reftable">';
+    s+='<div class="sec-h"><h2>Your attempts</h2><span class="rule"></span></div><div class="tblwrap" tabindex="0" role="region" aria-label="Scrollable table"><table class="reftable">';
     s+='<thead><tr><th>Exam</th><th>Score</th><th>Percent</th><th>Verdict</th><th>When</th></tr></thead><tbody>';
     atts.slice().reverse().forEach(function(a){
       var pc=Math.round(a.score/a.total*100);
@@ -653,7 +653,7 @@ function viewRef(){
   var s='<div class="wrap"><div class="mhead"><div class="no">Reference</div><h1>Quick reference</h1>';
   s+='<p class="sub">The facts the exam tests literally. If you can reproduce this page from memory, the recall half of PSPO I is handled.</p></div>';
 
-  s+='<div class="wk-lbl">Timeboxes, for a one-month Sprint</div><div class="tblwrap"><table class="reftable"><thead><tr><th>Event</th><th>Maximum</th><th>Who it is for</th></tr></thead><tbody>'
+  s+='<div class="wk-lbl">Timeboxes, for a one-month Sprint</div><div class="tblwrap" tabindex="0" role="region" aria-label="Scrollable table"><table class="reftable"><thead><tr><th>Event</th><th>Maximum</th><th>Who it is for</th></tr></thead><tbody>'
    + row("The Sprint","One month or less","The whole Scrum Team")
    + row("Sprint Planning","8 hours","The whole Scrum Team")
    + row("Daily Scrum","15 minutes","The Developers")
@@ -661,20 +661,20 @@ function viewRef(){
    + row("Sprint Retrospective","3 hours","The whole Scrum Team")
    + '</tbody></table></div><p class="muted" style="font-size:13px;margin-top:9px">For shorter Sprints, the events are usually shorter. The Daily Scrum is 15 minutes regardless of Sprint length.</p>';
 
-  s+='<div class="wk-lbl" style="margin-top:30px">Artifacts and their commitments</div><div class="tblwrap"><table class="reftable"><thead><tr><th>Artifact</th><th>Commitment</th><th>In one line</th></tr></thead><tbody>'
+  s+='<div class="wk-lbl" style="margin-top:30px">Artifacts and their commitments</div><div class="tblwrap" tabindex="0" role="region" aria-label="Scrollable table"><table class="reftable"><thead><tr><th>Artifact</th><th>Commitment</th><th>In one line</th></tr></thead><tbody>'
    + row("Product Backlog","Product Goal","An emergent, ordered list of what is needed to improve the product.")
    + row("Sprint Backlog","Sprint Goal","The Sprint Goal (why), the selected items (what), and the plan (how).")
    + row("Increment","Definition of Done","A concrete stepping stone toward the Product Goal. It must be usable.")
    + '</tbody></table></div>';
 
-  s+='<div class="wk-lbl" style="margin-top:30px">Who is accountable for what</div><div class="tblwrap"><table class="reftable"><thead><tr><th>Accountability</th><th>Accountable for</th></tr></thead><tbody>'
+  s+='<div class="wk-lbl" style="margin-top:30px">Who is accountable for what</div><div class="tblwrap" tabindex="0" role="region" aria-label="Scrollable table"><table class="reftable"><thead><tr><th>Accountability</th><th>Accountable for</th></tr></thead><tbody>'
    + row2("Product Owner","Maximizing the value of the product resulting from the work of the Scrum Team, and effective Product Backlog management.")
    + row2("Scrum Master","Establishing Scrum as defined in the Scrum Guide, and the Scrum Team's effectiveness.")
    + row2("Developers","Creating a plan for the Sprint, instilling quality by adhering to the Definition of Done, adapting their plan each day toward the Sprint Goal, and holding each other accountable as professionals.")
    + row2("The whole Scrum Team","Creating a valuable, useful Increment every Sprint.")
    + '</tbody></table></div>';
 
-  s+='<div class="wk-lbl" style="margin-top:30px">Decisions that belong to exactly one party</div><div class="tblwrap"><table class="reftable"><thead><tr><th>Decision</th><th>Belongs to</th></tr></thead><tbody>'
+  s+='<div class="wk-lbl" style="margin-top:30px">Decisions that belong to exactly one party</div><div class="tblwrap" tabindex="0" role="region" aria-label="Scrollable table"><table class="reftable"><thead><tr><th>Decision</th><th>Belongs to</th></tr></thead><tbody>'
    + row2("Ordering the Product Backlog","Product Owner")
    + row2("Cancelling a Sprint","Product Owner, and only the Product Owner")
    + row2("Sizing Product Backlog items","The Developers who will do the work")
@@ -685,7 +685,7 @@ function viewRef(){
    + '</tbody></table></div>';
 
   s+='<div class="wk-lbl" style="margin-top:30px">Theory, pillars, values</div>';
-  s+='<div class="tblwrap"><table class="reftable"><tbody>'
+  s+='<div class="tblwrap" tabindex="0" role="region" aria-label="Scrollable table"><table class="reftable"><tbody>'
    + row2("Founded on","Empiricism and lean thinking")
    + row2("Three pillars","Transparency, Inspection, Adaptation")
    + row2("Five values","Commitment, Focus, Openness, Respect, Courage")

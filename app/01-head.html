@@ -1,7 +1,9 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>The Ordered List</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Mono:ital,wght@0,400;0,500;1,400&display=swap">
 <style>
 /* ============================================================
    THE ORDERED LIST - a Product Owner course
@@ -10,28 +12,33 @@
 
 :root{
   /* light palette (complete; dark blocks below redefine only these) */
-  --paper:#F2F2EE;
-  --surface:#FBFBF8;
-  --surface-2:#EDEDE7;
-  --sunk:#E6E7E0;
-  --ink:#161A22;
-  --ink-2:#5A6472;
-  --ink-3:#828B98;
-  --rule:#D6D8D0;
-  --rule-strong:#B9BDB3;
-  --accent:#26356B;
-  --accent-soft:#E4E7F2;
-  --accent-ink:#26356B;
-  --spark:#B5842F;
-  --spark-ink:#8A5F14;
-  --spark-soft:#F4EADA;
-  --ok:#2E6B4F;
-  --ok-soft:#E0EFE6;
-  --bad:#A83A2E;
-  --bad-soft:#F6E4E1;
-  --mixed:#5A6472;
-  --mixed-soft:#E8EAEC;
-  --focus:#26356B;
+  --paper:#F4F3EF;
+  --surface:#FCFCFA;
+  --surface-2:#E9E8E1;
+  --sunk:#DFDED5;
+  --ink:#141821;
+  --ink-2:#49515F;
+  --ink-3:#5F6875;
+  --rule:#D9D7CC;
+  --rule-strong:#B4B1A4;
+  --accent:#0F5567;
+  --accent-soft:#DBE9ED;
+  --accent-ink:#0B4353;
+  --spark:#8F5520;
+  --spark-ink:#7E4A1A;
+  --spark-soft:#F6E8DB;
+  --ok:#1C6444;
+  --ok-soft:#DCEEE4;
+  --bad:#9C3126;
+  --bad-soft:#F8E3DF;
+  --mixed:#49515F;
+  --mixed-soft:#E7E6E0;
+  --focus:#0F5567;
+  --on-accent:#FFFFFF;
+  --fill-bg:#0F5567;
+  --fill-ink:#FFFFFF;
+  --fill-edge:#0F5567;
+  --control:#78766A;
   --shadow:0 1px 2px rgba(22,26,34,.06), 0 8px 24px -12px rgba(22,26,34,.18);
   --shadow-lift:0 2px 4px rgba(22,26,34,.08), 0 16px 40px -16px rgba(22,26,34,.26);
 
@@ -43,62 +50,72 @@
   --step-2:1.4375rem;
   --step-3:1.8125rem;
   --step-4:2.375rem;
-  --sans:"IBM Plex Sans",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
-  --slab:"Zilla Slab",Georgia,"Times New Roman",serif;
-  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --sans:"Public Sans",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --slab:"Newsreader",Georgia,"Times New Roman",serif;
+  --mono:"DM Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
 }
 
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
-    --paper:#12151C;
-    --surface:#181C25;
-    --surface-2:#1E232E;
-    --sunk:#0D1016;
-    --ink:#E8E9E4;
-    --ink-2:#9AA3B0;
-    --ink-3:#78818E;
-    --rule:#2A303C;
-    --rule-strong:#3B4252;
-    --accent:#93A5EA;
-    --accent-soft:#1C2340;
-    --accent-ink:#B3C0F2;
-    --spark:#D9AC5E;
-    --spark-ink:#D9AC5E;
-    --spark-soft:#2A2318;
-    --ok:#6FBE8E;
-    --ok-soft:#13291F;
-    --bad:#E8877A;
-    --bad-soft:#2E1A17;
-    --mixed:#9AA3B0;
-    --mixed-soft:#232833;
-    --focus:#93A5EA;
+    --paper:#10141A;
+    --surface:#171C24;
+    --surface-2:#1F252F;
+    --sunk:#0A0D12;
+    --ink:#E9EAE5;
+    --ink-2:#A8B1BD;
+    --ink-3:#8C96A4;
+    --rule:#293039;
+    --rule-strong:#3B4450;
+    --accent:#6CC5D8;
+    --accent-soft:#0F2F39;
+    --accent-ink:#9BDBE8;
+    --spark:#E0A469;
+    --spark-ink:#E8B77E;
+    --spark-soft:#2C2318;
+    --ok:#6CC195;
+    --ok-soft:#12291E;
+    --bad:#E98A7C;
+    --bad-soft:#2F1A17;
+    --mixed:#A8B1BD;
+    --mixed-soft:#232935;
+    --focus:#6CC5D8;
+    --on-accent:#08222A;
+    --fill-bg:#0F2F39;
+    --fill-ink:#9BDBE8;
+    --fill-edge:#6CC5D8;
+    --control:#69737F;
     --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.7);
     --shadow-lift:0 2px 4px rgba(0,0,0,.45), 0 16px 40px -16px rgba(0,0,0,.8);
   }
 }
 :root[data-theme="dark"]{
-  --paper:#12151C;
-  --surface:#181C25;
-  --surface-2:#1E232E;
-  --sunk:#0D1016;
-  --ink:#E8E9E4;
-  --ink-2:#9AA3B0;
-  --ink-3:#78818E;
-  --rule:#2A303C;
-  --rule-strong:#3B4252;
-  --accent:#93A5EA;
-  --accent-soft:#1C2340;
-  --accent-ink:#B3C0F2;
-  --spark:#D9AC5E;
-  --spark-ink:#D9AC5E;
-  --spark-soft:#2A2318;
-  --ok:#6FBE8E;
-  --ok-soft:#13291F;
-  --bad:#E8877A;
-  --bad-soft:#2E1A17;
-  --mixed:#9AA3B0;
-  --mixed-soft:#232833;
-  --focus:#93A5EA;
+  --paper:#10141A;
+  --surface:#171C24;
+  --surface-2:#1F252F;
+  --sunk:#0A0D12;
+  --ink:#E9EAE5;
+  --ink-2:#A8B1BD;
+  --ink-3:#8C96A4;
+  --rule:#293039;
+  --rule-strong:#3B4450;
+  --accent:#6CC5D8;
+  --accent-soft:#0F2F39;
+  --accent-ink:#9BDBE8;
+  --spark:#E0A469;
+  --spark-ink:#E8B77E;
+  --spark-soft:#2C2318;
+  --ok:#6CC195;
+  --ok-soft:#12291E;
+  --bad:#E98A7C;
+  --bad-soft:#2F1A17;
+  --mixed:#A8B1BD;
+  --mixed-soft:#232935;
+  --focus:#6CC5D8;
+  --on-accent:#08222A;
+  --fill-bg:#0F2F39;
+  --fill-ink:#9BDBE8;
+  --fill-edge:#6CC5D8;
+  --control:#69737F;
   --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.7);
   --shadow-lift:0 2px 4px rgba(0,0,0,.45), 0 16px 40px -16px rgba(0,0,0,.8);
 }
@@ -113,11 +130,11 @@ body{
   line-height:1.65;
   -webkit-font-smoothing:antialiased;
 }
-h1,h2,h3,h4{font-family:var(--slab);font-weight:600;line-height:1.2;text-wrap:balance;margin:0}
+h1,h2,h3,h4{font-family:var(--slab);font-optical-sizing:auto;font-weight:600;line-height:1.2;text-wrap:balance;margin:0}
 p{margin:0}
 a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:2px}
 button{font:inherit;color:inherit}
-:focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:3px}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:2px}
 ::selection{background:var(--spark-soft);color:var(--ink)}
 
 /* ---------- app frame ---------- */
@@ -174,23 +191,20 @@ button{font:inherit;color:inherit}
 /* ---------- shared bits ---------- */
 .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-3)}
 .btn{
-  font-family:var(--sans);font-size:var(--step--1);font-weight:500;padding:9px 16px;border-radius:6px;
-  border:1px solid var(--rule-strong);background:var(--surface);color:var(--ink);cursor:pointer;
+  font-family:var(--sans);font-size:var(--step--1);font-weight:500;padding:9px 16px;border-radius:5px;
+  border:1px solid var(--control);background:var(--surface);color:var(--ink);cursor:pointer;
   transition:background .15s ease,border-color .15s ease,transform .06s ease;
 }
 .btn:hover{background:var(--surface-2);border-color:var(--ink-3)}
 .btn:active{transform:translateY(1px)}
 .btn[disabled]{opacity:.45;cursor:not-allowed}
-.btn-primary{background:var(--accent);border-color:var(--accent);color:#fff}
-:root[data-theme="dark"] .btn-primary,
-:root:not([data-theme="light"]) .btn-primary{color:var(--sunk)}
-@media (prefers-color-scheme:light){:root:not([data-theme="dark"]) .btn-primary{color:#fff}}
+.btn-primary{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
 .btn-primary:hover{background:var(--accent);filter:brightness(1.1);border-color:var(--accent)}
 .btn-ghost{background:none;border-color:transparent;color:var(--ink-2)}
 .btn-ghost:hover{background:var(--surface-2);color:var(--ink);border-color:transparent}
 .btn-sm{padding:5px 11px;font-size:12px}
 
-.chip{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;padding:3px 8px;border-radius:4px;background:var(--surface-2);color:var(--ink-2);border:1px solid var(--rule)}
+.chip{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:11px;letter-spacing:.07em;text-transform:uppercase;padding:3px 8px;border-radius:4px;background:var(--surface-2);color:var(--ink-2);border:1px solid var(--rule)}
 .chip-ok{background:var(--ok-soft);color:var(--ok);border-color:transparent}
 .chip-bad{background:var(--bad-soft);color:var(--bad);border-color:transparent}
 .chip-accent{background:var(--accent-soft);color:var(--accent-ink);border-color:transparent}
